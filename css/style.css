@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(77, 74, 74);
+  overflow: hidden;
+}
+@font-face {
+  font-family: urchlo;
+  src: url('../fonts/Urchlo\ Romhanach.ttf');
+}
+.container {
+  padding-top: 4%;
+  /* border: 3px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.eyes {
+  margin-top: 60px;
+
+  display: none;
+  height: 500px;
+  width: 500px;
+  /* border: 2px solid blue; */
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.selectedLv {
+  height: 140px;
+  width: 140px;
+  background-repeat: no-repeat;
+  color: wheat;
+  /* -webkit-transform: translateZ(60px);
+  transform: translateZ(60px);  text-align: center; */
+}
+
+#eye1 {
+  background-image: url('../images/a2.png');
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 172px;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+#eye3 {
+  background-image: url('../images/a1.png');
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 163px;
+  left: 388px;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+#eye5 {
+  background-image: url('../images/a3.png');
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 320px;
+  left: 185px;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+#eye7 {
+  background-image: url('../images/a4.png');
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 163px;
+  left: -37px;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+#eire-map {
+  display: none;
+  margin-top: 1%;
+  position: absolute;
+  z-index: -10;
+  background-image: url('../images/e.png');
+
+  height: 500px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#eire-mapBG {
+  display: none;
+  margin-top: 1%;
+  position: absolute;
+  z-index: -11;
+  background-image: url('../images/e.png');
+
+  height: 500px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.province-map {
+  pointer-events: none;
+  margin-top: 41%;
+  position: absolute;
+  z-index: -11;
+  background-image: url('../images/maps/u2.png');
+  height: 500px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.province-mapBG {
+  margin-top: 41%;
+  position: absolute;
+  z-index: -21;
+  background-image: url('../images/e.png');
+
+  height: 500px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#circle {
+  position: absolute;
+  opacity: 0.5;
+
+  z-index: -1;
+  background-image: url('../images/drawn-circle-vector-9.gif');
+  /* border: 2px solid salmon; */
+  height: 800px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.button-ring {
+  position: relative;
+  z-index: 50;
+  height: 500px;
+  width: 500px;
+  /* border: 2px solid blue; */
+}
+#text-output {
+  position: absolute;
+  pointer-events: none;
+
+  background-color: rgba(10, 10, 10, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid goldenrod;
+
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.levelDescription {
+  color: rgb(184, 168, 168);
+  margin: 5px;
+  text-align: center;
+  font-size: 4em;
+  font-family: urchlo;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#back-to-main-menu {
+  display: relative;
+  position: absolute;
+  z-index: 50;
+}
+#back-to-main-menu:hover {
+  color: gainsboro;
+}
+
+#antrim {
+  top: 7px;
+  left: 351px;
+  background-image: url('../images/emblems/antrim.png');
+}
+
+#armagh {
+  top: 288px;
+  left: 366px;
+  background-image: url('../images/emblems/armagh.png');
+}
+
+#cavan {
+  top: 388px;
+  left: 122px;
+  background-image: url('../images/emblems/cavan.png');
+}
+
+#derry {
+  top: -22px;
+  left: 182px;
+  background-image: url('../images/emblems/derry.png');
+}
+
+#donegal {
+  top: 170px;
+  left: -27px;
+  background-image: url('../images/emblems/donegal.png');
+}
+
+#down {
+  top: 170px;
+  left: 404px;
+  background-image: url('../images/emblems/down.png');
+}
+
+#fermanagh {
+  top: 308px;
+  left: -10px;
+  background-image: url('../images/emblems/fermanagh.png');
+}
+
+#monaghan {
+  top: 408px;
+  left: 258px;
+  background-image: url('../images/emblems/monaghan.png');
+}
+
+#tyrone {
+  top: 27px;
+  left: 32px;
+  background-image: url('../images/emblems/tyrone.png');
+}
+
+.connachta,
+.uladh,
+.mumhain,
+.laighean {
+  display: none;
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  position: absolute;
+
+  -webkit-transform: translateZ(20px);
+
+  transform: translateZ(20px);
+}
+#galway {
+  top: 0px;
+  left: 172px;
+  background-image: url('../images/emblems/galway.png');
+}
+#leitrim {
+  top: 94px;
+  left: -40px;
+  background-image: url('../images/emblems/leitrim.png');
+}
+#mayo {
+  top: 259px;
+  left: 56px;
+  background-image: url('../images/emblems/mayo.png');
+}
+#roscommon {
+  top: 312px;
+  left: 271px;
+  background-image: url('../images/emblems/roscommon.png');
+}
+#sligo {
+  top: 94px;
+  left: 388px;
+  background-image: url('../images/emblems/sligo.png');
+}
+
+#clare {
+  top: 15px;
+  left: 71px;
+  background-image: url('../images/emblems/clare.png');
+}
+
+#cork {
+  top: 309px;
+  left: 71px;
+  background-image: url('../images/emblems/cork.png');
+}
+
+#kerry {
+  top: 169px;
+  left: -11px;
+  background-image: url('../images/emblems/kerry.png');
+}
+
+#limerick {
+  top: 295px;
+  left: 345px;
+  background-image: url('../images/emblems/limerick.png');
+}
+
+#tipperary {
+  top: 15px;
+  left: 317px;
+  background-image: url('../images/emblems/tipperary.png');
+}
+
+#waterford {
+  top: 109px;
+  left: 388px;
+  background-image: url('../images/emblems/waterford.png');
+}
+
+#carlow {
+  top: 373px;
+  left: 301px;
+  background-image: url('../images/emblems/carlow.png');
+}
+#dublin {
+  top: 72px;
+  left: 404px;
+  background-image: url('../images/emblems/dublin.png');
+}
+#kildare {
+  top: 415px;
+  left: 192px;
+  background-image: url('../images/emblems/kildare.png');
+}
+#kilkenny {
+  top: 373px;
+  left: 80px;
+  background-image: url('../images/emblems/kilkenny.png');
+}
+#laois {
+  top: 305px;
+  left: -21px;
+  background-image: url('../images/emblems/laois.png');
+}
+#longford {
+  top: -15px;
+  left: 80px;
+  background-image: url('../images/emblems/longford.png');
+}
+#louth {
+  top: -15px;
+  left: 303px;
+  background-image: url('../images/emblems/louth.png');
+}
+#meath {
+  top: -60px;
+  left: 191px;
+  background-image: url('../images/emblems/meath.png');
+}
+#offaly {
+  top: 182px;
+  left: -63px;
+  background-image: url('../images/emblems/offaly.png');
+}
+#westmeath {
+  top: 72px;
+  left: -22px;
+  background-image: url('../images/emblems/westmeath.png');
+}
+#wexford {
+  top: 305px;
+  left: 401px;
+  background-image: url('../images/emblems/wexford.png');
+}
+#wicklow {
+  top: 185px;
+  left: 450px;
+  background-image: url('../images/emblems/wicklow.png');
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+
+  color: #444;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+
+  padding: 10px;
+  font-size: 100%;
+}
+
+.header {
+  /* border: 2px solid blue; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.header > div {
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+}
+
+#centered-content {
+  width: 200px;
+  height: 600px;
+  background-color: blue;
+
+  position: absolute; /*it can be fixed too*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.emblems {
+  /* border: 2px solid orange; */
+}
