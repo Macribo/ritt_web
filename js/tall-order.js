@@ -1,6 +1,9 @@
 /*credit - Rex van der Spuy, "Foundation Game Design with HTML Javascript" */
 console.log('rex');
 
+// alert(Cookies.get('place'));
+
+$('.levelDescription').text(Cookies.get('place'));
 //Get a reference to the stage and output
 var stage = document.querySelector('#stage');
 var output = document.querySelector('#output');
@@ -25,7 +28,7 @@ var map = [
 //The game objects map
 var gameObjects = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 4, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -36,10 +39,10 @@ var lastPressed = ''; //what was the last key pressed?
 
 //Map code
 var EMPTY = 0;
-var ISLAND = 1;
-var PIRATE = 2;
+var LAND = 1;
+var MAGIC_TREE = 2;
 var HOME = 3;
-var SHIP = 4;
+var sheep = 4;
 var BLOCKED = 7;
 var WAVES = 5;
 var MONSTER = 6;
@@ -56,17 +59,17 @@ var DOWN = 40;
 var RIGHT = 39;
 var LEFT = 37;
 
-//An automatic way of setting the ship's start position
-var shipRow;
-var shipColumn;
+//An automatic way of setting the sheep's start position
+var sheepRow;
+var sheepColumn;
 var monsterColumn;
 var monsterRow;
 
 for (var row = 0; row < ROWS; row++) {
   for (var column = 0; column < COLUMNS; column++) {
-    if (gameObjects[row][column] === SHIP) {
-      shipRow = row;
-      shipColumn = column;
+    if (gameObjects[row][column] === sheep) {
+      sheepRow = row;
+      sheepColumn = column;
     }
     if (gameObjects[row][column] === MONSTER) {
       monsterRow = row;
@@ -80,62 +83,62 @@ render();
 function keydownHandler(event) {
   switch (event.keyCode) {
     case UP:
-      //Find out if the ship's move will
+      //Find out if the sheep's move will
       //be within the playing field
-      if (shipRow > 0) {
-        //first buffer ship position to simulate blocked squares
+      if (sheepRow > 0) {
+        //first buffer sheep position to simulate blocked squares
         lastPressed = 'up';
 
-        //If it is, clear the ship's current cell
-        gameObjects[shipRow][shipColumn] = 0;
+        //If it is, clear the sheep's current cell
+        gameObjects[sheepRow][sheepColumn] = 0;
 
-        //Subract 1 from the ship's row
+        //Subract 1 from the sheep's row
         //to move it up one row on the map
-        shipRow--;
+        sheepRow--;
 
-        //Apply the ship's new updated position to the array
-        gameObjects[shipRow][shipColumn] = SHIP;
+        //Apply the sheep's new updated position to the array
+        gameObjects[sheepRow][sheepColumn] = sheep;
       }
       break;
 
     case DOWN:
-      if (shipRow < ROWS - 1) {
+      if (sheepRow < ROWS - 1) {
         lastPressed = 'down';
-        gameObjects[shipRow][shipColumn] = ROWS - 0;
-        shipRow++;
-        gameObjects[shipRow][shipColumn] = SHIP;
+        gameObjects[sheepRow][sheepColumn] = ROWS - 0;
+        sheepRow++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
       }
       break;
 
     case LEFT:
-      if (shipColumn > 1) {
-        gameObjects[shipRow][shipColumn] = 1;
-        shipColumn--;
-        gameObjects[shipRow][shipColumn] = SHIP;
+      if (sheepColumn > 1) {
+        gameObjects[sheepRow][sheepColumn] = 1;
+        sheepColumn--;
+        gameObjects[sheepRow][sheepColumn] = sheep;
         lastPressed = 'left';
       }
       break;
 
     case RIGHT:
-      if (shipColumn < COLUMNS - 1) {
-        gameObjects[shipRow][shipColumn] = 0;
-        shipColumn++;
-        gameObjects[shipRow][shipColumn] = SHIP;
+      if (sheepColumn < COLUMNS - 1) {
+        gameObjects[sheepRow][sheepColumn] = 0;
+        sheepColumn++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
       }
       lastPressed = 'right';
       break;
   }
-  //find out what kind of cell the ship is on
-  switch (map[shipRow][shipColumn]) {
+  //find out what kind of cell the sheep is on
+  switch (map[sheepRow][sheepColumn]) {
     case EMPTY:
       gameMessage = 'You sail the open seas.';
       break;
 
-    case PIRATE:
+    case MAGIC_TREE:
       // fight();
       break;
 
-    case ISLAND:
+    case LAND:
       // trade();
       break;
 
@@ -153,36 +156,36 @@ function keydownHandler(event) {
   blockPath = () => {
     switch (lastPressed) {
       case 'down':
-        gameObjects[shipRow][shipColumn] = BLOCKED;
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
 
-        shipRow--;
+        sheepRow--;
 
-        //Apply the ship's new updated position to the array
-        gameObjects[shipRow][shipColumn] = SHIP;
+        //Apply the sheep's new updated position to the array
+        gameObjects[sheepRow][sheepColumn] = sheep;
 
         break;
 
       case 'up':
-        gameObjects[shipRow][shipColumn] = BLOCKED;
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
 
-        shipRow++;
-        gameObjects[shipRow][shipColumn] = SHIP;
+        sheepRow++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
 
         break;
 
       case 'right':
-        gameObjects[shipRow][shipColumn] = BLOCKED;
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
 
-        shipColumn--;
-        gameObjects[shipRow][shipColumn] = SHIP;
+        sheepColumn--;
+        gameObjects[sheepRow][sheepColumn] = sheep;
 
         break;
 
       case 'left':
-        gameObjects[shipRow][shipColumn] = BLOCKED;
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
 
-        shipColumn++;
-        gameObjects[shipRow][shipColumn] = SHIP;
+        sheepColumn++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
         break;
     }
     render();
@@ -255,11 +258,11 @@ function render() {
           cell.src = randWave();
           break;
 
-        case ISLAND:
+        case LAND:
           cell.src = './images/talamh.png';
           break;
 
-        case PIRATE:
+        case MAGIC_TREE:
           cell.src = './images/geaga.png';
           break;
 
@@ -271,14 +274,14 @@ function render() {
           cell.src = './images/folamh.png';
       }
 
-      if (gameObjects[shipRow][shipColumn] === MONSTER) {
+      if (gameObjects[sheepRow][sheepColumn] === MONSTER) {
         alert('collision!');
       }
 
-      //Add the ship from the gameObjects array
+      //Add the sheep from the gameObjects array
       switch (gameObjects[row][column]) {
-        case SHIP:
-          cell.src = './images/ship.png';
+        case sheep:
+          cell.src = './images/sheep.png';
           break;
         // case MONSTER:
         //   cell.src = './images/geaga.png';
