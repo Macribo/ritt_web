@@ -1,0 +1,117 @@
+:root {
+  --background-color: rgb(49, 49, 49);
+}
+
+body {
+  background-color: var(--background-color);
+}
+@font-face {
+  font-family: urchlo;
+  src: url('../fonts/Urchlo\ Romhanach.ttf');
+}
+.page-header {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-list {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 10px;
+  background-color: #ce641e;
+  border-radius: 3px;
+}
+
+.navigation-list li:hover {
+  /* background-color: rgba(255, 219, 61, 1); */
+}
+
+.navigation-list__item--active {
+  /* text-decoration: none; */
+  /* border: 2px solid red; */
+  /* background-image: url('../images/interact.png'); */
+  /* background-size: cover; */
+  background-color: goldenrod;
+}
+#tall-order {
+  width: 1024px;
+  /* padding-top: 128px; */
+  margin: 0;
+  height: 384px;
+  /* border: 2px solid red; */
+  background-image: url('../images/2BG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+
+  /* padding: 10px; */
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 200px;
+  grid-template-areas:
+    'header  header  header'
+    'content content content'
+    'footer  footer  footer';
+  background-color: var(--background-color);
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: rgb(39, 37, 37);
+  border: 1px solid goldenrod;
+}
+
+.levelDescription {
+  color: rgb(184, 168, 168);
+  /* margin: 5px; */
+  text-align: center;
+  font-size: 3em;
+  font-family: urchlo, Helvetica, sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#back-to-main-menu {
+  display: relative;
+  position: absolute;
+  z-index: 50;
+}
+#back-to-main-menu:hover {
+  color: gainsboro;
+}

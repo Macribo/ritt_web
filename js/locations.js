@@ -5,7 +5,7 @@ $(document).ready(function() {
   console.log('hi' + Cookies.get('playerCounty'));
   var myCookie = Cookies.get('playerCounty');
   if (myCookie != '') {
-    let chosenCountyImg = "url('../images/maps/coMaps/" + myCookie + '.png';
+    let chosenCountyImg = "url('./images/maps/coMaps/" + myCookie + '.png';
     // $('#county-map').css('border', '5px solid red');
     $('#county-map').css('background-image', chosenCountyImg);
   } else {
@@ -100,7 +100,7 @@ $(document).ready(function() {
   $('.map-pin').click(function() {
     Cookies.set('place', place);
     console.log(Cookies.get());
-    // alert('go');
+    // show first form and fade
 
     setTimeout(function() {
       location.href = 'file:///home/devugees/Desktop/ritt_web/projects.html';
