@@ -349,7 +349,7 @@ $(document).ready(function() {
     //   alert('test');
   });
   $('#back-to-main-menu').click(function() {
-    location.href = 'file:///home/devugees/Desktop/ritt_web/index.html';
+    location.href = './index.html';
   });
 
   $('.county').click(function() {
@@ -362,6 +362,6 @@ $(document).ready(function() {
   });
 
   function leave() {
-    location.href = 'file:///home/devugees/Desktop/ritt_web/locations.html';
+    location.href = './locations.html';
   }
 });
