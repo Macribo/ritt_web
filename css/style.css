@@ -136,7 +136,7 @@ body {
 
 .province-map {
   pointer-events: none;
-  margin-top: 41%;
+  margin-top: 22%;
   position: absolute;
   z-index: -11;
   background-image: url('../images/maps/u2.png');
@@ -147,7 +147,7 @@ body {
 }
 
 .province-mapBG {
-  margin-top: 41%;
+  margin-top: 22%;
   position: absolute;
   z-index: -21;
   background-image: url('../images/e.png');

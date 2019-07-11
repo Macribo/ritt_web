@@ -13,7 +13,7 @@ $(document).ready(function() {
   }
 
   $('#back-to-counties').click(function() {
-    location.href = 'file:///home/devugees/Desktop/ritt_web/provinces.html';
+    location.href = './provinces.html';
   });
 
   setTimeout(function() {
@@ -103,7 +103,7 @@ $(document).ready(function() {
     // show first form and fade
 
     setTimeout(function() {
-      location.href = 'file:///home/devugees/Desktop/ritt_web/projects.html';
+      location.href = './projects.html';
     }, 5000);
   });
   $('.map-pin').mouseleave(function() {
