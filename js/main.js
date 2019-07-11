@@ -61,29 +61,25 @@ $(document).ready(function() {
     // alert('u');
     Cookies.set('province', 'ulster');
     console.log(Cookies.get('province'));
-    location.href =
-      'file:///home/devugees/Desktop/ritt_web/countySelector.html';
+    location.href = './countySelector.html';
   });
 
   $('#eye3').click(function() {
     // alert('l');
 
     Cookies.set('province', 'leinster');
-    location.href =
-      'file:///home/devugees/Desktop/ritt_web/countySelector.html';
+    location.href = './countySelector.html';
   });
 
   $('#eye5').click(function() {
     // alert('m');
     Cookies.set('province', 'munster');
-    location.href =
-      'file:///home/devugees/Desktop/ritt_web/countySelector.html';
+    location.href = './countySelector.html';
   });
 
   $('#eye7').click(function() {
     Cookies.set('province', 'connacht');
     // alert('c');
-    location.href =
-      'file:///home/devugees/Desktop/ritt_web/countySelector.html';
+    location.href = './countySelector.html';
   });
 });
