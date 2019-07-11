@@ -79,6 +79,16 @@
   height: 50px;
   width: 50px;
   background-image: url('../images/maps/coMaps/pin.png');
+  background-repeat: no-repeat;
+}
+.map-pin:hover {
+  position: absolute;
+  /* z-index: 500; */
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-image: url('../images/maps/coMaps/pin2.png');
+  background-repeat: no-repeat;
 }
 
 #map-pins {

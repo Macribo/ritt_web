@@ -152,6 +152,7 @@ body {
 
 .county {
   transition: all 0.5s ease-out;
+  z-index: 400 !important;
 }
 
 #antrim {
