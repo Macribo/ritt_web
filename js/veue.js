@@ -17,7 +17,13 @@ let englishProse = [
   `an Enchantment of Winds.`,
   ``
 ];
-
+// alert('hi veue');
+// start.onclick = function() {
+//     alert('started');
+//     window.location.replace(
+//       './Untitled/index.html'
+//     );
+//   };
 
 let aboutIsRunning = false;
 verse2 = () => {
@@ -199,7 +205,7 @@ for (let i = 1; i < 33; i++) {
     slideAction = `
         <div id="blue-cape-menu" onload="test()">
         
-       <img id="blue-cape" src="assets/images/blue-cape.gif" >
+       <img id="blue-cape" src="./images/blue-cape.gif" >
     </div>`;
 
       break;
@@ -227,7 +233,7 @@ for (let i = 1; i < 33; i++) {
       slideAction = '';
   }
   let carouselBodyString = `<div class="carousel-item">
-                              <img class="d-block w-100" src="./assets/images/About1/${picName}.png" alt="Second slide">
+                              <img class="d-block w-100" src="./images/About1/${picName}.png" alt="Second slide">
                               ${slideAction}
                             </div>`; //creatae dom elements
   console.log(i + 'slideAction:' + slideAction);
@@ -241,6 +247,35 @@ function goToSlide(number) {
 }
 
 $(document).ready(function() {
+    
+    $('.about').click(function() {
+        $('#on-top').animate({
+          opacity: 1,
+          background: 'black'
+        });
+        $('#stage').fadeOut();
+        setTimeout(function() {
+        //   req =
+        //     about.requestFullScreen ||
+        //     about.webkitRequestFullScreen ||
+        //     about.mozRequestFullScreen;
+    
+          $('#dark-frame').animate({ opacity: 1 });
+          $('#carousel').removeClass('hidden');
+          slideNumber = 0;
+          aboutGo();
+        }, 400);
+        setTimeout(function() {
+        //   req.call(about);
+    
+          $('#on-top').animate({
+            opacity: 0,
+            background: 'black'
+          });
+        }, 800);
+      });
+    
+    
     var rain = document.getElementById('rain');
     // var amergin = document.getElementById('amergin');
     slideEvent = () => {
