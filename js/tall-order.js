@@ -671,10 +671,11 @@ $(document).ready(function() {
       'url("./images/maps/localMaps/bg176.png")'
     );
   } else {
-    $('#stageBG').css(
-      'background-image',
-      'url("./images/maps/localMaps/bg175.png")'
-    );
+    //random
+    $('#stageBG').css('background-image', randMap);
+    // alert(randMap);
   }
   //   alert('go');
 });
+let rando = Math.floor(Math.random() * 40 + 150);
+let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
