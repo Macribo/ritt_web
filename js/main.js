@@ -24,7 +24,7 @@ $(document).ready(function() {
   $('#eye1').mouseenter(function() {
     console.log('hover1');
     // $('.selectedLv').css('background-image', "url('v1.png')");
-    $('#eire-map').css('background-image', 'url("../images/u.png")');
+    $('#eire-map').css('background-image', 'url("./images/u.png")');
     $('#eire-map').fadeIn(500);
 
     $('.levelDescription').text(`Uladh`);
@@ -33,7 +33,7 @@ $(document).ready(function() {
   //LEINSTER
   $('#eye3').mouseenter(function() {
     console.log('hover3');
-    $('#eire-map').css('background-image', 'url("../images/l.png")');
+    $('#eire-map').css('background-image', 'url("./images/l.png")');
     $('#eire-map').fadeIn(500);
 
     $('.levelDescription').text('Laighean');
@@ -43,7 +43,7 @@ $(document).ready(function() {
   $('#eye5').mouseenter(function() {
     console.log('hover3');
     // $('.selectedLv').css('background-image', "url('v5.png')");
-    $('#eire-map').css('background-image', 'url("../images/m.png")');
+    $('#eire-map').css('background-image', 'url("./images/m.png")');
     $('#eire-map').fadeIn(500);
     $('.levelDescription').text('An Mhumhain');
   });
@@ -51,7 +51,7 @@ $(document).ready(function() {
   //CONNAUGHT
   $('#eye7').mouseenter(function() {
     console.log('hover3');
-    $('#eire-map').css('background-image', 'url("../images/c.png")');
+    $('#eire-map').css('background-image', 'url("./images/c.png")');
     $('#eire-map').fadeIn(500);
 
     $('.levelDescription').text('Connachta');
