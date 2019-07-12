@@ -27,67 +27,65 @@ let englishProse = [
 
 let aboutIsRunning = false;
 verse2 = () => {
-    setTimeout(function() {
-      $('#demo').text('');
-      // clearLine();
-      $('#demo').text(englishProse[6]);
-      // typeWriter("#demo", "true", 40);
-    }, 8000);
+  setTimeout(function() {
+    $('#demo').text('');
+    // clearLine();
+    $('#demo').text(englishProse[6]);
+    // typeWriter("#demo", "true", 40);
+  }, 8000);
 
-    setTimeout(function() {
-      $('#demo').text('');
+  setTimeout(function() {
+    $('#demo').text('');
 
-      // clearLine();
-      $('#demo').text(' ');
-
-      $('#demo').text(englishProse[5]);
-      // typeWriter("#demo", "true", 40);
-    }, 5000);
-
-    setTimeout(function() {
-      // clearLine();
-      $('#demo').text(' ');
-
-      $('#demo').text(englishProse[4]);
-      // typeWriter("#demo", "true", 40);
-    }, 2000);
-
+    // clearLine();
     $('#demo').text(' ');
 
-    $('#demo').text(englishProse[3]);
-    // return msg;
+    $('#demo').text(englishProse[5]);
     // typeWriter("#demo", "true", 40);
-    break;
+  }, 5000);
 
+  setTimeout(function() {
+    // clearLine();
+    $('#demo').text(' ');
+
+    $('#demo').text(englishProse[4]);
+    // typeWriter("#demo", "true", 40);
+  }, 2000);
+
+  $('#demo').text(' ');
+
+  $('#demo').text(englishProse[3]);
+  // return msg;
+  // typeWriter("#demo", "true", 40);
+  // break;
 };
 
 verse3 = () => {
+  //show 3 lines of the poem sequentially on one slide
 
- //show 3 lines of the poem sequentially on one slide
+  setTimeout(function() {
+    $('#demo').text(' ');
 
- setTimeout(function() {
-  $('#demo').text(' ');
+    $('#demo').text(englishProse[9]);
+    // typeWriter("#demo", "true", 40);
+  }, 6000);
 
-  $('#demo').text(englishProse[9]);
+  setTimeout(function() {
+    // clearLine();
+    $('#demo').text(' ');
+
+    $('#demo').text(englishProse[8]);
+    // typeWriter("#demo", "true", 40);
+  }, 3000);
+
+  $('#demo').text('');
+
+  $('#demo').text(englishProse[7]);
+  // return msg;
   // typeWriter("#demo", "true", 40);
-}, 6000);
+  // $('#skip').fadeTo('slow', 1);
 
-setTimeout(function() {
-  // clearLine();
-  $('#demo').text(' ');
-
-  $('#demo').text(englishProse[8]);
-  // typeWriter("#demo", "true", 40);
-}, 3000);
-
-$('#demo').text('');
-
-$('#demo').text(englishProse[7]);
-// return msg;
-// typeWriter("#demo", "true", 40);
-// $('#skip').fadeTo('slow', 1);
-
-break;
+  // break;
 };
 verse4 = () => {
   setTimeout(function() {
@@ -101,23 +99,21 @@ verse4 = () => {
   $('#demo').text(englishProse[10]);
   // return msg;
   // typeWriter("#demo", "true", 40);
-  break;
-
+  //   break;
 };
 verse5 = () => {
- //show 3 lines of the poem together on one slide
+  //show 3 lines of the poem together on one slide
 
- setTimeout(function() {
-  $('#demo').text(' ');
-  $('#demo').text(englishProse[13]);
+  setTimeout(function() {
+    $('#demo').text(' ');
+    $('#demo').text(englishProse[13]);
+    // typeWriter("#demo", "true", 40);
+  }, 3000);
+
+  $('#demo').text(englishProse[12]);
+  // return msg;
   // typeWriter("#demo", "true", 40);
-}, 3000);
-
-$('#demo').text(englishProse[12]);
-// return msg;
-// typeWriter("#demo", "true", 40);
-break;
-
+  // break;
 };
 verse6 = () => {
   $('#demo').text('');
@@ -141,16 +137,12 @@ verse6 = () => {
   //   $('#about').fadeOut();
   // }, 3000);
 
-  break;
-
+  //   break;
 };
 
-test = ()=>{
-  console.log(
-
-    "TEST"
-   );
-}
+test = () => {
+  console.log('TEST');
+};
 // animateAmergin1 = () => {
 //   setTimeout(function() {
 //     $('#blue-cape').animate(
@@ -169,29 +161,25 @@ var veue = document.getElementById('veue');
 
 //make skip invisible to mouse while opacity 0//
 
-// 
+//
 
+$('.veue').click(function() {
+  $('#on-top').animate({
+    opacity: 1,
+    background: 'black'
+  });
+});
 
- $('.veue').click(function() {
-    $('#on-top').animate({
-      opacity: 1,
-      background: 'black'
-    });});
-
-
-    skip.onclick= function(){
-        if(slideNumber>=31){
-            $('#about').css({'display':'none'});
-            $('#start').fadeTo('slow',1);
-            $('#skip').fadeTo('slow',0);
-            $('#btn-menu').fadeTo('slow',1);
-        
-        }
-         slideNumber++;
-        goToSlide(slideNumber);
-        }
-        
-        
+skip.onclick = function() {
+  if (slideNumber >= 31) {
+    $('#about').css({ display: 'none' });
+    $('#start').fadeTo('slow', 1);
+    $('#skip').fadeTo('slow', 0);
+    $('#btn-menu').fadeTo('slow', 1);
+  }
+  slideNumber++;
+  goToSlide(slideNumber);
+};
 
 // skip.onclick= function(){
 // if(slideNumber>=31){
@@ -205,19 +193,17 @@ var veue = document.getElementById('veue');
 // goToSlide(slideNumber);
 // }
 
-
 //load images into slides.
-//Include 'special effects' with slideAction 
+//Include 'special effects' with slideAction
 for (let i = 1; i < 33; i++) {
   let picName = '';
   i < 10 ? (picName = '0' + i) : (picName = i);
   let slideAction = '';
   switch (i) {
-    
     case 4:
       //amergin animations ///
-    
-    slideAction = `
+
+      slideAction = `
         <div id="blue-cape-menu" onload="test()">
         
        <img id="blue-cape" src="./images/blue-cape.gif" >
@@ -242,7 +228,7 @@ for (let i = 1; i < 33; i++) {
     case 14:
       break;
     case 15:
-   
+
     default:
       // alert('default');
       slideAction = '';
@@ -262,52 +248,49 @@ function goToSlide(number) {
 }
 
 $(document).ready(function() {
-    
-    $('.about').click(function() {
-        $('#on-top').animate({
-          opacity: 1,
-          background: 'black'
-        });
-        $('#stage').fadeOut();
-        setTimeout(function() {
-        //   req =
-        //     about.requestFullScreen ||
-        //     about.webkitRequestFullScreen ||
-        //     about.mozRequestFullScreen;
-    
-          $('#dark-frame').animate({ opacity: 1 });
-          $('#carousel').removeClass('hidden');
-          slideNumber = 0;
-          aboutGo();
-        }, 400);
-        setTimeout(function() {
-        //   req.call(about);
-    
-          $('#on-top').animate({
-            opacity: 0,
-            background: 'black'
-          });
-        }, 800);
-      });
-    
-    
-    var rain = document.getElementById('rain');
-    // var amergin = document.getElementById('amergin');
-    slideEvent = () => {
-        switch (slideNumber) {
-            case 0:
-            console.log('The oldest Gaelic poem');
-            goToSlide(0);
-            // amergin.pause();
-            // $('#demo').fadeOut();
-          
-            break;
-            
-            case 1:
-            console.log('an dán');
-            goToSlide(1);
-          
+  $('.about').click(function() {
+    // alert("hey!")
+    $('#on-top').animate({
+      opacity: 1,
+      background: 'black'
+    });
+    $('#stage').fadeOut();
+    setTimeout(function() {
+      //   req =
+      //     about.requestFullScreen ||
+      //     about.webkitRequestFullScreen ||
+      //     about.mozRequestFullScreen;
 
+      $('#dark-frame').animate({ opacity: 1 });
+      $('#carousel').removeClass('hidden');
+      slideNumber = 0;
+      aboutGo();
+    }, 400);
+    setTimeout(function() {
+      //   req.call(about);
+
+      $('#on-top').animate({
+        opacity: 0,
+        background: 'black'
+      });
+    }, 800);
+  });
+
+  var rain = document.getElementById('rain');
+  // var amergin = document.getElementById('amergin');
+  slideEvent = () => {
+    switch (slideNumber) {
+      case 0:
+        console.log('The oldest Gaelic poem');
+        goToSlide(0);
+        // amergin.pause();
+        // $('#demo').fadeOut();
+
+        break;
+
+      case 1:
+        console.log('an dán');
+        goToSlide(1);
 
         break;
       case 2:
@@ -360,13 +343,14 @@ $(document).ready(function() {
         break;
       case 10:
         console.log('and then...');
-        if(aboutIsRunning){
-        // amergin.play();
-        goToSlide(10);
-        setTimeout(function() {
-          $('#demo').fadeTo('slow', 1);
-        }, 2000);
-    }break;
+        if (aboutIsRunning) {
+          // amergin.play();
+          goToSlide(10);
+          setTimeout(function() {
+            $('#demo').fadeTo('slow', 1);
+          }, 2000);
+        }
+        break;
 
       case 11:
         goToSlide(11);
@@ -438,10 +422,10 @@ $(document).ready(function() {
         console.log('and then...');
         // wait = 1000;
         goToSlide(24);
-        
+
         break;
-        
-        case 25:
+
+      case 25:
         console.log('and then...');
         // wait = 4000;
         goToSlide(25);
@@ -463,7 +447,7 @@ $(document).ready(function() {
 
         break;
       case 29:
-    //   rain.play();
+        //   rain.play();
 
         console.log('and then...');
         goToSlide(29);
@@ -474,22 +458,19 @@ $(document).ready(function() {
         console.log('and then...');
         goToSlide(30);
 
-
         break;
       case 31:
         console.log('and then...');
         goToSlide(31);
 
         break;
-        case 32:
+      case 32:
         console.log('done');
         goToSlide(32);
-        $('#about').css({'display':'none'});
-        $('#veue').fadeTo('slow',1);
+        $('#about').css({ display: 'none' });
+        $('#veue').fadeTo('slow', 1);
         // $('#skip').fadeTo('slow',0);
-        $('#btn-menu').fadeTo('slow',1);
-
-
+        $('#btn-menu').fadeTo('slow', 1);
 
         break;
 
@@ -512,7 +493,7 @@ $(document).ready(function() {
     setTimeout(changeSlide, wait);
     slideEvent();
     // slideNumber++;
-     };
+  };
   changeSlide();
 
   if (playa) {
@@ -522,30 +503,24 @@ $(document).ready(function() {
   }
 
   aboutGo = () => {
-      aboutIsRunning = true;
-      goToSlide(0);
-      setTimeout(function(){
-          $('#holdSlide').fadeTo('slow', 1);
-          
-    },1000)
-setTimeout(function(){
+    aboutIsRunning = true;
+    goToSlide(0);
+    setTimeout(function() {
+      $('#holdSlide').fadeTo('slow', 1);
+    }, 1000);
+    setTimeout(function() {
+      $('#btn-panel').animate({ top: '80%' });
+    }, 500);
+    $('#btn-panel').animate({ left: '35%' });
 
-$('#btn-panel').animate({top:'80%'});
-},500);
-$('#btn-panel').animate({left:'35%'});
-
-   
-   
-    setTimeout(function(){
-
-        $('#about').fadeOut();
-        $('#veue').fadeOut();
-        setTimeout(function(){
-            $('#skip').fadeTo('slow', 0.4);
-            $('#skip').css('pointer-events', 'auto');
-        },500);
-    },1000)
-
+    setTimeout(function() {
+      $('#about').fadeOut();
+      $('#veue').fadeOut();
+      setTimeout(function() {
+        $('#skip').fadeTo('slow', 0.4);
+        $('#skip').css('pointer-events', 'auto');
+      }, 500);
+    }, 1000);
 
     // $('#hold-frame').css('background-image', darkpic)
   };
@@ -556,10 +531,10 @@ $('#btn-panel').animate({left:'35%'});
       background: 'black'
     });
     setTimeout(function() {
-    //   req =
-    //     about.requestFullScreen ||
-    //     about.webkitRequestFullScreen ||
-    //     about.mozRequestFullScreen;
+      //   req =
+      //     about.requestFullScreen ||
+      //     about.webkitRequestFullScreen ||
+      //     about.mozRequestFullScreen;
 
       $('#dark-frame').animate({ opacity: 1 });
       $('#carousel').removeClass('hidden');
@@ -567,7 +542,7 @@ $('#btn-panel').animate({left:'35%'});
       aboutGo();
     }, 400);
     setTimeout(function() {
-    //   req.call(about);
+      //   req.call(about);
 
       $('#on-top').animate({
         opacity: 0,
@@ -575,5 +550,4 @@ $('#btn-panel').animate({left:'35%'});
       });
     }, 800);
   });
-  
 });

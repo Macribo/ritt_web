@@ -104,7 +104,7 @@ $(document).ready(function() {
 
     setTimeout(function() {
       location.href = './projects.html';
-    }, 5000);
+    }, 500);
   });
   $('.map-pin').mouseleave(function() {
     for (var key in countyDetails) {
