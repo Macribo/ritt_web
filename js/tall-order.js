@@ -137,6 +137,10 @@ function keydownHandler(event) {
 
     case MAGIC_TREE:
       // fight();
+      blockPath();
+      $('#about').fadeIn('slow');
+
+      //   alert('show btn!');
       break;
 
     case LAND:

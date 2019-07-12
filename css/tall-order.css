@@ -65,3 +65,17 @@ p
   width: 1024px;
   background-repeat: no-repeat;
 }
+
+#about {
+  display: none;
+  animation: 1s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  from {
+    background-color: #ffbf00;
+  }
+  to {
+    background-color: #f714e4;
+  }
+}
