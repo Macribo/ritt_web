@@ -303,6 +303,10 @@ function render() {
   }
 }
 $(document).ready(function() {
+  $('#back-to-county').click(function() {
+    location.href = './locations.html';
+    // alert('see u');
+  });
   if (placeName === 'Carraig Ḟearġais') {
     $('#stageBG').css(
       'background-image',

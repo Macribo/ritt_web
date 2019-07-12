@@ -207,12 +207,14 @@ body {
     1px 1px 0 #000;
 }
 #back-to-main-menu {
-  display: relative;
-  position: absolute;
+  position: fixed;
   z-index: 50;
+  color: whitesmoke;
+  top: 5%;
+  left: 2%;
 }
 #back-to-main-menu:hover {
-  color: gainsboro;
+  color: yellow;
 }
 
 #antrim {

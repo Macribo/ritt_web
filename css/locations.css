@@ -20,11 +20,13 @@
   src: url('../fonts/Urchlo\ Romhanach.ttf');
 }
 #back-to-counties {
-  position: absolute;
-  z-index: 50;
+  color: whitesmoke;
+  top: 5%;
+  left: 2%;
+  position: fixed;
 }
 #back-to-counties:hover {
-  color: gainsboro;
+  color: yellow;
 }
 #bg-land {
   z-index: -10;

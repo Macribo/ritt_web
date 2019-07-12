@@ -3,7 +3,16 @@
 html {
   overflow: hidden;
 }
-
+#back-to-county {
+  position: fixed;
+  z-index: 5000;
+  color: whitesmoke;
+  top: 5%;
+  left: 2%;
+}
+#back-to-county :hover {
+  color: yellow;
+}
 #main-bg {
   background-image: url('../images/backgrounds/mainBG.png');
 
