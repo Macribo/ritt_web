@@ -34,8 +34,17 @@
 
     <!-- <script src="./assets/scripts/jquery.js"></script> -->
   </head>
-
-  <body>
+  <script>
+        function loadIt() {
+          setTimeout(function () {
+            var body = document.getElementById('toLoad');
+            body.className += 'loaded';
+            console.log("load spinner visible?")
+          }, 000); //add for curtains intro
+        }
+      
+      </script>
+  <body  onload="loadIt()" id="toLoad">
     
     
     <div id="hold-frame">
@@ -60,6 +69,13 @@
       </div> <!-- close hold-frame-->
 
     <div class="wrapper">
+            <div id="loader-wrapper">
+                    <div id="loader"></div>
+                    <div class="loader-section section-left">
+                    </div>
+                    <div class="loader-section section-right"></div>
+                
+                  </div>
       <div class="box header">
            
         <div class="levelDescription">
