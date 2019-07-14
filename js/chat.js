@@ -6,10 +6,10 @@ $(document).ready(function() {
     $('.modal-content').html('');
     $('.modal-content').append(`<h1>Cad is ainm dhuit?</h1>`);
     $('.modal-content').append(`<input type="text" id="ainm"></input>`);
-    $('#btn-menu').css('pointer-events', 'auto');
   });
   let playerName;
   $(document).on('keypress', function(e) {
+    $('#btn-menu').css('pointer-events', 'auto');
     if (e.which == 13) {
       //     alert('You pressed enter!');
       playerName = $('#ainm').val();
