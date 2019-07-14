@@ -10,6 +10,11 @@ body {
   font-family: urchlo;
   src: url('../fonts/Urchlo\ Romhanach.ttf');
 }
+
+@font-face {
+  font-family: MeathFLF;
+  src: url('../fonts/MeathFLF.ttf');
+}
 .container {
   padding-top: 4%;
   /* border: 3px solid red; */

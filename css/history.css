@@ -55,6 +55,8 @@ body {
 #btn-menu,
 #blue-cape-menu,
 .test {
+  pointer-events: none;
+
   /* border: 2px solid purple; */
 
   height: 50%;
