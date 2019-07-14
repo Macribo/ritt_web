@@ -1,4 +1,5 @@
 .modal {
+  /* display: none; */
   font-size: 24px;
   display: flex;
   /* opacity: 0.5; */
@@ -88,5 +89,13 @@
 span {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  /* margin-right: 7px; */
+  /* border:5px; */
+}
+#ainm {
+  margin-left: 30%;
+  width: 30%;
+  border: 3px solid orangered;
+  background-color: black;
+  padding: 30px;
+  color: orange;
 }

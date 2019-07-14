@@ -138,6 +138,8 @@ $(document).ready(function() {
       case MAGIC_TREE:
         // fight();
         blockPath();
+        $('#back-to-county').fadeOut('slow');
+        $('.modal').css('display', 'flex');
         $('#about').fadeIn('slow');
 
         //   alert('show btn!');
