@@ -26,6 +26,7 @@
   width: 90%;
   max-width: 1200px;
   text-align: justify;
+  z-index: 1200;
 }
 
 .answers {

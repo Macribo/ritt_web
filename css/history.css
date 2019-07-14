@@ -182,11 +182,11 @@ body {
   height: 100%;
   /* border:5px purple solid; */
   position: fixed;
-
   z-index: 50 !important;
 }
 
 #dark-frame {
+  /* pointer-events: none; */
   opacity: 0.01;
   width: 100%;
   height: 100%;

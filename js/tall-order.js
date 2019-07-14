@@ -140,7 +140,8 @@ $(document).ready(function() {
         blockPath();
         $('#back-to-county').fadeOut('slow');
         $('.modal').css('display', 'flex');
-        $('#about').fadeIn('slow');
+        // $('.btn-panel').css('display', 'none');
+        $('.btn-menu').css('pointer-events', 'none');
 
         //   alert('show btn!');
         break;

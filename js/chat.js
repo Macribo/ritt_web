@@ -2,9 +2,11 @@ $(document).ready(function() {
   //   alert('hello chat.js(');
 
   $('.button-a').click(function() {
+    // alert('test a');
     $('.modal-content').html('');
     $('.modal-content').append(`<h1>Cad is ainm dhuit?</h1>`);
     $('.modal-content').append(`<input type="text" id="ainm"></input>`);
+    $('#btn-menu').css('pointer-events', 'auto');
   });
   let playerName;
   $(document).on('keypress', function(e) {
@@ -13,9 +15,13 @@ $(document).ready(function() {
       playerName = $('#ainm').val();
       $('.modal-content').html('');
       $('.modal-content').append(`<h1>fáilte ` + playerName + `!</h1>`);
+
       setTimeout(function() {
         $('.modal').fadeOut('slow');
-      }, 2000);
+      }, 1000);
+      $('#about').fadeIn('slow');
+
+      //   $('btn-panel').fadeIn();
     }
   });
 
@@ -25,11 +31,17 @@ $(document).ready(function() {
       `<h1><span id="Geaga's monologue to go here">Cainnt Geaga le dul anseo</h1>`
     );
     setTimeout(function() {
+      $('#btn-menu').css('pointer-events', 'auto');
+
       $('.modal').fadeOut('slow');
     }, 2000);
+    // $('btn-panel').fadeIn();
+    $('#about').fadeIn('slow');
   });
 
   $('.button-c').click(function() {
+    $('#btn-menu').css('pointer-events', 'auto');
     $('.modal').fadeOut('slow');
+    $('#about').fadeIn('slow');
   });
 });
