@@ -107,23 +107,50 @@
           
           <div class="modal-content">
                 <div class="modal-icon"></div>
-           <h2><span id="You hear voices speaking quietly in the branches of the tree">Chloiseann tú  guthanna ag cainnt ós iseal i ngéaga an crann</span>.
-           </h2>
-           <h2><span id="What will you do?">Cad a dheanfaidh tú?</span></h2>
-           <div class="answers">
-              <button class="button button-a">A:</button>
-              <h3 class="choice choice-a"><span id="Introduce myself">Cuir mé féin in aithne</span></h3>
-              <br>
+                <div class="story" id="You hear voices speaking quietly in the branches of the tree">Chloiseann tú  guthanna ag cainnt ós iseal i ngéaga an crann
+                </div>
+                <div class="story"id="What will you do?">Cad a dheanfaidh tú?
+                </div>
+                
+           <table class="answer-table">
+             <!-- <thead><tr><th>btn</th><th>frg</tr></thead> -->
+                          <tbody>
+<tr><td>
 
-              <button class="button button-b">B:</button>
-              <h3 class="choice choice-b"><span id="Stay silent ">Fan ciúin</span><span id="and ">agus </span><span id="listen to them ">éist leo</span>                </h3>
-              <br>
+        <button class="button button-a">A:</button>
 
-              <button class = "button button-c">C:</button>
-              <h3 class="choice choice-c"><span id="Retreat">Cúlaigh                  </span>
-              </h3>
+</td>
+<td>   <div class="story choice choice-a" id="Introduce myself">Cuir mé féin in aithne
+    </div></td>
+</tr>
+<tr><td>
+
+        <button class="button button-b">B:</button>
+
+</td>
+    <td>
+
+            <div class="story choice choice-b" id="Stay silent and listen to them">Fan ciúin agus éist leo
+
+    </td>
+    </tr>     
+    <tr><td>
+            <button class = "button button-c">C:</button>
+
+
+    </td>
+        <td>
+                <div class="story choice choice-c"  id="Retreat">Cúlaigh                  
+
+
+        </td>
+        </tr>
+
+</tbody>
+     
             </div>
-        </div>
+            </div>
+        </table>
     </div>
       <!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"

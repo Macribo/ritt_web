@@ -10,21 +10,23 @@ $(document).ready(function() {
   //     function() {
   //       $(this).css('background-color', 'rgb(255, 232, 157)');
   //     }
+
   //   );
   let anGaeilge;
-  $('.modal span').hover(
+  $('.modal .story').hover(
     function() {
       anGaeilge = $(this).html();
       $(this).text($(this).attr('id'));
       $(this).css('font-family', 'MeathFLF');
-      $(this).css('font-size', 'larger');
+      //   $(this).css('font-size', 'larger');
       $(this).css('color', 'rgb(255, 232, 157)');
     },
     function() {
       $(this).css('color', 'white');
       $(this).text(anGaeilge);
-      $(this).css('font-family', 'urchlo');
-      $(this).css('font-size', '32px');
+      //   $(this).css('font-size', 'larger');
+
+      $(this).css({ 'font-family': 'urchlo,Arial, Helvetica, sans-serif' });
     }
   );
 });

@@ -1,7 +1,7 @@
 .modal {
-  display: none;
+  /* display: none; */
   font-size: 24px;
-  /* display: flex; */
+  display: flex;
   /* opacity: 0.5; */
   position: fixed;
   z-index: 1000;
@@ -15,6 +15,8 @@
   /* border: 2px solid orangered; */
   background-image: url('../images/bg_Dark.png');
   background-size: cover;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .modal-content {
@@ -112,4 +114,12 @@ span {
   left: 45%;
   z-index: 6000;
   background-size: contain;
+}
+.story {
+  /* font-family: urchlo; */
+  width: 100%;
+  /* border: 2px solid blue; */
+  margin: 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
