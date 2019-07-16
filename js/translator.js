@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('.modal .story').hover(
     function() {
       anGaeilge = $(this).html();
-      $(this).text($(this).attr('id'));
+      $(this).text($(this).attr('data-eng'));
       $(this).css('font-family', 'MeathFLF');
       //   $(this).css('font-size', 'larger');
       $(this).css('color', 'rgb(255, 232, 157)');

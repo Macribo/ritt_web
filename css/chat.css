@@ -123,3 +123,13 @@ span {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
+
+.geaga-voices {
+  margin-left: 20%;
+  color: rgb(162, 191, 235);
+}
+
+#geaga1 {
+  margin-left: 10%;
+  color: greenyellow;
+}

@@ -27,9 +27,18 @@ $(document).ready(function() {
   });
 
   $('.button-b').click(function() {
-    // $('.modal-content').html('');
+    $('.modal-content').fadeOut();
+    setTimeout(function() {
+      $('.modal-content').html('');
+
+      setTimeout(function() {
+        $('.modal-content').fadeIn();
+
+        $('#geaga1').load('../geaga_test.txt #first-chat');
+        // alert('called');
+      }, 1000);
+    }, 2000);
     // $('.modal-content').append(`<h1>A</h1>`);
-    $('#div1').load('../geaga_test.txt');
     setTimeout(function() {
       $('#btn-menu').css('pointer-events', 'auto');
 
