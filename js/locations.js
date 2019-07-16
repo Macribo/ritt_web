@@ -3,14 +3,16 @@ $(document).ready(function() {
 
   // chosenCounty = this.id;
   console.log('hi' + Cookies.get('playerCounty'));
-  var myCookie = Cookies.get('playerCounty');
-  if (myCookie != '') {
-    let chosenCountyImg = "url('./images/maps/coMaps/" + myCookie + '.png';
+  var county = Cookies.get('playerCounty');
+  if (county != '') {
+    let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
     $('#county-map').css('background-image', chosenCountyImg);
   } else {
     console.log('still no cookie');
   }
+  /*It turns out we need a location id.
+32 counties with 6 locations each makes 192 locations.*/
 
   $('#back-to-counties').click(function() {
     location.href = './provinces.html';
@@ -21,7 +23,7 @@ $(document).ready(function() {
   }, 500);
   //add location pins to county map
   for (var key in countyDetails) {
-    if (key == myCookie) {
+    if (key == county) {
       $('#first-map-pin').css('left', countyDetails[key][2][0]);
       $('#first-map-pin').css('top', countyDetails[key][3][0]);
       $('#second-map-pin').css('left', countyDetails[key][2][1]);
@@ -39,7 +41,7 @@ $(document).ready(function() {
 
   $('#first-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][0]);
         place = $('#location-description').html();
         console.log('xsldkfjsl' + place);
@@ -49,7 +51,7 @@ $(document).ready(function() {
 
   $('#second-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][1]);
         place = $('#location-description').html();
         console.log('xsldkfjsl' + place);
@@ -59,7 +61,7 @@ $(document).ready(function() {
 
   $('#third-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][2]);
         place = $('#location-description').html();
         console.log('xsldkfjsl' + place);
@@ -69,7 +71,7 @@ $(document).ready(function() {
 
   $('#fourth-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][3]);
         place = $('#location-description').html();
         console.log('xsldkfjsl' + place);
@@ -79,7 +81,7 @@ $(document).ready(function() {
 
   $('#fifth-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][4]);
         place = $('#location-description').html();
         console.log('xsldkfjsl' + place);
@@ -89,32 +91,72 @@ $(document).ready(function() {
 
   $('#sixth-map-pin').mouseenter(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][1][5]);
         place = $('#location-description').html();
         console.log('Áit: ' + place);
       }
     }
   });
+  let locationCode =
+    //establish locationCode
+    //     $('#first-map-pin').click(function() {
+    //       alert(Cookies.get('playerCounty'));
+    //     });
+    //   $('#second-map-pin').click(function() {
+    //     alert(Cookies.get('playerCounty'));
+    //   });
+    //   $('#third-map-pin').click(function() {
+    //     alert(Cookies.get('playerCounty'));
+    //   });
+    //   $('#fourth-map-pin').click(function() {
+    //     alert(Cookies.get('playerCounty'));
+    //   });
+    //   $('#fifth-map-pin').click(function() {
+    //     alert(Cookies.get('playerCounty'));
+    //   });
+    //   $('#sixth-map-pin').click(function() {
+    //     alert(Cookies.get('playerCounty'));
+    //   });
 
-  $('.map-pin').click(function() {
-    Cookies.set('place', place);
-    console.log(Cookies.get());
-    // show first form and fade
+    $('.map-pin').click(function() {
+      // alert(Cookies.get('locationID'));
+      if (this.id === 'first-map-pin') {
+        Cookies.set('locationID', county + '1');
+        // alert(Cookies.get('locationID'));
+      } else if (this.id === 'second-map-pin') {
+        Cookies.set('locationID', county + '2');
+        // alert(Cookies.get('locationID'));
+      } else if (this.id === 'third-map-pin') {
+        Cookies.set('locationID', county + '3');
+        // alert(Cookies.get('locationID'));
+      } else if (this.id === 'fourth-map-pin') {
+        Cookies.set('locationID', county + '4');
+        // alert(Cookies.get('locationID'));
+      } else if (this.id === 'fifth-map-pin') {
+        Cookies.set('locationID', county + '5');
+        // alert(Cookies.get('locationID'));
+      } else if (this.id === 'sixth-map-pin') {
+        Cookies.set('locationID', county + '6');
+        // alert(Cookies.get('locationID'));
+      }
+      Cookies.set('place', place);
+      console.log(Cookies.get());
+      // show first form and fade
 
-    setTimeout(function() {
-      location.href = './projects.html';
-    }, 5);
-  });
+      setTimeout(function() {
+        location.href = './projects.html';
+      }, 5);
+    });
   $('.map-pin').mouseleave(function() {
     for (var key in countyDetails) {
-      if (key == myCookie) {
+      if (key == county) {
         $('#location-description').html(countyDetails[key][0]);
       }
     }
   });
   for (var key in countyDetails) {
-    if (key == myCookie) {
+    if (key == county) {
       //   console.log(key + '->' + countyDetails[key][0]);
       $('#location-description').html(countyDetails[key][0]);
       console.log(

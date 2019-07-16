@@ -3,6 +3,44 @@ console.log('rex');
 $(document).ready(function() {
   // alert(Cookies.get('place'));
 
+  blockPath = () => {
+    switch (lastPressed) {
+      case 'down':
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
+
+        sheepRow--;
+
+        //Apply the sheep's new updated position to the array
+        gameObjects[sheepRow][sheepColumn] = sheep;
+
+        break;
+
+      case 'up':
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
+
+        sheepRow++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
+
+        break;
+
+      case 'right':
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
+
+        sheepColumn--;
+        gameObjects[sheepRow][sheepColumn] = sheep;
+
+        break;
+
+      case 'left':
+        gameObjects[sheepRow][sheepColumn] = BLOCKED;
+
+        sheepColumn++;
+        gameObjects[sheepRow][sheepColumn] = sheep;
+        break;
+    }
+    render();
+  };
+
   $('.levelDescription').text(Cookies.get('place'));
   let placeName = Cookies.get('place');
   //Get a reference to the stage and output
@@ -29,7 +67,7 @@ $(document).ready(function() {
   //The game objects map
   var gameObjects = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -154,6 +192,7 @@ $(document).ready(function() {
         //Undo last key press
         //   alert('blocked!');
         console.log(lastPressed);
+        alert(lastPressed + Cookies.get('locationID'));
         blockPath();
         break;
       case WAVES:
@@ -161,43 +200,6 @@ $(document).ready(function() {
         break;
     }
 
-    blockPath = () => {
-      switch (lastPressed) {
-        case 'down':
-          gameObjects[sheepRow][sheepColumn] = BLOCKED;
-
-          sheepRow--;
-
-          //Apply the sheep's new updated position to the array
-          gameObjects[sheepRow][sheepColumn] = sheep;
-
-          break;
-
-        case 'up':
-          gameObjects[sheepRow][sheepColumn] = BLOCKED;
-
-          sheepRow++;
-          gameObjects[sheepRow][sheepColumn] = sheep;
-
-          break;
-
-        case 'right':
-          gameObjects[sheepRow][sheepColumn] = BLOCKED;
-
-          sheepColumn--;
-          gameObjects[sheepRow][sheepColumn] = sheep;
-
-          break;
-
-        case 'left':
-          gameObjects[sheepRow][sheepColumn] = BLOCKED;
-
-          sheepColumn++;
-          gameObjects[sheepRow][sheepColumn] = sheep;
-          break;
-      }
-      render();
-    };
     //Render the game
     render();
   }

@@ -1,3 +1,4 @@
+var xhr = new XMLHttpRequest({ mozSystem: true });
 $(document).ready(function() {
   //   alert('hello chat.js(');
 
@@ -26,14 +27,13 @@ $(document).ready(function() {
   });
 
   $('.button-b').click(function() {
-    $('.modal-content').html('');
-    $('.modal-content').append(
-      `<h1><span id="Geaga's monologue to go here">Cainnt Geaga le dul anseo</h1>`
-    );
+    // $('.modal-content').html('');
+    // $('.modal-content').append(`<h1>A</h1>`);
+    $('#div1').load('../geaga_test.txt');
     setTimeout(function() {
       $('#btn-menu').css('pointer-events', 'auto');
 
-      $('.modal').fadeOut('slow');
+      //   $('.modal').fadeOut('slow');
     }, 2000);
     // $('btn-panel').fadeIn();
     $('#about').fadeIn('slow');
@@ -45,37 +45,3 @@ $(document).ready(function() {
     $('#about').fadeIn('slow');
   });
 });
-var story = [
-  { m: 'Hi!' },
-  { m: 'This is my new game.' },
-  {
-    question: 'Do you like it?',
-    answers: [{ m: 'yes', next: 'like_yes' }, { m: 'no', next: 'like_no' }]
-  },
-  { label: 'like_yes', m: 'I am happy you like my game!', next: 'like_end' },
-  { label: 'like_no', m: 'You made me sad!', next: 'like_end' },
-  { label: 'like_end' },
-  { m: "OK, let's change the topic" }
-];
-
-function execute_game() {
-  var current_line = 0;
-  while (current_line < story.length) {
-    var current_step = story[current_line];
-    if (undefined !== current_step.m) {
-      display_message(current_step.m);
-      if (undefined !== current_step.next) {
-        current_line = find_label(current_step.next);
-      } else {
-        current_line = current_line + 1;
-      }
-    } else if (undefined !== current_step.question) {
-      alert(current_step.question);
-      // display the question: current_step.question
-      // display the answers: current_step.answers
-      // choose an answer
-      // and change current_line accordingly
-    }
-  }
-}
-execute_game();

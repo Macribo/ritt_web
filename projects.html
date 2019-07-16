@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="ga" xmlns="http://www.w3.org/1999/xhtml">
+<add name="Access-Control-Allow-Origin" value="*" />
+<add name="Access-Control-Allow-Headers" value="Content-Type" />
+<add name="Access-Control-Allow-Headers" value="x-requested-with" /> <!-- Add me! -->
    <meta charset="UTF-8" />
    <!-- <script src="./scripts/typeWriter.js-master/typeWriter.js"></script> -->
    <head>
       <title>Projects</title>
       <!-- <link rel="stylesheet" href="./assets/css/location-styles.css" /> -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <link
          rel="stylesheet"
          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
          crossorigin="anonymous"
          />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      
       <script src="./js/jquery.js"></script>
       <link
          rel="stylesheet"
@@ -106,8 +112,10 @@
       <div class="modal">
           
           <div class="modal-content">
+                <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
                 <div class="modal-icon"></div>
-                <div class="story" id="You hear voices speaking quietly in the branches of the tree">Chloiseann tú  guthanna ag cainnt ós iseal i ngéaga an crann
+                <div class="story" id="The wind blows through the branches of the tree. the sound sends a shiver down your spine.">Séideann an ghaoith tríd geaga an crann. Cuireann an fuaim creatha fuachta ort.
                 </div>
                 <div class="story"id="What will you do?">Cad a dheanfaidh tú?
                 </div>
@@ -120,7 +128,7 @@
         <button class="button button-a">A:</button>
 
 </td>
-<td>   <div class="story choice choice-a" id="Introduce myself">Cuir mé féin in aithne
+<td>   <div class="story choice choice-a" id="Approach boldly">Druid i leith go neamheaglach
     </div></td>
 </tr>
 <tr><td>
@@ -130,8 +138,7 @@
 </td>
     <td>
 
-            <div class="story choice choice-b" id="Stay silent and listen to them">Fan ciúin agus éist leo
-
+            <div class="story choice choice-b" id="Wait and listen">Fan agus éist 
     </td>
     </tr>     
     <tr><td>
