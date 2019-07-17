@@ -38,27 +38,42 @@ $(document).ready(function() {
     setTimeout(function() {
       $('#geaga2').fadeIn();
       dropText('#geaga1');
+      $('#skull1').fadeIn();
     }, 9000);
 
     setTimeout(function() {
       $('#geaga3').fadeIn();
+      $('#skull2').fadeIn();
     }, 15000);
     setTimeout(function() {
       $('#geaga4').fadeIn();
+      $('#skull3').fadeIn();
     }, 20000);
     setTimeout(function() {
       $('#geaga5').fadeIn();
+      $('#skull4').fadeIn();
     }, 25000);
     setTimeout(function() {
+      $('#skull5').fadeIn();
+
       $('#geaga6').fadeIn();
       dropText('#geaga2');
       dropText('#geaga3');
       dropText('#geaga4');
       dropText('#geaga5');
     }, 35000);
-
+    centerSkulls = () => {
+      $('.skulls').css('animation', 'none');
+      $('#skull1').animate({ top: '30%', left: '50%' }, 4500);
+      $('#skull2').animate({ top: '54%', left: '57%' }, 4700);
+      $('#skull3').animate({ top: '37%', left: '55%' }, 4100);
+      $('#skull4').animate({ top: '45%', left: '50%' }, 4000);
+      $('#skull5').animate({ top: '34%', left: '40%' }, 4000);
+    };
     setTimeout(function() {
-      $('#geaga-portrait').fadeIn();
+      centerSkulls();
+
+      //   $('#geaga-portrait').fadeIn();
       $('modal-content').fadeIn('slow');
     }, 38000);
   });

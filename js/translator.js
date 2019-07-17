@@ -17,7 +17,7 @@ $(document).ready(function() {
     function() {
       anGaeilge = $(this).html();
       $(this).text($(this).attr('data-eng'));
-      $(this).css('font-family', 'Arial');
+      $(this).css('font-family', 'Arial,Helvetica, sans-serif');
       //   $(this).css('font-size', 'larger');
       $(this).css('color', 'rgb(255, 232, 157)');
     },

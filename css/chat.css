@@ -197,6 +197,47 @@ span {
   margin-top: 3%;
   color: rgb(89, 255, 47);
 }
+
+.skulls {
+  display: none;
+  position: absolute;
+
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: 40s floaty infinite alternate ease-in-out;
+}
+
+#skull1 {
+  background-image: url('../images/skull1.png');
+  top: 25%;
+  left: 75%;
+}
+
+#skull2 {
+  background-image: url('../images/skull2.png');
+  top: 45%;
+  left: 15%;
+}
+
+#skull3 {
+  background-image: url('../images/skull3.png');
+  top: 65%;
+  left: 35%;
+}
+
+#skull4 {
+  background-image: url('../images/skull4.png');
+  top: 65%;
+  left: 65%;
+}
+
+#skull5 {
+  background-image: url('../images/skull5.png');
+  top: 15%;
+  left: 5%;
+}
 @keyframes breeze-skew {
   from {
     transform: skew(5deg, 0deg);
@@ -204,5 +245,14 @@ span {
 
   to {
     transform: translate(-20deg, 0deg);
+  }
+}
+
+@keyframes floaty {
+  from {
+    -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
   }
 }
