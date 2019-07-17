@@ -17,6 +17,7 @@
   background-size: cover;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+  transition-property: all;
 }
 
 .modal-content {
@@ -36,7 +37,7 @@
   text-align: left;
   padding: 50px;
   margin-top: 50px;
-  font-size: large;
+  /* font-size: large; */
 }
 
 .choice {
@@ -114,6 +115,7 @@ span {
   left: 45%;
   z-index: 6000;
   background-size: contain;
+  animation: 3s breeze-skew infinite alternate ease-in-out;
 }
 .story {
   /* font-family: urchlo; */
@@ -122,14 +124,85 @@ span {
   margin: 10px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+  transition-property: all;
+}
+
+.listen-to-tree {
+  display: flex;
+  /* align-content: center;
+  justify-content: center;
+  text-align: center; */
+  /* border: 2px solid blue; */
+}
+#suile {
+  position: absolute;
+  top: 231px;
+  left: 135px;
+  z-index: 701;
+  background-image: url('../images/suile.gif');
+  height: 27px;
+  width: 93px;
+}
+#geaga-portrait {
+  display: none;
+  top: 15%;
+  left: 40%;
+  z-index: 700;
+  height: 353px;
+  width: 348px;
+  background-image: url('../images/geaga5.png');
+
+  position: absolute;
 }
 
 .geaga-voices {
+  text-align: left;
+  display: none;
+  position: fixed;
+  z-index: 600;
+  top: 10px;
   margin-left: 20%;
   color: rgb(162, 191, 235);
+  margin-top: 10%;
+  /* animation: linear !important; */
 }
 
 #geaga1 {
-  margin-left: 10%;
-  color: greenyellow;
+  /* color: rgb(255, 255, 255); */
+  margin-top: 20%;
+  /* animation-timing-function: linear !important; */
+}
+
+#geaga2 {
+  margin-top: 15%;
+  color: rgb(47, 113, 255);
+}
+
+#geaga3 {
+  margin-top: 12%;
+  color: rgb(238, 47, 255);
+}
+
+#geaga4 {
+  margin-top: 9%;
+  color: rgb(255, 172, 47);
+}
+
+#geaga5 {
+  margin-top: 6%;
+  color: rgb(255, 47, 47);
+}
+
+#geaga6 {
+  margin-top: 3%;
+  color: rgb(89, 255, 47);
+}
+@keyframes breeze-skew {
+  from {
+    transform: skew(5deg, 0deg);
+  }
+
+  to {
+    transform: translate(-20deg, 0deg);
+  }
 }
