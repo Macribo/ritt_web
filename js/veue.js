@@ -255,6 +255,7 @@ $(document).ready(function() {
       background: 'black'
     });
     $('#stage').fadeOut();
+    $('.modal').fadeOut(); //hide geaga panel
     setTimeout(function() {
       //   req =
       //     about.requestFullScreen ||

@@ -61,20 +61,25 @@ $(document).ready(function() {
       dropText('#geaga3');
       dropText('#geaga4');
       dropText('#geaga5');
-    }, 35000);
+    }, 34000);
     centerSkulls = () => {
-      $('.skulls').css('animation', 'none');
       $('#skull1').animate({ top: '30%', left: '50%' }, 4500);
       $('#skull2').animate({ top: '54%', left: '57%' }, 4700);
       $('#skull3').animate({ top: '37%', left: '55%' }, 4100);
       $('#skull4').animate({ top: '45%', left: '50%' }, 4000);
       $('#skull5').animate({ top: '34%', left: '40%' }, 4000);
+      $('.skulls').css('animation', 'none');
     };
     setTimeout(function() {
       centerSkulls();
 
       //   $('#geaga-portrait').fadeIn();
       $('modal-content').fadeIn('slow');
+      setTimeout(function() {
+        $('#btn-menu').css('pointer-events', 'auto');
+        $('btn-panel').fadeIn();
+        $('#about').fadeIn('slow');
+      }, 4000);
     }, 38000);
   });
   dropText = textID => {
@@ -86,6 +91,3 @@ $(document).ready(function() {
     $('#about').fadeIn('slow');
   });
 });
-//   $('#btn-menu').css('pointer-events', 'auto');
-// $('btn-panel').fadeIn();
-// $('#about').fadeIn('slow');
