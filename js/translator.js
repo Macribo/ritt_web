@@ -16,10 +16,14 @@ $(document).ready(function() {
   $('.modal .story').hover(
     function() {
       anGaeilge = $(this).html();
-      $(this).text($(this).attr('data-eng'));
-      $(this).css('font-family', 'Arial,Helvetica, sans-serif');
       //   $(this).css('font-size', 'larger');
-      $(this).css('color', 'rgb(255, 232, 157)');
+      //   $(this).css('color', 'rgb(0, 0, 0)');
+      $(this).text($(this).attr('data-eng'));
+      setTimeout(function() {
+        $(this).css('font-family', 'Arial,Helvetica, sans-serif');
+        // alert('seen');
+        $('.modal .story').css('color', 'white');
+      }, 700);
     },
     function() {
       $(this).css('color', 'white');
