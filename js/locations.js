@@ -120,7 +120,7 @@ $(document).ready(function() {
     //   });
 
     $('.map-pin').click(function() {
-      // alert(Cookies.get('locationID'));
+      alert(Cookies.get('locationID'));
       if (this.id === 'first-map-pin') {
         Cookies.set('locationID', county + '1');
         // alert(Cookies.get('locationID'));
@@ -257,7 +257,7 @@ let countyDetails = {
     ], //left
     [405, 346, 378, 191, 404, 362],
     //top
-    [153, 90, 286, 345, 156, 246]
+    [123, 90, 286, 345, 156, 246]
   ],
   derry: [
     `Co. Ḋoire`,
