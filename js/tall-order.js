@@ -1345,8 +1345,10 @@ $(document).ready(function() {
   setLocation(locationID);
   changeLocation = () => {
     let currentCounty = String(locationID);
+
+    let countyLocation = currentCounty.slice(-1);
     currentCounty = currentCounty.substring(0, currentCounty.length - 1);
-    alert(String(currentCounty));
+    alert(String(currentCounty + ' ' + countyLocation));
   };
   //   alert('go');
 });
