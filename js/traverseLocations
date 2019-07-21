@@ -1,0 +1,970 @@
+antrim A
+
+left:sea
+right:sea
+up:sea
+down: antrim B
+
+antrim B:
+left :sea
+right:sea
+up: antrim A
+down: antrim C
+
+antrim C:
+left :
+right:
+up:
+down:
+antrim D:
+left :
+right:
+up:
+down:
+antrim E:
+left :
+right:
+up:
+down:
+antrim F:
+left :
+right:
+up:
+down:
+
+armagh A:
+left :
+right:
+up:
+down:
+armagh B:
+left :
+right:
+up:
+down:
+armagh C:
+left :
+right:
+up:
+down:
+armagh D:
+left :
+right:
+up:
+down:
+armagh E:
+left :
+right:
+up:
+down:
+armagh F:
+left :
+right:
+up:
+down:
+carlow A:
+left :
+right:
+up:
+down:
+carlowB:
+left :
+right:
+up:
+down:
+carlowC:
+left :
+right:
+up:
+down:
+carlowD:
+left :
+right:
+up:
+down:
+carlowE:
+left :
+right:
+up:
+down:
+carlowF:
+left :
+right:
+up:
+down:
+cavanA:
+left :
+right:
+up:
+down:
+cavanB:
+left :
+right:
+up:
+down:
+cavanC:
+left :
+right:
+up:
+down:
+cavanD:
+left :
+right:
+up:
+down:
+cavanE:
+left :
+right:
+up:
+down:
+cavanF:
+left :
+right:
+up:
+down:
+clare A:
+left :
+right:
+up:
+down:
+clare B:
+left :
+right:
+up:
+down:
+clare C:
+left :
+right:
+up:
+down:
+clare D:
+left :
+right:
+up:
+down:
+clare E:
+left :
+right:
+up:
+down:
+clare F:
+left :
+right:
+up:
+down:
+corkA:
+left :
+right:
+up:
+down:
+corkB:
+left :
+right:
+up:
+down:
+corkC:
+left :
+right:
+up:
+down:
+corkD:
+left :
+right:
+up:
+down:
+corkE:
+left :
+right:
+up:
+down:
+corkF:
+left :
+right:
+up:
+down:
+ derryA:
+left :
+right:
+up:
+down:
+ derryB:
+left :
+right:
+up:
+down:
+ derryC:
+left :
+right:
+up:
+down:
+ derryD:
+left :
+right:
+up:
+down:
+ derryE:
+left :
+right:
+up:
+down:
+ derryF:
+left :
+right:
+up:
+down:
+ donegalA :
+left :
+right:
+up:
+down:
+ donegal B:
+left :
+right:
+up:
+down:
+ donegal C:
+left :
+right:
+up:
+down:
+ donegal D:
+left :
+right:
+up:
+down:
+ donegal E:
+left :
+right:
+up:
+down:
+ donegal F:
+left :
+right:
+up:
+down:
+downA:
+left :
+right:
+up:
+down:
+downB:
+left :
+right:
+up:
+down:
+downC:
+left :
+right:
+up:
+down:
+downD:
+left :
+right:
+up:
+down:
+downE:
+left :
+right:
+up:
+down:
+down F:
+left :
+right:
+up:
+down:
+dublinA:
+left :
+right:
+up:
+down:
+dublinB:
+left :
+right:
+up:
+down:
+dublinC:
+left :
+right:
+up:
+down:
+dublinD:
+left :
+right:
+up:
+down:
+dublinE:
+left :
+right:
+up:
+down:
+dublin F :
+left :
+right:
+up:
+down:
+fermanaghA:
+left :
+right:
+up:
+down:
+fermanaghB:
+left :
+right:
+up:
+down:
+fermanaghC:
+left :
+right:
+up:
+down:
+fermanaghD:
+left :
+right:
+up:
+down:
+fermanaghE:
+left :
+right:
+up:
+down:
+fermanagh F :
+left :
+right:
+up:
+down:
+galway A:
+left :
+right:
+up:
+down:
+galway B:
+left :
+right:
+up:
+down:
+galway C:
+left :
+right:
+up:
+down:
+galway D:
+left :
+right:
+up:
+down:
+galway E:
+left :
+right:
+up:
+down:
+galway F:
+left :
+right:
+up:
+down:
+kerry A:
+left :
+right:
+up:
+down:
+kerry B:
+left :
+right:
+up:
+down:
+kerry C:
+left :
+right:
+up:
+down:
+kerry D:
+left :
+right:
+up:
+down:
+kerry E:
+left :
+right:
+up:
+down:
+kerryF:
+left :
+right:
+up:
+down:
+  kildareA :
+left :
+right:
+up:
+down:
+kildare B:
+left :
+right:
+up:
+down:
+kildare C:
+left :
+right:
+up:
+down:
+kildare D:
+left :
+right:
+up:
+down:
+kildare E:
+left :
+right:
+up:
+down:
+kildare F:
+left :
+right:
+up:
+down:
+
+kilkenny A:
+left :
+right:
+up:
+down:
+kilkenny B:
+left :
+right:
+up:
+down:
+kilkenny C:
+left :
+right:
+up:
+down:
+kilkenny D:
+left :
+right:
+up:
+down:
+kilkenny E:
+left :
+right:
+up:
+down:
+kilkenny F:
+left :
+right:
+up:
+down:
+laois A:
+left :
+right:
+up:
+down:
+laois B:
+left :
+right:
+up:
+down:
+laois C:
+left :
+right:
+up:
+down:
+laois D:
+left :
+right:
+up:
+down:
+laois E:
+left :
+right:
+up:
+down:
+laois F:
+left :
+right:
+up:
+down:
+leitrimA :
+left :
+right:
+up:
+down:
+leitrim B:
+left :
+right:
+up:
+down:
+leitrim C:
+left :
+right:
+up:
+down:
+leitrim D:
+left :
+right:
+up:
+down:
+leitrim E:
+left :
+right:
+up:
+down:
+leitrim F:
+left :
+right:
+up:
+down:
+:
+limerick A:
+left :
+right:
+up:
+down:
+limerick B:
+left :
+right:
+up:
+down:
+limerick C:
+left :
+right:
+up:
+down:
+limerick D:
+left :
+right:
+up:
+down:
+limerick E:
+left :
+right:
+up:
+down:
+limerick F:
+left :
+right:
+up:
+down:
+longford A:
+left :
+right:
+up:
+down:
+longford B:
+left :
+right:
+up:
+down:
+longford C:
+left :
+right:
+up:
+down:
+longford D:
+left :
+right:
+up:
+down:
+longford E:
+left :
+right:
+up:
+down:
+longford F:
+left :
+right:
+up:
+down:
+louth A:
+left :
+right:
+up:
+down:
+louth B:
+left :
+right:
+up:
+down:
+louth C:
+left :
+right:
+up:
+down:
+louth D:
+left :
+right:
+up:
+down:
+louth E:
+left :
+right:
+up:
+down:
+louth F:
+left :
+right:
+up:
+down:
+mayo A:
+left :
+right:
+up:
+down:
+mayo B:
+left :
+right:
+up:
+down:
+mayo C:
+left :
+right:
+up:
+down:
+mayo D:
+left :
+right:
+up:
+down:
+mayo E:
+left :
+right:
+up:
+down:
+mayo F:
+left :
+right:
+up:
+down:
+meath A:
+left :
+right:
+up:
+down:
+meath B:
+left :
+right:
+up:
+down:
+meath C:
+left :
+right:
+up:
+down:
+meath D:
+left :
+right:
+up:
+down:
+meath E:
+left :
+right:
+up:
+down:
+meath F:
+left :
+right:
+up:
+down:
+monaghan A:
+left :
+right:
+up:
+down:
+monaghan B:
+left :
+right:
+up:
+down:
+monaghan C:
+left :
+right:
+up:
+down:
+monaghan D:
+left :
+right:
+up:
+down:
+monaghan E:
+left :
+right:
+up:
+down:
+monaghan F:
+left :
+right:
+up:
+down:
+offaly A:
+left :
+right:
+up:
+down:
+offaly B:
+left :
+right:
+up:
+down:
+offaly C:
+left :
+right:
+up:
+down:
+offaly D:
+left :
+right:
+up:
+down:
+offaly E:
+left :
+right:
+up:
+down:
+offaly F:
+left :
+right:
+up:
+down:
+roscommon A :
+left :
+right:
+up:
+down:
+roscommon B:
+left :
+right:
+up:
+down:
+roscommon C:
+left :
+right:
+up:
+down:
+roscommon D:
+left :
+right:
+up:
+down:
+roscommon E:
+left :
+right:
+up:
+down:
+roscommonF:
+left :
+right:
+up:
+down:
+:
+:
+sligo A:
+left :
+right:
+up:
+down:
+sligo B:
+left :
+right:
+up:
+down:
+sligo C:
+left :
+right:
+up:
+down:
+sligo D:
+left :
+right:
+up:
+down:
+sligo E:
+left :
+right:
+up:
+down:
+sligo F:
+left :
+right:
+up:
+down:
+tipperaryA :
+left :
+right:
+up:
+down:
+tipperary B:
+left :
+right:
+up:
+down:
+tipperary C:
+left :
+right:
+up:
+down:
+tipperary D:
+left :
+right:
+up:
+down:
+tipperary E:
+left :
+right:
+up:
+down:
+tipperary F:
+left :
+right:
+up:
+down:
+tyrone A:
+left :
+right:
+up:
+down:
+tyrone B:
+left :
+right:
+up:
+down:
+tyrone C:
+left :
+right:
+up:
+down:
+tyrone D:
+left :
+right:
+up:
+down:
+tyrone E:
+left :
+right:
+up:
+down:
+tyrone F:
+left :
+right:
+up:
+down:
+waterford A :
+left :
+right:
+up:
+down:
+waterford B:
+left :
+right:
+up:
+down:
+waterford C:
+left :
+right:
+up:
+down:
+waterford D:
+left :
+right:
+up:
+down:
+waterford E:
+left :
+right:
+up:
+down:
+waterford F:
+left :
+right:
+up:
+down:
+westmeath A:
+left :
+right:
+up:
+down:
+westmeath B:
+left :
+right:
+up:
+down:
+westmeath C:
+left :
+right:
+up:
+down:
+westmeath D:
+left :
+right:
+up:
+down:
+westmeath E:
+left :
+right:
+up:
+down:
+westmeath F:
+left :
+right:
+up:
+down:
+wexford A:
+left :
+right:
+up:
+down:
+wexford B:
+left :
+right:
+up:
+down:
+wexford C:
+left :
+right:
+up:
+down:
+wexford D:
+left :
+right:
+up:
+down:
+wexford E:
+left :
+right:
+up:
+down:
+wexfordF:
+left :
+right:
+up:
+down:
+:
+:
+wicklowA:
+left :
+right:
+up:
+down:
+wicklowB:
+left :
+right:
+up:
+down:
+wicklowC:
+left :
+right:
+up:
+down:
+wicklowD:
+left :
+right:
+up:
+down:
+wicklowE:
+left :
+right:
+up:
+down:
+wicklowF:
+left :
+right:
+up:
+down:
