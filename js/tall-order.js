@@ -1343,12 +1343,27 @@ $(document).ready(function() {
     }
   };
   setLocation(locationID);
+
+  ///changeLocation using "traverse locations" data
   changeLocation = () => {
     let currentCounty = String(locationID);
-
+    //eg fermanagh1
     let countyLocation = currentCounty.slice(-1);
+    //eg 1
     currentCounty = currentCounty.substring(0, currentCounty.length - 1);
-    alert(String(currentCounty + ' ' + countyLocation));
+    //eg fermanagh
+
+    console.log(String(currentCounty + ' location number: ' + countyLocation));
+
+    //player can exit a map left right up or down. This will trigger loading of new map resources, depending on the adjacent map:
+    switch (currentCounty) {
+      case 'antrim':
+        if (countyLocation == 1 && lastPressed === 'left') {
+          //   alert('new current location will be loch erne');
+          setLocation('antrim6');
+        }
+        break;
+    }
   };
   //   alert('go');
 });
