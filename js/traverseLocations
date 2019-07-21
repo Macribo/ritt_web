@@ -876,150 +876,151 @@ up:offaly E
 down:laois C
 
 roscommon A :
-left :
-right:
-up:
-down:
+left : mayo C
+right: roscommon B
+up:sligo E
+down:galway F
 
 roscommon B:
-left :
-right:
-up:
-down:
+left :roscommon A
+right:roscommon D
+up:mayo F
+down:galway F
 
 roscommon C:
-left :
-right:
-up:
-down:
+left :roscommon B
+right: leitrim F
+up:leitrim C
+down:roscommon E
 
 roscommon D:
-left :
-right:
-up:
-down:
+left :roscommon B
+right:roscommon E
+up:roscommon C
+down:roscommon F
 
 roscommon E:
-left :
-right:
-up:
-down:
+left :roscommon D
+right:longford D
+up:roscommon C
+down:rroscommon F
 
 roscommonF:
-left :
-right:
-up:
-down:
-:
-:
+left :galway F
+right:westmeath A
+up:roscommon D
+down:galway F
+
 
 sligo A:
-left :
-right:
-up:
-down:
+left : mayo C
+right:sligo B
+up:sea
+down:sligo D
 
 sligo B:
-left :
-right:
-up:
-down:
+left :sligo A
+right:leitrim B
+up:sea
+down:sligo D
 
 sligo C:
-left :
-right:
-up:
-down:
+left :sea
+right:sligo D
+up:sea
+down:sligo E
 
 sligo D:
-left :
-right:
-up:
-down:
+left : sligo C
+right:sligo F
+up:sligo B
+down:sligo F
 
 sligo E:
-left :
-right:
-up:
-down:
+left :mayo F
+right:sligo F
+up:sligo C
+down:mayo F
 
 sligo F:
-left :
-right:
-up:
-down:
+left :sligo E
+right:roscommon 
+up:sligo D
+down:roscommon C
 
-tipperaryA :
-left :
-right:
-up:
-down:
+tipperary A :
+left : clare 
+right:offaly
+up:galway
+down:tipperary B
 
 tipperary B:
-left :
-right:
-up:
-down:
+left :tipperary C
+right:tipperary E
+up:tipperary A
+down:tipperary E
 
 tipperary C:
-left :
-right:
-up:
-down:
+left :tipperary D
+right:tipperary B
+up:tipperary B
+down:tipperary D
 
 tipperary D:
-left :
-right:
-up:
-down:
+left :limerick 
+right:tipperary C
+up:tipperary C
+down: cork
 
 tipperary E:
-left :
-right:
-up:
-down:
+left : tipperary B
+right:kilkenny A
+up:tipperary B
+down:tipperary F
 
 tipperary F:
-left :
-right:
-up:
-down:
+left : tipperary C
+right:kilkenny B
+up:tipperary E
+down:waterford B
 
 tyrone A:
-left :
-right:
-up:
-down:
+left : donegal E
+right:tyrone B
+up:donegal F
+down:tyrone C
 
 tyrone B:
-left :
-right:
-up:
-down:
+left :tyrone A
+right:derryC
+up:derry A
+down:tyrone D
 
 tyrone C:
-left :
-right:
-up:
-down:
+left :fermanagh C
+right:tyrone D
+up:tyrone A
+down:fermanagh E
 
 tyrone D:
-left :
-right:
-up:
-down:
+left :tyrone C
+right:tyrone E
+up:tyrone B
+down:tyrone F
 
 tyrone E:
-left :
-right:
-up:
-down:
+left :tyrone D
+right:derry F
+up:derry E
+down:tyrone F
 
 tyrone F:
-left :
-right:
-up:
-down:
+left :tyrone C
+right:armagh E
+up:tyrone E
+down:monaghan A
+
+
 waterford A :
 
 left :
