@@ -144,9 +144,9 @@ $(document).ready(function() {
       console.log(Cookies.get());
       // show first form and fade
 
-      //   setTimeout(function() {
-      //     location.href = './projects.html';
-      //   }, 5);
+      setTimeout(function() {
+        location.href = './projects.html';
+      }, 5);
     });
   $('.map-pin').mouseleave(function() {
     for (var key in countyDetails) {
