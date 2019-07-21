@@ -1,3 +1,6 @@
+
+//rand transition text array: [`the winding roads eventually lead you to`,``,``,``,]
+
 antrim A
 
 left:sea
@@ -12,376 +15,454 @@ up: antrim A
 down: antrim C
 
 antrim C:
-left :
-right:
-up:
-down:
+left : derry D
+right: antrim E
+up: antrim B
+down:antrim D
+
+
 antrim D:
-left :
-right:
-up:
-down:
+left :derry e
+right:antrim E
+up:antrim C
+down: antrim F
+
+
 antrim E:
-left :
-right:
-up:
-down:
+
+
+left :antrim D
+right:sea
+up:sea
+down:antrim F
+
 antrim F:
+left : loch Erin
+right:sea
+up:antrim D
+down: down F
+
+armagh A:
+left : monaghanA
+right: armagh B
+up: antrim F
+down:armagh D
+
+armagh B:
+left :armagh A
+right:armagh C
+up:antrim F
+down:armagh D
+
+armagh C:
+left :armagh B
+right:sea 
+up:antrim F
+down:armagh D
+
+armagh D:
+left : monaghan E
+right: sea
+up: armagh B
+down:armagh E
+
+armagh E:
+left :monaghan F
+right:armagh F
+up:armagh D
+down:louth A
+
+armagh F:
+left :armagh E
+right:sea
+up:armagh D
+down:louth B
+
+carlow A:
+left :laois C
+right: carlow B
+up:kidare F
+down: carlow D
+
+carlow B:
+left :carlow A
+right: wicklow E
+up: kildare F
+down: carlow C
+
+carlow C:
+left :carlow D
+right:carlow F
+up:carlow B
+down:carlow E
+
+carlow D:
+left :kilkenny A
+right:carlow E
+up:carlow A
+down:kilkenny C
+
+carlow E:
+left :carlow D
+right:wexford C
+up: carlow F
+down: wexford E
+
+carlow F:
+left :carlow C
+right:wexford C
+up:carlow B
+down:carlow E
+
+
+cavan A:
+left :leitrm C
+right:fermanagh D
+up:fermanagh A
+down:leitrim E
+
+cavan B:
+left :cavan A
+right:fermanagh D
+up:fermanagh A
+down:longfordB
+
+cavan C:
+left : cavan B
+right:fermanagh D
+up:fermanagh A
+down:cavan D
+
+cavan D:
+left :leitrim C
+right:cavan E
+up:cavan C
+down: westmeath C
+
+cavan E:
+left :cavan D
+right:louth D
+up:cavan F
+down:meath A
+
+cavan F:
+left :cavan D
+right:monaghan F
+up:monaghan C
+down:cavan E
+
+clare A:
+left :sea
+right: tipperary A
+up:gaway F
+down:clare B
+
+clare B:
+left :sea
+right:cllare C
+up:clare A
+down:clare E
+
+clare C:
+left :clare B
+right:tipperary A
+up:galway F
+down:clare F
+
+clare D:
+left :sea	
+right:clare E
+up:clare B
+down:sea
+
+clare E:
+left :clare D
+right:clare F
+up:clare B
+down:clare sea
+
+clare F:
+left :clare E
+right:tipperary A
+up:clare C
+down:limerick C
+
+corkA:
+left :sea
+right:cork B
+up:limerick C
+down:cork D
+
+corkB:
+left :cork A
+right:waterford A
+up:limerickF
+down:cork C
+
+corkC:
+left :corkD
+right:waterford A
+up:cork B
+down:cork D
+
+cork D:
+left :cork F
+right:sea
+up:cork C
+down:cork E
+
+corkE:
+left :cork F
+right:sea
+up:cork D
+down:sea
+
+corkF:
+left :cork E
+right:sea
+up:cork A
+down:sea
+
+ derryA:
+left :donegal F
+right:derry B
+up:donegal B
+down:tyrone B
+
+ derryB:
+left :derry A
+right:derry C
+up:sea
+down:derry E
+
+ derryC:
+left :derry B
+right:derry D
+up:derry B
+down:derry E
+
+ derryD:
+left :derry E
+right:antrim C
+up:derry C
+down:derry E
+
+ derryE:
+left :tyrone E
+right:antrim D
+up:derry D
+down:derry F
+
+ derryF:
+left :tyrone E
+right:antrim D
+up:derry E
+down:
+
+ donegalA :
+left :sea
+right:donegal B
+up:sea
+down:donegal C
+
+ donegal B:
+left :sea
+right:sea
+up:sea
+down:donegal F
+
+ donegal C:
+left :sea
+right:donegal F
+up:donegal A
+down:donegal D
+
+ donegal D:
+left :sea
+right:donegal E
+up:donegal C
+down:fermanagh C
+
+ donegal E:
+left :donegal D
+right:donegal 
+up: donegal F 
+down:tyrone A
+
+ donegal F:
+left :donegal C
+right:derry A
+up:donegal B
+down:donegal E
+
+down A:
+left :armagh A
+right:down B
+up:antrim F
+down:down D
+
+downB:
+left :down B
+right:down C
+up:antrim F
+down:down D
+
+downC:
+left :down B
+right:down F
+up:antrim F
+down:down D
+
+downD:
+left :armagh F
+right:sea
+up:armagh B
+down:louth B
+
+downE:
+left :down D
+right:sea
+up:down F
+down:down D
+
+down F:
+left :down C
+right:sea
+up:antrim F
+down:down E
+
+dublinA:
+left :meath F
+right:sea
+up:meath F
+down:dublin C
+
+dublinB:
+left :kildare D
+right:dublin C
+up:dublin A
+down:dublin E
+
+dublinC:
+left :dublin B
+right:dublin D
+up:dublin A
+down:dublin E
+
+dublinD:
+left :dublin C
+right:sea
+up:dublin A
+down:dublin E
+
+dublinE:
+left :kildare D
+right:sea
+up:dublin C
+down:dublin F
+
+dublin F :
+left :kildare D
+right:sea
+up:dublin E
+down:wicklow B
+
+fermanagh A:
+left :leitrim A
+right:fearmanagh B
+up:donegal E
+down:cavan A
+
+fermanagh B:
+left :fermanagh A
+right:fermanagh C
+up:donegal E
+down:fermanagh D
+
+fermanagh C:
+left :fermanagh B
+right:tyrone A
+up:tyrone C
+down: fermanagh E
+
+fermanagh D:
 left :
 right:
 up:
 down:
 
-armagh A:
-left :
-right:
-up:
-down:
-armagh B:
-left :
-right:
-up:
-down:
-armagh C:
-left :
-right:
-up:
-down:
-armagh D:
-left :
-right:
-up:
-down:
-armagh E:
-left :
-right:
-up:
-down:
-armagh F:
-left :
-right:
-up:
-down:
-carlow A:
-left :
-right:
-up:
-down:
-carlowB:
-left :
-right:
-up:
-down:
-carlowC:
-left :
-right:
-up:
-down:
-carlowD:
-left :
-right:
-up:
-down:
-carlowE:
-left :
-right:
-up:
-down:
-carlowF:
-left :
-right:
-up:
-down:
-cavanA:
-left :
-right:
-up:
-down:
-cavanB:
-left :
-right:
-up:
-down:
-cavanC:
-left :
-right:
-up:
-down:
-cavanD:
-left :
-right:
-up:
-down:
-cavanE:
-left :
-right:
-up:
-down:
-cavanF:
-left :
-right:
-up:
-down:
-clare A:
-left :
-right:
-up:
-down:
-clare B:
-left :
-right:
-up:
-down:
-clare C:
-left :
-right:
-up:
-down:
-clare D:
-left :
-right:
-up:
-down:
-clare E:
-left :
-right:
-up:
-down:
-clare F:
-left :
-right:
-up:
-down:
-corkA:
-left :
-right:
-up:
-down:
-corkB:
-left :
-right:
-up:
-down:
-corkC:
-left :
-right:
-up:
-down:
-corkD:
-left :
-right:
-up:
-down:
-corkE:
-left :
-right:
-up:
-down:
-corkF:
-left :
-right:
-up:
-down:
- derryA:
-left :
-right:
-up:
-down:
- derryB:
-left :
-right:
-up:
-down:
- derryC:
-left :
-right:
-up:
-down:
- derryD:
-left :
-right:
-up:
-down:
- derryE:
-left :
-right:
-up:
-down:
- derryF:
-left :
-right:
-up:
-down:
- donegalA :
-left :
-right:
-up:
-down:
- donegal B:
-left :
-right:
-up:
-down:
- donegal C:
-left :
-right:
-up:
-down:
- donegal D:
-left :
-right:
-up:
-down:
- donegal E:
-left :
-right:
-up:
-down:
- donegal F:
-left :
-right:
-up:
-down:
-downA:
-left :
-right:
-up:
-down:
-downB:
-left :
-right:
-up:
-down:
-downC:
-left :
-right:
-up:
-down:
-downD:
-left :
-right:
-up:
-down:
-downE:
-left :
-right:
-up:
-down:
-down F:
-left :
-right:
-up:
-down:
-dublinA:
-left :
-right:
-up:
-down:
-dublinB:
-left :
-right:
-up:
-down:
-dublinC:
-left :
-right:
-up:
-down:
-dublinD:
-left :
-right:
-up:
-down:
-dublinE:
-left :
-right:
-up:
-down:
-dublin F :
-left :
-right:
-up:
-down:
-fermanaghA:
-left :
-right:
-up:
-down:
-fermanaghB:
-left :
-right:
-up:
-down:
-fermanaghC:
-left :
-right:
-up:
-down:
-fermanaghD:
-left :
-right:
-up:
-down:
 fermanaghE:
 left :
 right:
 up:
 down:
+
 fermanagh F :
 left :
 right:
 up:
 down:
+
 galway A:
 left :
 right:
 up:
 down:
+
 galway B:
 left :
 right:
 up:
 down:
+
 galway C:
 left :
 right:
 up:
 down:
+
 galway D:
 left :
 right:
 up:
 down:
+
 galway E:
 left :
 right:
 up:
 down:
+
 galway F:
 left :
 right:
 up:
 down:
+
 kerry A:
 left :
 right:
 up:
 down:
+
 kerry B:
 left :
 right:
 up:
 down:
+
 kerry C:
 left :
 right:
 up:
 down:
+
 kerry D:
 left :
 right:
 up:
 down:
+
 kerry E:
 left :
 right:
@@ -392,31 +473,37 @@ left :
 right:
 up:
 down:
+
   kildareA :
 left :
 right:
 up:
 down:
+
 kildare B:
 left :
 right:
 up:
 down:
+
 kildare C:
 left :
 right:
 up:
 down:
+
 kildare D:
 left :
 right:
 up:
 down:
+
 kildare E:
 left :
 right:
 up:
 down:
+
 kildare F:
 left :
 right:
@@ -428,11 +515,13 @@ left :
 right:
 up:
 down:
+
 kilkenny B:
 left :
 right:
 up:
 down:
+
 kilkenny C:
 left :
 right:
