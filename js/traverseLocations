@@ -1,5 +1,6 @@
 
 //rand transition text array: [`the winding roads eventually lead you to`,``,``,``,]
+//tá forc san mbóthar: téigh go a b no c?
 
 antrim A
 
@@ -29,8 +30,6 @@ down: antrim F
 
 
 antrim E:
-
-
 left :antrim D
 right:sea
 up:sea
@@ -386,458 +385,526 @@ up:tyrone C
 down: fermanagh E
 
 fermanagh D:
-left :
-right:
-up:
-down:
+left :fermanagh A
+right:fermanagh F
+up:fermanagh B
+down:cavan B
 
 fermanaghE:
-left :
-right:
-up:
-down:
+left :fermanagh A
+right:tyrone C
+up:fermanagh C
+down:fermanagh F
 
 fermanagh F :
-left :
-right:
-up:
-down:
+left :fermanagh D
+right:monaghan B
+up:fermanagh E
+down:cavan B
 
 galway A:
-left :
-right:
-up:
-down:
+left :sea
+right:sea
+up:galway B
+down:sea
 
-galway B:
-left :
-right:
-up:
-down:
+galway B: 
+left :sea
+right:galway C
+up:mayo D
+down:galway A
 
 galway C:
-left :
-right:
-up:
-down:
+left :galway B
+right:galway D
+up:mayo E
+down:galway B
 
 galway D:
-left :
-right:
-up:
-down:
+left :galway C
+right:galway E
+up:mayo F
+down:sea
 
 galway E:
-left :
-right:
-up:
-down:
+left :galway D
+right:galway F
+up:mayo F
+down:sea
 
 galway F:
-left :
-right:
-up:
-down:
+left :galway E
+right:roscommon F
+up:roscommon A
+down:clare C
 
 kerry A:
-left :
-right:
-up:
-down:
+left :sea
+right:kerry B
+up:sea
+down:sea
 
 kerry B:
-left :
-right:
-up:
-down:
+left :kerry A
+right:kerry C
+up:kerry A
+down:sea
 
 kerry C:
-left :
-right:
-up:
-down:
+left :kerry B
+right:kerry D
+up:sea
+down:sea
 
 kerry D:
-left :
-right:
-up:
-down:
+left :kerry C
+right:cork A
+up:sea
+down:kerry E
 
 kerry E:
-left :
-right:
-up:
-down:
+left :kerry F
+right:cork A
+up:kerry D
+down:kerry F
+
 kerryF:
-left :
-right:
-up:
-down:
+left :sea
+right:kerry E
+up:kerry E
+down:sea
 
   kildareA :
-left :
-right:
-up:
-down:
+left :offaly E
+right:kildare B
+up:meath E
+down: kildare C 
 
 kildare B:
-left :
-right:
-up:
-down:
+left :kildare A
+right:Dublin B
+up:meath F
+down:kildare D
 
 kildare C:
-left :
-right:
-up:
-down:
+left :offaly E
+right:kildare D
+up:kildare A
+down:kildare E
 
 kildare D:
-left :
-right:
-up:
-down:
+left :kildare C
+right:dublin B
+up:kildare B
+down:kildare F
 
 kildare E:
-left :
-right:
-up:
-down:
+left :laois C
+right:wicklow C
+up:kildare D
+down:kildare F
 
 kildare F:
 left :
-right:
-up:
-down:
+right:wicklow D
+up:kikdare E
+down:carlow B
 
 kilkenny A:
-left :
-right:
-up:
-down:
+left :tipperary A
+right:kilkenny B
+up:laois F
+down:waterford C
 
 kilkenny B:
-left :
-right:
-up:
-down:
+left :tipperary A
+right:kilkenny C
+up:kilkenny A
+down:kilkenny D
 
 kilkenny C:
-left :
-right:
-up:
-down:
+left :kilkenny B
+right: carlow D
+up:laois F
+down:kilkenny E
+
 kilkenny D:
-left :
-right:
-up:
-down:
+left :tipperary E
+right:kilkenny E 
+up:kilkenny B
+down:waterford C
+
 kilkenny E:
-left :
-right:
-up:
-down:
+left :kilkenny D
+right:carlow D
+up:kilkenny C
+down:kilkenny F
+
 kilkenny F:
-left :
-right:
-up:
-down:
+left : waterford B
+right:wexford E
+up:kilkenny E
+down:waterford C
+
 laois A:
-left :
-right:
-up:
-down:
+left : offaly E
+right:laois B
+up:offaly F
+down:laois D
+
 laois B:
-left :
-right:
-up:
-down:
+left :laois A
+right:laois C
+up:laois C
+down:laois E
+
 laois C:
-left :
-right:
-up:
-down:
+left : laois B
+right:kildare C
+up:offaly F
+down:laois B
+
 laois D:
-left :
-right:
-up:
-down:
+left :tipperary A
+right:laois F
+up:laois A
+down:kilkenny A
+
 laois E:
-left :
-right:
-up:
-down:
+left : laois D
+right: kildare C
+up:laoise C
+down:laois F
+
 laois F:
-left :
-right:
-up:
-down:
+left :laoise D
+right:kildare F
+up:laoise E
+down:kilkenny A
+
 leitrimA :
-left :
-right:
-up:
-down:
+left :sligo B
+right:fermanagh A
+up:sea	
+down:leitrim B
+
 leitrim B:
-left :
-right:
-up:
-down:
+left :sligo B
+right:fermanagh C
+up:leitrim A
+down:leitrim C
+
 leitrim C:
-left :
-right:
-up:
-down:
+left : roscommon C
+right: leitrim D
+up:leitrim B
+down:roscommon E
+
 leitrim D:
-left :
-right:
-up:
-down:
+left : leitrim C
+right:cavan B
+up:cavan A
+down:leitrim E
+
 leitrim E:
-left :
-right:
-up:
-down:
+left :roscommon E
+right:cavan D
+up:leitrim D
+down:leitrim F
+
 leitrim F:
-left :
-right:
-up:
-down:
+left :roscommon  E
+right:cavan D
+up:leitrim E
+down:longford B
 :
 limerick A:
-left :
-right:
-up:
-down:
+left :kerry D
+right:limerick B
+up:sea
+down:limerick E
+
 limerick B:
-left :
-right:
-up:
-down:
+left :limerick A
+right:limerick C
+up:clare F
+down:limerick D
+
 limerick C:
-left :
-right:
-up:
-down:
+left :limerick B
+right:tiperary C
+up:clare F
+down:cork B
+
 limerick D:
-left :
-right:
-up:
-down:
+left :limerick E
+right:tipperary D
+up:limerick A
+down:limerick F
+
 limerick E:
-left :
-right:
-up:
-down:
+left :kerry E
+right:limerick F
+up:limerick A
+down:limerick F
+
 limerick F:
-left :
-right:
-up:
-down:
+left :limerick E
+right:tipperary D
+up:limerick D
+down:cork A
+
 longford A:
-left :
-right:
-up:
-down:
+left :roscommon C
+right:longford B
+up:leitrim F
+down:longford D
+
 longford B:
-left :
-right:
-up:
-down:
+left :longford A
+right:longford C
+up:leitrim F
+down:longford F
+
 longford C:
-left :
-right:
-up:
-down:
+left :longford B
+right:meath A
+up:cavan D
+down:westmeath C
+
 longford D:
-left :
-right:
-up:
-down:
+left :roscommon E
+right:longford E
+up:longford A
+down:westmeath B
+
 longford E:
-left :
-right:
-up:
-down:
+left : longford D
+right:longford F
+up:longford A
+down:westmeath F
+
 longford F:
-left :
-right:
-up:
-down:
+left : longford E
+right: westmeath C
+up:longford B
+down:westmeath C
+
 louth A:
-left :
-right:
-up:
-down:
+left :monaghan E
+right: louth C
+up:armagh F
+down:louth E
+
 louth B:
-left :
-right:
-up:
-down:
+left :louth C
+right:sea
+up:sea
+down:louth C
+
 louth C:
-left :
-right:
-up:
-down:
+left :louth A
+right:louth B
+up:louth B
+down:louth F
+
 louth D:
-left :
-right:
-up:
-down:
+left :meath C
+right:louth E
+up:louth A
+down:meath D
+
 louth E:
-left :
-right:
-up:
-down:
+left :louth D
+right:louth F
+up:louth A
+
+down:Meath C
+
 louth F:
-left :
-right:
-up:
-down:
+left :louth E
+right:sea
+up:louth A
+
+down:meath C
+
 mayo A:
-left :
-right:
-up:
-down:
+
+left :sea
+right:mayo B
+up:sea
+down:sea
+
 mayo B:
-left :
-right:
-up:
-down:
+left :mayo A
+right: mayo C
+up:sea
+down:mayo D
+
 mayo C:
-left :
-right:
-up:
-down:
+left :mayo B
+right:sligo C
+up:sea
+down:mayo F
+
 mayo D:
-left :
-right:
-up:
-down:
+left :sea
+right:mayo E
+up:mayo B
+down:galway C
+
 mayo E:
-left :
-right:
-up:
-down:
+left :mayo D
+right:mayo F
+up:mayo B
+down:galway F
+
 mayo F:
-left :
-right:
-up:
-down:
+left :mayo E
+right:roscommon F
+up:mayo C
+down:galway F
+
 meath A:
-left :
-right:
-up:
-down:
+left :westemath C
+right:meath B
+up:cavan E
+down:meath B
+
 meath B:
-left :
-right:
-up:
-down:
+left :meath A
+right:meath C
+up:meath A
+down:meath E
+
 meath C:
-left :
-right:
-up:
-down:
+left :meath B
+right:meath D
+up:cavan E
+down:meath D
+
 meath D:
-left :
-right:
-up:
-down:
+left :meath B
+right: meath F
+up:meath C
+down:meath F
+
 meath E:
-left :
-right:
-up:
-down:
+left :westmeath D 
+right:meath F
+up:meath B
+down:kildare A
+
 meath F:
-left :
-right:
-up:
-down:
+left :meath E
+right:dublin 
+up:meath D
+down:kildare B
+
 monaghan A:
-left :
-right:
-up:
-down:
+left : monaghan B
+right:armagh D
+up:tyrone C
+down:monaghan B
+
 monaghan B:
-left :
-right:
-up:
-down:
+left :fermanagh F 
+right: monaghan C
+up:monaghan B
+down: monaghan C
+
 monaghan C:
-left :
-right:
-up:
-down:
+left :monaghan B
+right:monaghan E
+up:monaghan B
+down:monaghan D
+
 monaghan D:
-left :
-right:
-up:
-down:
+left :cavan B
+right: monaghan F
+up:monaghan C
+down:cavan C
+
 monaghan E:
-left :
-right:
-up:
-down:
+left :Monaghan D
+right:armagh E
+up:armagh E
+down:monaghan F
+
 monaghan F:
-left :
-right:
-up:
-down:
+left :monaghan D
+right:louth A
+up:monaghan E
+down:meath C
+
+
 offaly A:
-left :
-right:
-up:
-down:
+
+left : roscommon F
+right:offaly E
+up:westmeath F
+down:offaly B
+
 offaly B:
-left :
-right:
-up:
-down:
+left :galway F
+right:offaly D
+up:offaly D
+down:offaly C
+
 offaly C:
-left :
-right:
-up:
-down:
+left :tipperary A
+right:offaly D
+up:offaly B
+down:tipperary A
+
 offaly D:
-left :
-right:
-up:
-down:
+left :offaly C
+right:offaly F
+up:offaly F
+down:tipperary B
+
 offaly E:
-left :
-right:
-up:
-down:
+left : offaly A
+right:kildare A
+up:westmeath E
+down:offaly F
+
 offaly F:
-left :
-right:
-up:
-down:
+left :offaly D
+right:kildare C
+up:offaly E
+down:laois C
+
 roscommon A :
 left :
 right:
 up:
 down:
+
 roscommon B:
 left :
 right:
 up:
 down:
+
 roscommon C:
 left :
 right:
 up:
 down:
+
 roscommon D:
 left :
 right:
 up:
 down:
+
 roscommon E:
 left :
 right:
 up:
 down:
+
 roscommonF:
 left :
 right:
@@ -845,109 +912,130 @@ up:
 down:
 :
 :
+
 sligo A:
 left :
 right:
 up:
 down:
+
 sligo B:
 left :
 right:
 up:
 down:
+
 sligo C:
 left :
 right:
 up:
 down:
+
 sligo D:
 left :
 right:
 up:
 down:
+
 sligo E:
 left :
 right:
 up:
 down:
+
 sligo F:
 left :
 right:
 up:
 down:
+
 tipperaryA :
 left :
 right:
 up:
 down:
+
 tipperary B:
 left :
 right:
 up:
 down:
+
 tipperary C:
 left :
 right:
 up:
 down:
+
 tipperary D:
 left :
 right:
 up:
 down:
+
 tipperary E:
 left :
 right:
 up:
 down:
+
 tipperary F:
 left :
 right:
 up:
 down:
+
 tyrone A:
 left :
 right:
 up:
 down:
+
 tyrone B:
 left :
 right:
 up:
 down:
+
 tyrone C:
 left :
 right:
 up:
 down:
+
 tyrone D:
 left :
 right:
 up:
 down:
+
 tyrone E:
 left :
 right:
 up:
 down:
+
 tyrone F:
 left :
 right:
 up:
 down:
 waterford A :
+
 left :
 right:
 up:
 down:
 waterford B:
 left :
+
 right:
 up:
 down:
 waterford C:
 left :
 right:
+
 up:
 down:
 waterford D:
