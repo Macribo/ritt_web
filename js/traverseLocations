@@ -77,28 +77,28 @@ right:sea
 up:armagh3 
 down:louth B
 
-carlow 4:
+carlow4:
 left :laois C
-right: carlow 5
+right: carlow5
 up:kidare F
 down: carlow2
 
-carlow 5:
-left :carlow 4
+carlow5:
+left :carlow4
 right: wicklow E
 up: kildare F
 down: carlow 1
 
-carlow 1:
+carlow1:
 left :carlow2
 right:carlow3
-up:carlow 5
+up:carlow5
 down:carlow6
 
 carlow2:
 left :kilkenny A
 right:carlow6
-up:carlow 4
+up:carlow4
 down:kilkenny C
 
 carlow6:
@@ -108,9 +108,9 @@ up: carlow3
 down: wexford E
 
 carlow3:
-left :carlow 1
+left :carlow1
 right:wexford C
-up:carlow 5
+up:carlow5
 down:carlow6
 
 
@@ -222,73 +222,73 @@ right:sea
 up:cork2
 down:sea
 
- derry6:
+derry6:
 left :donegal4
 right:derry1
 up:donegal5
 down:tyrone B
 
- derry1:
+derry1:
 left :derry6
 right:derry4
 up:sea
 down:derry2
 
- derry4:
+derry4:
 left :derry1
 right:derry3
 up:derry1
 down:derry2
 
- derry3:
+derry3:
 left :derry2
 right:antrim4
 up:derry4
 down:derry2
 
- derry2:
+derry2:
 left :tyrone E
 right:antrim5
 up:derry3
 down:derry5
 
- derry5:
+derry5:
 left :tyrone E
 right:antrim5
 up:derry2
 down:
 
- donegal6 :
+donegal6 :
 left :sea
 right:donegal5
 up:sea
 down:donegal1
 
- donegal5:
+donegal5:
 left :sea
 right:sea
 up:sea
 down:donegal4
 
- donegal1:
+donegal1:
 left :sea
 right:donegal4
 up:donegal6
 down:donegal2
 
- donegal2:
+donegal2:
 left :sea
 right:donegal3
 up:donegal1
 down:fermanagh C
 
- donegal3:
+donegal3:
 left :donegal2
 right:donegal 
 up: donegal4 
 down:tyrone A
 
- donegal4:
+donegal4:
 left :donegal1
 right:derry6
 up:donegal5
@@ -330,7 +330,7 @@ right:sea
 up:antrim1
 down:down3
 
-dublin A:
+dublinA:
 left :meath F
 right:sea
 up:meath F
