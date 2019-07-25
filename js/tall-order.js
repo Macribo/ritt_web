@@ -370,6 +370,10 @@ $(document).ready(function() {
     // alert('see u');
   });
   setLocation = locationID => {
+    checkForSeaTile = currentCounty.substring(0, currentCounty.length );
+    if (checkForSeaTile = 'sea'){
+        alert("uisce!")
+    }
     if (locationID === 'antrim1') {
       $('#stageBG').css(
         'background-image',
@@ -1356,12 +1360,115 @@ $(document).ready(function() {
     console.log(String(currentCounty + ' location number: ' + countyLocation));
 
     //player can exit a map left right up or down. This will trigger loading of new map resources, depending on the adjacent map:
+    
+    /* 
+    TODO - refactor this huge switch statement as a couple of functions:
+    switchCounty=(countyFrom,locationFrom,lastPressed)=>{
+
+//also all setLocation() replace with ajax requests
+    */ }
+    let targetDestination;
     switch (currentCounty) {
       case 'antrim':
         if (countyLocation == 1 && lastPressed === 'left') {
           //   alert('new current location will be loch erne');
-          setLocation('antrim6');
-        }
+          targetDestination = 'derry5'
+          setLocation(targetDestination);
+        } else if (countyLocation == 1 && lastPressed === 'right') {
+          //   alert('new current location will be loch erne');
+          targetDestination ='sea'
+          setLocation(targetDestination);
+        } else if (countyLocation == 1 && lastPressed === 'up') {
+          //   alert('new current location will be loch erne');
+          targetDestination ='antrim5'
+          setLocation(targetDestination);
+        } else if (countyLocation == 1 && lastPressed === 'down') {
+          //   alert('new current location will be loch erne');
+          targetDestination ='down2'
+          setLocation(targetDestination);
+        } else if (countyLocation == 2 && lastPressed === 'left') {
+          //   alert('new current location will be loch erne');
+          targetDestination ='antrim5'
+         
+          setLocation(targetDestination);
+        } else if (countyLocation == 2 && lastPressed === 'right') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 2 && lastPressed === 'up') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 2 && lastPressed === 'down') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim1'
+            setLocation(targetDestination);
+          }else if (countyLocation == 3 && lastPressed === 'left') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 3 && lastPressed === 'right') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 3 && lastPressed === 'up') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 3 && lastPressed === 'down') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim6'
+            setLocation(targetDestination);
+          }else if (countyLocation == 4 && lastPressed === 'left') {
+            //   alert('new current location will be loch erne');
+            targetDestination = 'derry3'
+            setLocation(targetDestination);
+          }else if (countyLocation == 4 && lastPressed === 'right') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim2'
+            setLocation(targetDestination);
+          }else if (countyLocation == 4 && lastPressed === 'up') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim6'
+            setLocation(targetDestination);
+          }else if (countyLocation == 4 && lastPressed === 'down') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim5'
+            setLocation(targetDestination);
+          }else if (countyLocation == 5 && lastPressed === 'left') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='derry2'
+            setLocation(targetDestination);
+          }else if (countyLocation == 5 && lastPressed === 'right') {
+            targetDestination ='antrim2'
+            //   alert('new current location will be loch erne');
+            setLocation(targetDestination);
+          }else if (countyLocation == 5 && lastPressed === 'up') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim4'
+            setLocation(targetDestination);
+          }else if (countyLocation == 5 && lastPressed === 'down') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='antrim1'
+            setLocation(targetDestination);
+          }else if (countyLocation == 6 && lastPressed === 'left') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 6 && lastPressed === 'right') {
+            //   alert('new current location will be loch erne');
+            targetDestination ='sea'
+            setLocation(targetDestination);
+          }else if (countyLocation == 6 && lastPressed === 'up') {
+            //   alert('new current location will be loch erne');
+            targetDestination =
+             setLocation(target);'antrim3'
+          }else if (countyLocation == 6 && lastPressed === 'down') {
+            //   alert('new current location will be loch erne');
+           
+            targetDestination ='antrim4'
+            setLocation(targetDestination);
+          }
         break;
     }
   };
