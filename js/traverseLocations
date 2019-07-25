@@ -69,16 +69,16 @@ armagh4:
 left :monaghan F
 right:armagh5
 up:armagh3 
-down:louth A
+down:louth 1
 
 armagh5:
 left :armagh4
 right:sea
 up:armagh3 
-down:louth B
+down:louth2
 
 carlow4:
-left :laois C
+left :laois6
 right: carlow5
 up:kidare F
 down: carlow2
@@ -86,7 +86,7 @@ down: carlow2
 carlow5:
 left :carlow4
 right: wicklow E
-up: kildare F
+up: kildare2
 down: carlow 1
 
 carlow1:
@@ -116,31 +116,31 @@ down:carlow6
 
 cavan4:
 left :leitrm C
-right:fermanagh D
-up:fermanagh A
-down:leitrim E
+right:fermanagh2
+up:fermanagh3
+down:leitrim3
 
 cavan6:
 left :cavan4
-right:fermanagh D
-up:fermanagh A
-down:longfordB
+right:fermanagh2
+up:fermanagh3
+down:longford6
 
 cavan3:
 left : cavan6
-right:fermanagh D
-up:fermanagh A
+right:fermanagh2
+up:fermanagh3
 down:cavan5
 
 cavan5:
-left :leitrim C
+left :leitrim5
 right:cavan2
 up:cavan3
 down: westmeath C
 
 cavan2:
 left :cavan5
-right:louth D
+right:louth5
 up:cavan1
 down:meath A
 
@@ -165,7 +165,7 @@ down:clare3
 clare4:
 left :clare1
 right:tipperary A
-up:galway F
+up:galway5
 down:clare6
 
 clare5:
@@ -184,18 +184,18 @@ clare6:
 left :clare3
 right:tipperary A
 up:clare4
-down:limerick C
+down:limerick4
 
 cork2:
 left :sea
 right:cork1
-up:limerick C
+up:limerick4
 down:cork6
 
 cork1:
 left :cork2
 right:waterford A
-up:limerickF
+up:limerick5
 down:cork5
 
 cork5:
@@ -280,7 +280,7 @@ donegal2:
 left :sea
 right:donegal3
 up:donegal1
-down:fermanagh C
+down:fermanagh5
 
 donegal3:
 left :donegal2
@@ -316,7 +316,7 @@ down4:
 left :armagh5
 right:sea
 up:armagh6
-down:louth B
+down:louth2
 
 down3:
 left :down4
@@ -330,16 +330,16 @@ right:sea
 up:antrim1
 down:down3
 
-dublinA:
-left :meath F
+dublin6:
+left :meath3
 right:sea
-up:meath F
+up:meath3
 down:dublin4
 
 dublin3:
-left :kildare D
+left :kildare3
 right:dublin4
-up:dublin A
+up:dublin6
 down:dublin5
 
 dublin4:
@@ -351,160 +351,160 @@ down:dublin5
 dublin2:
 left :dublin4
 right:sea
-up:dublin A
+up:dublin6
 down:dublin5
 
 dublin5:
-left :kildare D
+left :kildare3
 right:sea
 up:dublin4
 down:dublin1
 
 dublin1 :
-left :kildare D
+left :kildare3
 right:sea
 up:dublin5
 down:wicklow B
 
-fermanagh A:
-left :leitrim A
+fermanagh3:
+left :leitrim1
 right:fearmanagh B
 up:donegal3
 down:cavan4
 
-fermanagh B:
-left :fermanagh A
-right:fermanagh C
+fermanagh3:
+left :a3
+right:fermanagh5
 up:donegal3
-down:fermanagh D
+down:fermanagh2
 
-fermanagh C:
-left :fermanagh B
+fermanagh5:
+left :fermanagh3
 right:tyrone A
 up:tyrone C
-down: fermanagh E
+down: fermanagh4
 
-fermanagh D:
-left :fermanagh A
-right:fermanagh F
-up:fermanagh B
+fermanagh2:
+left :a3
+right:fermanagh1
+up:fermanagh3
 down:cavan6
 
-fermanagh E:
-left :fermanagh A
+fermanagh4:
+left :fermanagh3
 right:tyrone C
-up:fermanagh C
-down:fermanagh F
+up:fermanagh5
+down:fermanagh1
 
-fermanagh F :
-left :fermanagh D
+fermanagh1 :
+left :fermanagh2
 right:monaghan B
-up:fermanagh E
+up:fermanagh4
 down:cavan6
 
-galway A:
+galway6:
 left :sea
 right:sea
-up:galway B
+up:galway3
 down:sea
 
-galway B: 
+galway3: 
 left :sea
-right:galway C
+right:galway4
 up:mayo D
-down:galway A
+down:galway6
 
-galway C:
-left :galway B
-right:galway D
+galway4:
+left :galway3
+right:galway2
 up:mayo E
-down:galway B
+down:galway3
 
-galway D:
-left :galway C
-right:galway E
+galway2:
+left :galway4
+right:galway1
 up:mayo F
 down:sea
 
-galway E:
-left :galway D
-right:galway F
+galway1:
+left :galway2
+right:galway5
 up:mayo F
 down:sea
 
-galway F:
-left :galway E
+galway5:
+left :galway1
 right:roscommon F
 up:roscommon A
 down:clare4
 
-kerry A:
+kerry5:
 left :sea
-right:kerry B
+right:kerry3
 up:sea
 down:sea
 
-kerry B:
-left :kerry A
-right:kerry C
-up:kerry A
+kerry3:
+left :kerry5
+right:kerry4
+up:kerry5
 down:sea
 
-kerry C:
-left :kerry B
-right:kerry D
+kerry4:
+left :kerry3
+right:kerry6
 up:sea
 down:sea
 
-kerry D:
-left :kerry C
+kerry6:
+left :kerry4
 right:cork2
 up:sea
-down:kerry E
+down:kerry1
 
-kerry E:
-left :kerry F
+kerry1:
+left :kerry2
 right:cork2
-up:kerry D
-down:kerry F
+up:kerry6
+down:kerry2
 
-kerry F:
+kerry2:
 left :sea
-right:kerry E
-up:kerry E
+right:kerry1
+up:kerry1
 down:sea
 
-  kildare A :
+  kildare5 :
 left :offaly E
-right:kildare B
-up:meath E
-down: kildare C 
+right:kildare6
+up:meath6
+down: kildare4 
 
-kildare B:
-left :kildare A
+kildare6:
+left :kildare5
 right:dublin3
-up:meath F
-down:kildare D
+up:meath3
+down:kildare3
 
-kildare C:
+kildare4:
 left :offaly E
-right:kildare D
-up:kildare A
-down:kildare E
+right:kildare3
+up:kildare5
+down:kildare1
 
-kildare D:
-left :kildare C
+kildare3:
+left :kildare4
 right:dublin3
-up:kildare B
-down:kildare F
+up:kildare6
+down:kildare2
 
-kildare E:
-left :laois C
+kildare1:
+left :laois6
 right:wicklow C
-up:kildare D
-down:kildare F
+up:kildare3
+down:kildare2
 
-kildare F:
+kildare2:
 left :
 right:wicklow D
 up:kikdare E
@@ -513,7 +513,7 @@ down:carlow 5
 kilkenny A:
 left :tipperary A
 right:kilkenny B
-up:laois F
+up:laois4
 down:waterford C
 
 kilkenny B:
@@ -525,7 +525,7 @@ down:kilkenny D
 kilkenny C:
 left :kilkenny B
 right: carlow2
-up:laois F
+up:laois4
 down:kilkenny E
 
 kilkenny D:
@@ -546,187 +546,187 @@ right:wexford E
 up:kilkenny E
 down:waterford C
 
-laois A:
+laois3:
 left : offaly E
-right:laois B
+right:laois5
 up:offaly F
-down:laois D
+down:laois2
 
-laois B:
-left :laois A
-right:laois C
-up:laois C
-down:laois E
+laois5:
+left :laois3
+right:laois6
+up:laois6
+down:laois1
 
-laois C:
-left : laois B
-right:kildare C
+laois6:
+left : laois5
+right:kildare4
 up:offaly F
-down:laois B
+down:laois5
 
-laois D:
+laois2:
 left :tipperary A
-right:laois F
-up:laois A
+right:laois4
+up:laois3
 down:kilkenny A
 
-laois E:
-left : laois D
-right: kildare C
+laois1:
+left : laois2
+right: kildare4
 up:laoise C
-down:laois F
+down:laois4
 
-laois F:
+laois4:
 left :laoise D
-right:kildare F
+right:kildare2
 up:laoise E
 down:kilkenny A
 
-leitrimA :
+leitrim1 :
 left :sligo B
-right:fermanagh A
+right:fermanagh3
 up:sea	
-down:leitrim B
+down:leitrim6
 
-leitrim B:
+leitrim6:
 left :sligo B
-right:fermanagh C
-up:leitrim A
-down:leitrim C
+right:fermanagh5
+up:leitrim1
+down:leitrim5
 
-leitrim C:
+leitrim5:
 left : roscommon C
-right: leitrim D
-up:leitrim B
+right: leitrim2
+up:leitrim6
 down:roscommon E
 
-leitrim D:
-left : leitrim C
+leitrim2:
+left : leitrim5
 right:cavan6
 up:cavan4
-down:leitrim E
+down:leitrim3
 
-leitrim E:
+leitrim3:
 left :roscommon E
 right:cavan5
-up:leitrim D
-down:leitrim F
+up:leitrim2
+down:leitrim4
 
-leitrim F:
+leitrim4:
 left :roscommon  E
 right:cavan5
-up:leitrim E
-down:longford B
+up:leitrim3
+down:longford6
 :
-limerick A:
-left :kerry D
-right:limerick B
+limerick6:
+left :kerry6
+right:limerick6
 up:sea
-down:limerick E
+down:limerick3
 
-limerick B:
-left :limerick A
-right:limerick C
+limerick6:
+left :limerick2
+right:limerick4
 up:clare6
-down:limerick D
+down:limerick1
 
-limerick C:
-left :limerick B
+limerick4:
+left :limerick6
 right:tiperary C
 up:clare6
 down:cork1
 
-limerick D:
-left :limerick E
+limerick1:
+left :limerick3
 right:tipperary D
-up:limerick A
-down:limerick F
+up:limerick2
+down:limerick5
 
-limerick E:
-left :kerry E
-right:limerick F
-up:limerick A
-down:limerick F
+limerick3:
+left :kerry1
+right:limerick5
+up:limerick2
+down:limerick5
 
-limerick F:
-left :limerick E
+limerick5:
+left :limerick3
 right:tipperary D
-up:limerick D
+up:limerick1
 down:cork2
 
-longford A:
+longford2:
 left :roscommon C
-right:longford B
-up:leitrim F
-down:longford D
+right:longford6
+up:leitrim4
+down:longford3
 
-longford B:
-left :longford A
-right:longford C
-up:leitrim F
-down:longford F
+longford6:
+left :longford2
+right:longford5
+up:leitrim4
+down:longford4
 
-longford C:
-left :longford B
+longford5:
+left :longford6
 right:meath A
 up:cavan5
 down:westmeath C
 
-longford D:
+longford3:
 left :roscommon E
-right:longford E
-up:longford A
+right:longford1
+up:longford2
 down:westmeath B
 
-longford E:
-left : longford D
-right:longford F
-up:longford A
+longford1:
+left : longford3
+right:longford4
+up:longford2
 down:westmeath F
 
-longford F:
-left : longford E
+longford4:
+left : longford1
 right: westmeath C
-up:longford B
+up:longford6
 down:westmeath C
 
-louth A:
+louth 1:
 left :monaghan E
-right: louth C
+right: louth4
 up:armagh5
-down:louth E
+down:louth3
 
-louth B:
-left :louth C
+louth2:
+left :louth4
 right:sea
 up:sea
-down:louth C
+down:louth4
 
-louth C:
-left :louth A
-right:louth B
-up:louth B
-down:louth F
+louth4:
+left :louth 1
+right:louth2
+up:louth2
+down:           
 
-louth D:
-left :meath C
-right:louth E
-up:louth A
-down:meath D
+louth5:
+left :meath2
+right:louth3
+up:louth 1
+down:meath2
 
-louth E:
-left :louth D
-right:louth F
-up:louth A
+louth3:
+left :louth5
+right:louth6
+up:louth 1
 
-down:Meath C
+down:meath2
 
-louth F:
-left :louth E
+louth6:
+left :louth3
 right:sea
-up:louth A
+up:louth 1
 
-down:meath C
+down:meath2
 
 mayo A:
 
@@ -751,55 +751,55 @@ mayo D:
 left :sea
 right:mayo E
 up:mayo B
-down:galway C
+down:galway4
 
 mayo E:
 left :mayo D
 right:mayo F
 up:mayo B
-down:galway F
+down:galway5
 
 mayo F:
 left :mayo E
 right:roscommon F
 up:mayo C
-down:galway F
+down:galway5
 
-meath A:
+meath5:
 left :westemath C
-right:meath B
+right:meath4
 up:cavan2
-down:meath B
+down:meath4
 
-meath B:
-left :meath A
-right:meath C
-up:meath A
-down:meath E
+meath4:
+left :meath5
+right:meath2
+up:meath5
+down:meath6
 
-meath C:
-left :meath B
-right:meath D
+meath2:
+left :meath4
+right:meath2
 up:cavan2
-down:meath D
+down:meath2
 
-meath D:
-left :meath B
-right: meath F
-up:meath C
-down:meath F
+meath2:
+left :meath4
+right: meath3
+up:meath2
+down:meath3
 
-meath E:
+meath6:
 left :westmeath D 
-right:meath F
-up:meath B
-down:kildare A
+right:meath3
+up:meath4
+down:kildare5
 
-meath F:
-left :meath E
+meath3:
+left :meath6
 right:dublin 
-up:meath D
-down:kildare B
+up:meath1
+down:kildare6
 
 monaghan A:
 left : monaghan B
@@ -808,7 +808,7 @@ up:tyrone C
 down:monaghan B
 
 monaghan B:
-left :fermanagh F 
+left :fermanagh1 
 right: monaghan C
 up:monaghan B
 down: monaghan C
@@ -833,20 +833,20 @@ down:monaghan F
 
 monaghan F:
 left :monaghan D
-right:louth A
+right:louth 1
 up:monaghan E
-down:meath C
+down:meath2
 
 
-offaly A:
+offaly1:
 
 left : roscommon F
 right:offaly E
 up:westmeath F
-down:offaly B
+down:offaly2
 
-offaly B:
-left :galway F
+offaly2:
+left :galway5
 right:offaly D
 up:offaly D
 down:offaly C
@@ -854,7 +854,7 @@ down:offaly C
 offaly C:
 left :tipperary A
 right:offaly D
-up:offaly B
+up:offaly2
 down:tipperary A
 
 offaly D:
@@ -864,33 +864,33 @@ up:offaly F
 down:tipperary B
 
 offaly E:
-left : offaly A
-right:kildare A
+left : offaly1
+right:kildare5
 up:westmeath E
 down:offaly F
 
 offaly F:
 left :offaly D
-right:kildare C
+right:kildare4
 up:offaly E
-down:laois C
+down:laois6
 
 roscommon A :
 left : mayo C
 right: roscommon B
 up:sligo E
-down:galway F
+down:galway5
 
 roscommon B:
 left :roscommon A
 right:roscommon D
 up:mayo F
-down:galway F
+down:galway5
 
 roscommon C:
 left :roscommon B
-right: leitrim F
-up:leitrim C
+right: leitrim4
+up:leitrim5
 down:roscommon E
 
 roscommon D:
@@ -901,15 +901,15 @@ down:roscommon F
 
 roscommon E:
 left :roscommon D
-right:longford D
+right:longford3
 up:roscommon C
 down:rroscommon F
 
 roscommonF:
-left :galway F
-right:westmeath A
+left :galway5
+right:westmeath5
 up:roscommon D
-down:galway F
+down:galway5
 
 
 sligo A:
@@ -920,7 +920,7 @@ down:sligo D
 
 sligo B:
 left :sligo A
-right:leitrim B
+right:leitrim6
 up:sea
 down:sligo D
 
@@ -997,10 +997,10 @@ up:derry6
 down:tyrone D
 
 tyrone C:
-left :fermanagh C
+left :fermanagh5
 right:tyrone D
 up:tyrone A
-down:fermanagh E
+down:fermanagh4
 
 tyrone D:
 left :tyrone C
@@ -1057,14 +1057,14 @@ right:sea
 up:waterford E
 down:sea
 
-westmeath A:
+westmeath5:
 left :Roscommon C
 right:westmeath B
-up:longford F
+up:longford4
 down:westmeath B
 
 westmeath B:
-left :westmeath A
+left :westmeath5
 right:westmeath B
 up:westmeath B
 down:westmeath F
@@ -1077,7 +1077,7 @@ down:westmeath E
 
 westmeath D:
 left : westmeath C
-right:meath A
+right:meath5
 up:westmeath C
 down:westmeath E
 
@@ -1091,7 +1091,7 @@ westmeath F:
 left :westmeath B
 right:westmeath E
 up:westmeath B
-down:offaly A
+down:offaly1
 
 wexford A :
 
@@ -1135,7 +1135,7 @@ down:sea
 
 
 wicklowA:
-left : kildare B
+left : kildare6
 right:wicklow B
 up:dublin5
 down:wicklow C
@@ -1147,13 +1147,13 @@ up:dublin1
 down:wicklow F
 
 wicklowC:
-left :kildare D
+left :kildare3
 right: wicklow A
 up:wicklow A
 down:wicklow D
 
 wicklowD:
-left :kildare D
+left :kildare3
 right:wicklow E
 up:wicklow C
 down:wicklow E

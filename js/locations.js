@@ -141,7 +141,7 @@ $(document).ready(function() {
         // alert(Cookies.get('locationID'));
       }
       Cookies.set('place', place);
-      console.log(Cookies.get());
+      //   console.log(Cookies.get());
       // show first form and fade
 
       //   setTimeout(function() {
