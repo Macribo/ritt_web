@@ -98,56 +98,56 @@ $(document).ready(function() {
       }
     }
   });
-  let locationCode =
-    //establish locationCode
-    //     $('#first-map-pin').click(function() {
-    //       alert(Cookies.get('playerCounty'));
-    //     });
-    //   $('#second-map-pin').click(function() {
-    //     alert(Cookies.get('playerCounty'));
-    //   });
-    //   $('#third-map-pin').click(function() {
-    //     alert(Cookies.get('playerCounty'));
-    //   });
-    //   $('#fourth-map-pin').click(function() {
-    //     alert(Cookies.get('playerCounty'));
-    //   });
-    //   $('#fifth-map-pin').click(function() {
-    //     alert(Cookies.get('playerCounty'));
-    //   });
-    //   $('#sixth-map-pin').click(function() {
-    //     alert(Cookies.get('playerCounty'));
-    //   });
+  //   let locationCode =
+  //establish locationCode
+  //     $('#first-map-pin').click(function() {
+  //       alert(Cookies.get('playerCounty'));
+  //     });
+  //   $('#second-map-pin').click(function() {
+  //     alert(Cookies.get('playerCounty'));
+  //   });
+  //   $('#third-map-pin').click(function() {
+  //     alert(Cookies.get('playerCounty'));
+  //   });
+  //   $('#fourth-map-pin').click(function() {
+  //     alert(Cookies.get('playerCounty'));
+  //   });
+  //   $('#fifth-map-pin').click(function() {
+  //     alert(Cookies.get('playerCounty'));
+  //   });
+  //   $('#sixth-map-pin').click(function() {
+  //     alert(Cookies.get('playerCounty'));
+  //   });
 
-    $('.map-pin').click(function() {
-      console.log(Cookies.get('locationID'));
-      if (this.id === 'first-map-pin') {
-        Cookies.set('locationID', county + '1');
-        // alert(Cookies.get('locationID'));
-      } else if (this.id === 'second-map-pin') {
-        Cookies.set('locationID', county + '2');
-        // alert(Cookies.get('locationID'));
-      } else if (this.id === 'third-map-pin') {
-        Cookies.set('locationID', county + '3');
-        // alert(Cookies.get('locationID'));
-      } else if (this.id === 'fourth-map-pin') {
-        Cookies.set('locationID', county + '4');
-        // alert(Cookies.get('locationID'));
-      } else if (this.id === 'fifth-map-pin') {
-        Cookies.set('locationID', county + '5');
-        // alert(Cookies.get('locationID'));
-      } else if (this.id === 'sixth-map-pin') {
-        Cookies.set('locationID', county + '6');
-        // alert(Cookies.get('locationID'));
-      }
-      Cookies.set('place', place);
-      //   console.log(Cookies.get());
-      // show first form and fade
+  $('.map-pin').click(function() {
+    console.log(Cookies.get('locationID'));
+    if (this.id === 'first-map-pin') {
+      Cookies.set('locationID', county + '1');
+      // alert(Cookies.get('locationID'));
+    } else if (this.id === 'second-map-pin') {
+      Cookies.set('locationID', county + '2');
+      // alert(Cookies.get('locationID'));
+    } else if (this.id === 'third-map-pin') {
+      Cookies.set('locationID', county + '3');
+      // alert(Cookies.get('locationID'));
+    } else if (this.id === 'fourth-map-pin') {
+      Cookies.set('locationID', county + '4');
+      // alert(Cookies.get('locationID'));
+    } else if (this.id === 'fifth-map-pin') {
+      Cookies.set('locationID', county + '5');
+      // alert(Cookies.get('locationID'));
+    } else if (this.id === 'sixth-map-pin') {
+      Cookies.set('locationID', county + '6');
+      // alert(Cookies.get('locationID'));
+    }
+    Cookies.set('place', place);
+    //   console.log(Cookies.get());
+    // show first form and fade
 
-      //   setTimeout(function() {
-      //     location.href = './projects.html';
-      //   }, 5);
-    });
+    setTimeout(function() {
+      location.href = './projects.html';
+    }, 5);
+  });
   $('.map-pin').mouseleave(function() {
     for (var key in countyDetails) {
       if (key == county) {

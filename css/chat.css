@@ -25,6 +25,8 @@
   position: relative;
   color: whitesmoke;
   margin: auto;
+  margin-left: 5%;
+  width: 90%;
   padding: 0;
   /* width: 90%; */
   max-width: 1200px;
@@ -39,7 +41,10 @@
   margin-top: 50px;
   /* font-size: large; */
 }
-
+table {
+  position: relative;
+  z-index: 700;
+}
 .choice {
   display: inline;
 }
