@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
     render();
   };
-  alert('old state branch loaded');
+  //   alert('old state branch loaded');
   $('.levelDescription').text(Cookies.get('place'));
   let placeName = Cookies.get('place');
   //Get a reference to the stage and output
@@ -1365,17 +1365,17 @@ $(document).ready(function() {
     let countyLocation = getCountyLocation(locationID);
     // currentCounty = String(locationID);
 
-    alert(
-      'locationID: ' +
-        locationID +
-        ' countyName: ' +
-        currentCounty +
-        ' location in County: ' +
-        countyLocation +
-        ' last keypress : ' +
-        lastPressed
-    );
-    // updateLocationDescription();
+    // alert(
+    //   'locationID: ' +
+    //     locationID +
+    //     ' countyName: ' +
+    //     currentCounty +
+    //     ' location in County: ' +
+    //     countyLocation +
+    //     ' last keypress : ' +
+    //     lastPressed
+    // );
+    updateLocationDescription();
     updateMap(currentCounty, countyLocation, lastPressed);
     updatePlayerLocation();
   };
@@ -1540,3 +1540,7 @@ $(document).ready(function() {
 });
 let rando = Math.floor(Math.random() * 40 + 150);
 let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
+
+updateLocationDescription = () => {
+  $('.levelDescription').html('countyDetails[key][0]');
+};
