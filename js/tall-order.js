@@ -1351,140 +1351,192 @@ $(document).ready(function() {
   //problem starts here:
 
   let currentCounty;
-  let targetDestination;
+
+  getCountyLocation = locationID => {
+    var tempLocationID = locationID;
+    return String(tempLocationID.slice(-1));
+  };
+  getCurrentCounty = locationID => {
+    return String(locationID.substring(0, locationID.length - 1));
+  };
 
   changeLocation = () => {
-    currentCounty = String(locationID);
-    //eg fermanagh1
+    let currentCounty = getCurrentCounty(locationID);
+    let countyLocation = getCountyLocation(locationID);
+    // currentCounty = String(locationID);
 
-    let countyLocation = currentCounty.slice(-1);
-    //eg 1
-    currentCounty = currentCounty.substring(0, currentCounty.length - 1);
-    //eg fermanagh
-
-    console.log(
-      String(
+    alert(
+      'locationID: ' +
+        locationID +
+        ' countyName: ' +
         currentCounty +
-          ' location number: ' +
-          countyLocation +
-          ' : ' +
-          lastPressed
-      )
+        ' location in County: ' +
+        countyLocation +
+        ' last keypress : ' +
+        lastPressed
     );
-
-    //player can exit a map left right up or down. This will trigger loading of new map resources, depending on the adjacent map:
-
-    /* 
-    TODO - refactor this huge switch statement as a couple of functions:
-    switchCounty=(countyFrom,locationFrom,lastPressed)=>{
-
-//also all setLocation() replace with ajax requests
-    */
+    // updateLocationDescription();
+    updateMap(currentCounty, countyLocation, lastPressed);
+    updatePlayerLocation();
   };
-  switch (currentCounty) {
-    case 'antrim':
+  updateMap = (currentCounty, countyLocation, lastPressed) => {
+    //the sea!
+
+    if (currentCounty === 'antrim') {
       if (countyLocation == 1 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'derry5';
-        setLocation(targetDestination);
+        locationID = 'derry5';
+        setLocation(locationID);
+
+        setLocation(locationID);
       } else if (countyLocation == 1 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+        //    setLocation(locationID);
       } else if (countyLocation == 1 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim5';
-        setLocation(targetDestination);
+        locationID = 'antrim5';
+        setLocation(locationID);
       } else if (countyLocation == 1 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'down2';
-        setLocation(targetDestination);
+        locationID = 'down2';
+        setLocation(locationID);
       } else if (countyLocation == 2 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim5';
+        locationID = 'antrim5';
 
-        setLocation(targetDestination);
+        setLocation(locationID);
       } else if (countyLocation == 2 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        // setLocation(locationID);
+        alert('farraige!');
       } else if (countyLocation == 2 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+
+        // setLocation(locationID);
       } else if (countyLocation == 2 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim1';
-        setLocation(targetDestination);
+        locationID = 'antrim1';
+        setLocation(locationID);
       } else if (countyLocation == 3 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+
+        //        setLocation(locationID);
       } else if (countyLocation == 3 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+
+        alert('farraige!');
+
+        // setLocation(locationID);
       } else if (countyLocation == 3 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+
+        // setLocation(locationID);
       } else if (countyLocation == 3 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim6';
-        setLocation(targetDestination);
+        locationID = 'antrim6';
+        setLocation(locationID);
       } else if (countyLocation == 4 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'derry3';
-        setLocation(targetDestination);
+        locationID = 'derry3';
+        setLocation(locationID);
       } else if (countyLocation == 4 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim2';
-        setLocation(targetDestination);
+        locationID = 'antrim2';
+        setLocation(locationID);
       } else if (countyLocation == 4 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim6';
-        setLocation(targetDestination);
+        locationID = 'antrim6';
+        setLocation(locationID);
       } else if (countyLocation == 4 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim5';
-        setLocation(targetDestination);
+        locationID = 'antrim5';
+        setLocation(locationID);
       } else if (countyLocation == 5 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'derry2';
-        setLocation(targetDestination);
+        locationID = 'derry2';
+        setLocation(locationID);
       } else if (countyLocation == 5 && lastPressed === 'right') {
-        targetDestination = 'antrim2';
+        locationID = 'antrim2';
         //   alert('new current location will be loch erne');
-        setLocation(targetDestination);
+        setLocation(locationID);
       } else if (countyLocation == 5 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim4';
-        setLocation(targetDestination);
+        locationID = 'antrim4';
+        setLocation(locationID);
       } else if (countyLocation == 5 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'antrim1';
-        setLocation(targetDestination);
+        locationID = 'antrim1';
+        setLocation(locationID);
       } else if (countyLocation == 6 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+
+        // setLocation(locationID);
       } else if (countyLocation == 6 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
-        targetDestination = 'sea';
-        setLocation(targetDestination);
+        // locationID = 'sea';
+        alert('farraige!');
+
+        // setLocation(locationID);
       } else if (countyLocation == 6 && lastPressed === 'up') {
         //   alert('new current location will be loch erne');
-        targetDestination = setLocation(target);
-        ('antrim3');
+        locationID = 'antrim3';
+        setLocation(locationID);
       } else if (countyLocation == 6 && lastPressed === 'down') {
         //   alert('new current location will be loch erne');
 
-        targetDestination = 'antrim4';
-        setLocation(targetDestination);
+        locationID = 'antrim4';
+        setLocation(locationID);
       }
-      break;
-  }
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    } else if (currentCounty === '') {
+    }
+  };
   //   alert('go');
+
+  updatePlayerLocation = () => {
+    console.log('updatePlayerLocation on map');
+  };
 });
 let rando = Math.floor(Math.random() * 40 + 150);
 let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
