@@ -74,10 +74,10 @@ $(document).ready(function() {
       '^',
       7
     ],
-    [7, '<', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, '>'],
-    [7, '<', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, '>'],
-    [7, '<', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, '>'],
-    [7, 3, 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 7],
+    [7, '^', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, '^'],
+    [7, '^', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, '^'],
+    [7, '^', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, '^'],
+    [7, 3, '^', '^', '^', '^', '^', '^', '^', '^', '^', '^', '^', '^', '^', 7],
     [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
   ];
 
@@ -237,7 +237,7 @@ $(document).ready(function() {
         //Undo last key press
         //   alert('blocked!');
         console.log(lastPressed);
-        alert(lastPressed + Cookies.get('locationID'));
+        alert('Blocked' + lastPressed + Cookies.get('locationID'));
         blockPath();
         break;
       case WAVES:
@@ -461,9 +461,7 @@ $(document).ready(function() {
         'background-image',
         'url("./images/maps/localMaps/bg187.png")'
       );
-    }
-    //cork
-    else if (locationID === 'carlow6') {
+    } else if (locationID === 'carlow6') {
       $('#stageBG').css(
         'background-image',
         'url("./images/maps/localMaps/bg188.png")'
@@ -1345,9 +1343,18 @@ $(document).ready(function() {
       $('#stageBG').css('background-image', randMap);
       // alert(randMap);
     }
+    // alert('location set for ' + locationID);
   };
-  setLocation(locationID);
 
+  var bg = $('#stageBG').css('background-image');
+  //   alert(bg);
+  if (bg === 'none') {
+    $('#stageBG').css(
+      'background-image',
+      'url("./images/maps/localMaps/bg171.png")'
+    );
+  }
+  //setLocation(locationID);
   //problem starts here:
 
   let currentCounty;
@@ -1375,8 +1382,8 @@ $(document).ready(function() {
     //     ' last keypress : ' +
     //     lastPressed
     // );
-    updateLocationDescription(locationID, lastPressed);
     updateMap(currentCounty, countyLocation, lastPressed);
+    updateLocationDescription(locationID);
     updatePlayerLocation();
   };
   updateMap = (currentCounty, countyLocation, lastPressed) => {
@@ -1386,8 +1393,6 @@ $(document).ready(function() {
       if (countyLocation == 1 && lastPressed === 'left') {
         //   alert('new current location will be loch erne');
         locationID = 'derry5';
-        setLocation(locationID);
-
         setLocation(locationID);
       } else if (countyLocation == 1 && lastPressed === 'right') {
         //   alert('new current location will be loch erne');
@@ -1536,9 +1541,56 @@ $(document).ready(function() {
 
   updatePlayerLocation = () => {
     console.log('updatePlayerLocation on map');
+    if (lastPressed === 'up') {
+      //clear the sheep's current cell
+      gameObjects[sheepRow][sheepColumn] = 0;
+
+      //
+      // move it to bottom of map the map
+      sheepRow = 4;
+
+      //Apply the sheep's new updated position to the array
+      gameObjects[sheepRow][sheepColumn] = sheep;
+    }
+
+    if (lastPressed === 'down') {
+      //clear the sheep's current cell
+      gameObjects[sheepRow][sheepColumn] = 0;
+
+      //
+      // move it to bottom of map the map
+      sheepRow = 1;
+
+      //Apply the sheep's new updated position to the array
+      gameObjects[sheepRow][sheepColumn] = sheep;
+    }
+
+    if (lastPressed === 'right') {
+      //clear the sheep's current cell
+      gameObjects[sheepRow][sheepColumn] = 0;
+
+      //
+      // move it to bottom of map the map
+      sheepRow = 2;
+
+      //Apply the sheep's new updated position to the array
+      gameObjects[sheepRow][sheepColumn] = sheep;
+    }
+
+    if (lastPressed === 'left') {
+      //clear the sheep's current cell
+      gameObjects[sheepRow][sheepColumn] = 0;
+
+      //
+      // move it to bottom of map the map
+      sheepColumn = 14;
+
+      //Apply the sheep's new updated position to the array
+      gameObjects[sheepRow][sheepColumn] = sheep;
+    }
   };
 
-  updateLocationDescription = (locationID, lastPressed) => {
+  updateLocationDescription = locationID => {
     var varNum = Number(getCountyLocation(locationID)) - 1; //array value
     let newLocationName;
 
@@ -1547,6 +1599,128 @@ $(document).ready(function() {
       newLocationName = countyDetails.antrim[1][varNum];
       $('.levelDescription').html(newLocationName);
     }
+    if (co === 'armagh') {
+      newLocationName = countyDetails.armagh[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'carlow') {
+      newLocationName = countyDetails.carlow[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'cavan') {
+      newLocationName = countyDetails.cavan[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'clare') {
+      newLocationName = countyDetails.clare[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'cork') {
+      newLocationName = countyDetails.cork[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'derry') {
+      newLocationName = countyDetails.derry[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'donegal') {
+      newLocationName = countyDetails.donegal[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'down') {
+      newLocationName = countyDetails.down[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'dublin') {
+      newLocationName = countyDetails.dublin[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'fermanagh') {
+      newLocationName = countyDetails.fermanagh[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'galway') {
+      newLocationName = countyDetails.galway[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'kerry') {
+      newLocationName = countyDetails.kerry[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'kildare') {
+      newLocationName = countyDetails.kildare[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'kilkenny') {
+      newLocationName = countyDetails.kilkenny[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'laois') {
+      newLocationName = countyDetails.laois[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'leitrim') {
+      newLocationName = countyDetails.leitrim[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'limerick') {
+      newLocationName = countyDetails.limerick[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'longford') {
+      newLocationName = countyDetails.longford[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'louth') {
+      newLocationName = countyDetails.louth[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'mayo') {
+      newLocationName = countyDetails.mayo[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'meath') {
+      newLocationName = countyDetails.meath[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'monaghan') {
+      newLocationName = countyDetails.monaghan[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'offaly') {
+      newLocationName = countyDetails.offaly[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'roscommon') {
+      newLocationName = countyDetails.roscommon[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'sligo') {
+      newLocationName = countyDetails.sligo[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'tiperary') {
+      newLocationName = countyDetails.tiperary[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'tyrone') {
+      newLocationName = countyDetails.tyrone[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'westmeath') {
+      newLocationName = countyDetails.westmeath[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+
+    if (co === 'wexford') {
+      newLocationName = countyDetails.wexford[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+    if (co === 'wicklow') {
+      newLocationName = countyDetails.wickow[1][varNum];
+      $('.levelDescription').html(newLocationName);
+    }
+
     // alert('no : ' + varNum);
   };
 });

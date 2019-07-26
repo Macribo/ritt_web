@@ -59,7 +59,7 @@ p
 #stageBG {
   position: relative;
   z-index: 10;
-  /* background-image: url('../images/bg2.png'); */
+  background-image: '';
   /* border: 2px solid red; */
   height: 384px;
   width: 1024px;
