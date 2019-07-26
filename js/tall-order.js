@@ -1365,17 +1365,17 @@ $(document).ready(function() {
     let countyLocation = getCountyLocation(locationID);
     // currentCounty = String(locationID);
 
-    // alert(
-    //   'locationID: ' +
-    //     locationID +
-    //     ' countyName: ' +
-    //     currentCounty +
-    //     ' location in County: ' +
-    //     countyLocation +
-    //     ' last keypress : ' +
-    //     lastPressed
-    // );
-    updateLocationDescription();
+    alert(
+      'locationID: ' +
+        locationID +
+        ' countyName: ' +
+        currentCounty +
+        ' location in County: ' +
+        countyLocation +
+        ' last keypress : ' +
+        lastPressed
+    );
+    updateLocationDescription(locationID, lastPressed);
     updateMap(currentCounty, countyLocation, lastPressed);
     updatePlayerLocation();
   };
@@ -1537,10 +1537,10 @@ $(document).ready(function() {
   updatePlayerLocation = () => {
     console.log('updatePlayerLocation on map');
   };
+
+  updateLocationDescription = (locationID, lastPressed) => {
+    $('.levelDescription').html(locationID + lastPressed);
+  };
 });
 let rando = Math.floor(Math.random() * 40 + 150);
 let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
-
-updateLocationDescription = () => {
-  $('.levelDescription').html('countyDetails[key][0]');
-};
