@@ -4857,116 +4857,125 @@ $(document).ready(function() {
 
         if (countyLocation == 1 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'fermanagh5';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'tyrone6';
+            setLocation(locationID);
             //    setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone4';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'fermanagh4';
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone6';
     
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             // setLocation(locationID);
-            
+            locationID = 'derry5';
+            setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'derry2';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone3';
             setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
-    
+            locationID = 'tyrone1';
+            setLocation(locationID);
             //        setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
     
-            
+            locationID = 'armagh4';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'tyrone2';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'monaghan4';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'donegal3';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'donegal4';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone1';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone4';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'right') {
-            locationID = '';
+            locationID = 'derry1'; alert("todo: link to derry C")
             //   alert('new current location will be loch erne');
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'derry6';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone6';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'tyrone1';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
+            locationID = 'tyrone2';
+            setLocation(locationID);
             
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tyrone5';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
     
-            locationID = '';
+            locationID = 'tyrone3';
             setLocation(locationID);
 
 
@@ -4974,45 +4983,50 @@ $(document).ready(function() {
 
         if (countyLocation == 1 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford4';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
+            locationID = 'waterford1';
+            setLocation(locationID);
             
             //    setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford6';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford5';
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'cork1';
     
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             // setLocation(locationID);
-            
+            locationID = 'waterford1';
+            setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
-    
+            locationID = 'tipperary6';
+            setLocation(locationID);
             // setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford4';
             setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'waterford6';
+            setLocation(locationID);
     
             //        setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'right') {
@@ -5025,65 +5039,70 @@ $(document).ready(function() {
           } else if (countyLocation == 3 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'kilkenny5';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = '';//sea
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'cork5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford1';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford2';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford5';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford4';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'right') {
-            locationID = '';
+            locationID = '';//sea
             //   alert('new current location will be loch erne');
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford1';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = '';//sea
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
+            locationID = 'waterford2';
+            setLocation(locationID);
             
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
+            locationID = 'waterford3';
+            setLocation(locationID);
             
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'tipperary3';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
     
-            locationID = '';
+            locationID = 'waterford1';
             setLocation(locationID);
 
 
@@ -5091,116 +5110,126 @@ $(document).ready(function() {
 
         if (countyLocation == 1 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath2';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'meath5';
+            setLocation(locationID);
             //    setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath2';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath6';
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath3';
     
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             // setLocation(locationID);
-            
+            locationID = 'westmeath1';
+            setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
-    
+            locationID = 'cavan5';
+            setLocation(locationID);
             // setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'weestmeath6';
             setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'westmeath4';
+            setLocation(locationID);
     
             //        setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
     
-            
+            locationID = 'westmeath1';alert('todo: fix westmeath3 right + up links')
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
+            locationID = 'westmeath1';alert('todo: fix westmeath3 right + up links')
+            setLocation(locationID);
+    
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'roscommon6';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath3';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'longford4';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'right') {
-            locationID = '';
+            locationID = 'westmeath6';
             //   alert('new current location will be loch erne');
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'offaly1';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'westmeath5';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'westmeath1';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'westmeath1';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
     
-            locationID = '';
+            locationID = 'offaly5';
             setLocation(locationID);
 
 
@@ -5208,24 +5237,25 @@ $(document).ready(function() {
 
         if (countyLocation == 1 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'kilkenny3';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'wexford3';
+            setLocation(locationID);
             //    setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford5';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = '';//sea
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow1';
     
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'right') {
@@ -5236,17 +5266,19 @@ $(document).ready(function() {
           } else if (countyLocation == 2 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'wicklow6';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'waterford6';
             setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'wexford1';
+            setLocation(locationID);
     
             //        setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'right') {
@@ -5260,64 +5292,67 @@ $(document).ready(function() {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
-    
+            locationID = 'wexford5';
+            setLocation(locationID);
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
             locationID = '';
+            //sea
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'carlow3';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford6';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford4';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'right') {
-            locationID = '';
+            locationID = 'wexford6';
             //   alert('new current location will be loch erne');
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford6';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford3';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
+            locationID = 'wexford4';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
     
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wexford2';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
     
-            locationID = '';
+            locationID = 'wexford5';
             setLocation(locationID);
 
 
@@ -5325,24 +5360,25 @@ $(document).ready(function() {
 
         if (countyLocation == 1 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow4';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'wicklow6';
+            setLocation(locationID);
             //    setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow2';
             setLocation(locationID);
           } else if (countyLocation == 1 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = '';//sea
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow3';
     
             setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'right') {
@@ -5353,73 +5389,78 @@ $(document).ready(function() {
           } else if (countyLocation == 2 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'dublin1';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 2 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow6';
             setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'kildare6';
+            setLocation(locationID);
     
             //        setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-    
+            locationID = 'wicklow2';
+            setLocation(locationID);
             
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
-            
+            locationID = 'dublin5';
+            setLocation(locationID);
     
             // setLocation(locationID);
           } else if (countyLocation == 3 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'kildare3';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow1';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow5';
             setLocation(locationID);
           } else if (countyLocation == 4 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow1';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'kildare3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'right') {
-            locationID = '';
+            locationID = 'wicklow3';
             //   alert('new current location will be loch erne');
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow3';
             setLocation(locationID);
           } else if (countyLocation == 5 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow4';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'left') {
             //   alert('new current location will be loch erne');
             // locationID = 'sea';
             
-    
+            locationID = 'wicklow1';
+            setLocation(locationID);
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'right') {
             //   alert('new current location will be loch erne');
@@ -5429,11 +5470,11 @@ $(document).ready(function() {
             // setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'up') {
             //   alert('new current location will be loch erne');
-            locationID = '';
+            locationID = 'wicklow2';
             setLocation(locationID);
           } else if (countyLocation == 6 && lastPressed === 'down') {
             //   alert('new current location will be loch erne');
-    
+    //sea
             locationID = '';
             setLocation(locationID);
 
