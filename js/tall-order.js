@@ -1416,7 +1416,202 @@ $(document).ready(function() {
       $('#province-title').text('Connachta');
     }
   };
-  updateCountyEmblem = () => {};
+  updateCountyEmblem = () => {
+    currentCounty = getCurrentCounty(locationID);
+    if (currentCounty === 'antrim') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/antrim.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'armagh') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/armagh.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'carlow') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/carlow.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'cavan') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/derry.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'clare') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/clare.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'cork') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/cork.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'derry') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/derry.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'donegal') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/donegal.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'down') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/down.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'dublin') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/dublin.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'fermanagh') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/fermanagh.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'galway') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/galway.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'kerry') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kerry.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'kildare') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kildare.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'kilkenny') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kilkenny.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'laois') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/laois.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'leitrim') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/leitrim.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'limerick') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/limerick.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'longford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/longford.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'louth') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/louth.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'mayo') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/mayo.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'meath') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/meath.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'monaghan') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/monaghan.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'offaly') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/offaly.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'roscommon') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/roscommon.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'sligo') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/sligo.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'tipperary') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/tipperary.png'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'tyrone') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/tyrone.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'waterford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/waterford.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'westmeath') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/westmeath.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'wexford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/wexford.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    } else if (currentCounty === 'wicklow') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/wicklow.png")'
+      );
+      $('#county-title').text(countyDetails.derry[1][1]);
+    }
+  };
   updateCountyName = () => {};
 
   changeLocation = () => {
