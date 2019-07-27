@@ -39,14 +39,17 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/a2.png');
+  background-image: url('../images/emblems/nullEmblem.png');
+
   background-repeat: no-repeat;
   background-size: contain;
 }
 #province-title {
   /* display: block; */
   /* height: 50%; */
-  transform: translateX(-23px);
+  width: 250px;
+  transform: translateX(-78px);
+  opacity: 0.5;
 
   margin-top: 80px;
   /* border: 2px solid green; */
@@ -63,14 +66,15 @@
   text-align: left;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/emblems/donegal.png');
+  background-image: url('../images/emblems/nullEmblem.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 #county-title {
   margin-top: 80px;
+  opacity: 0.5;
   width: 250px;
-  transform: translateX(-28px);
+  transform: translateX(-5px);
 }
 /* 
 
