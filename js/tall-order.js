@@ -1346,14 +1346,6 @@ $(document).ready(function() {
     // alert('location set for ' + locationID);
   };
 
-  var bg = $('#stageBG').css('background-image');
-  //   alert(bg);
-  if (bg === 'none') {
-    $('#stageBG').css(
-      'background-image',
-      'url("./images/maps/localMaps/bg171.png")'
-    );
-  }
 
   getCountyLocation = locationID => {
     var tempLocationID = locationID;
@@ -1612,7 +1604,6 @@ $(document).ready(function() {
       $('#county-title').text(countyDetails.wicklow[0]);
     }
   };
-  updateCountyName = () => {};
 
   changeLocation = () => {
     let currentCounty = getCurrentCounty(locationID);
@@ -1634,7 +1625,7 @@ $(document).ready(function() {
 
     updateProvincialEmblem();
     updateCountyEmblem();
-    updateCountyName();
+
     //todo don't run if sea location
     updatePlayerLocation();
   };
@@ -4844,6 +4835,8 @@ $(document).ready(function() {
         seaHandler();
       }
     }
+
+
   };
   //   alert('go');
 
@@ -5031,7 +5024,16 @@ $(document).ready(function() {
 
     // alert('no : ' + varNum);
   };
-});
+
+  var bg = $('#stageBG').css('background-image');
+  //   alert(bg);
+  if (bg === 'none') {
+    setLocation(locationID);
+    updateProvincialEmblem();
+    updateCountyEmblem();
+  }
+
+}); //close document ready function
 let rando = Math.floor(Math.random() * 40 + 150);
 let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
 
