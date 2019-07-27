@@ -377,966 +377,966 @@ $(document).ready(function() {
     if (locationID === 'antrim1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg171.png")'
+        'url("./images/maps/localMaps/1.png")'
       );
     } else if (locationID === 'antrim2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg172.png")'
+        'url("./images/maps/localMaps/2.png")'
       );
     } else if (locationID === 'antrim3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg173.png")'
+        'url("./images/maps/localMaps/3.png")'
       );
     } else if (locationID === 'antrim4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg174.png")'
+        'url("./images/maps/localMaps/4.png")'
       );
     } else if (locationID === 'antrim5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg175.png")'
+        'url("./images/maps/localMaps/5.png")'
       );
     }
     //cavan
     else if (locationID === 'antrim6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/6.png")'
       );
     } else if (locationID === 'armagh1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg177.png")'
+        'url("./images/maps/localMaps/7.png")'
       );
     } else if (locationID === 'armagh2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg178.png")'
+        'url("./images/maps/localMaps/8.png")'
       );
     } else if (locationID === 'armagh3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg179.png")'
+        'url("./images/maps/localMaps/9.png")'
       );
     } else if (locationID === 'armagh4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg180.png")'
+        'url("./images/maps/localMaps/10.png")'
       );
     } else if (locationID === 'armagh5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg181.png")'
+        'url("./images/maps/localMaps/11.png")'
       );
     } else if (locationID === 'armagh6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg182.png")'
+        'url("./images/maps/localMaps/12.png")'
       );
     } else if (locationID === 'carlow1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg183.png")'
+        'url("./images/maps/localMaps/13.png")'
       );
     } else if (locationID === 'carlow2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg184.png")'
+        'url("./images/maps/localMaps/14.png")'
       );
     } else if (locationID === 'carlow3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg185.png")'
+        'url("./images/maps/localMaps/15.png")'
       );
     } else if (locationID === 'carlow4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg186.png")'
+        'url("./images/maps/localMaps/16.png")'
       );
     } else if (locationID === 'carlow5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg187.png")'
+        'url("./images/maps/localMaps/17.png")'
       );
     } else if (locationID === 'carlow6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg188.png")'
+        'url("./images/maps/localMaps/18.png")'
       );
     } else if (locationID === 'cavan1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg189.png")'
+        'url("./images/maps/localMaps/19.png")'
       );
     } else if (locationID === 'cavan2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg190.png")'
+        'url("./images/maps/localMaps/20.png")'
       );
     } else if (locationID === 'cavan3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg191.png")'
+        'url("./images/maps/localMaps/21.png")'
       );
     } else if (locationID === 'cavan4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg192.png")'
+        'url("./images/maps/localMaps/22.png")'
       );
     } else if (locationID === 'cavan5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg158.png")'
+        'url("./images/maps/localMaps/23.png")'
       );
     }
     //derry
     else if (locationID === 'cavan6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg157.png")'
+        'url("./images/maps/localMaps/24.png")'
       );
     } else if (locationID === 'clare1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg156.png")'
+        'url("./images/maps/localMaps/25.png")'
       );
     } else if (locationID === 'clare2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg155.png")'
+        'url("./images/maps/localMaps/26.png")'
       );
     } else if (locationID === 'clare3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg154.png")'
+        'url("./images/maps/localMaps/27.png")'
       );
     } else if (locationID === 'clare4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg153.png")'
+        'url("./images/maps/localMaps/28.png")'
       );
     } else if (locationID === 'clare5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg152.png")'
+        'url("./images/maps/localMaps/29.png")'
       );
     } else if (locationID === 'clare6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg151.png")'
+        'url("./images/maps/localMaps/30.png")'
       );
     } else if (locationID === 'cork1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg150.png")'
+        'url("./images/maps/localMaps/31.png")'
       );
     } else if (locationID === 'cork2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg149.png")'
+        'url("./images/maps/localMaps/32.png")'
       );
     } else if (locationID === 'cork3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg148.png")'
+        'url("./images/maps/localMaps/33.png")'
       );
     } else if (locationID === 'cork4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg147.png")'
+        'url("./images/maps/localMaps/34.png")'
       );
     } else if (locationID === 'cork5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg146.png")'
+        'url("./images/maps/localMaps/36.png")'
       );
     } else if (locationID === 'cork6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg145.png")'
+        'url("./images/maps/localMaps/37.png")'
       );
     } else if (locationID === 'derry1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg144.png")'
+        'url("./images/maps/localMaps/38.png")'
       );
     } else if (locationID === 'derry2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg143.png")'
+        'url("./images/maps/localMaps/39.png")'
       );
     } else if (locationID === 'derry3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg142.png")'
+        'url("./images/maps/localMaps/40.png")'
       );
     } else if (locationID === 'derry4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg141.png")'
+        'url("./images/maps/localMaps/41.png")'
       );
     } else if (locationID === 'derry5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg140.png")'
+        'url("./images/maps/localMaps/42.png")'
       );
     } else if (locationID === 'derry6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg139.png")'
+        'url("./images/maps/localMaps/43.png")'
       );
     } else if (locationID === 'donegal1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg138.png")'
+        'url("./images/maps/localMaps/44.png")'
       );
     } else if (locationID === 'donegal2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg137.png")'
+        'url("./images/maps/localMaps/45.png")'
       );
     } else if (locationID === 'donegal3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg156.png")'
+        'url("./images/maps/localMaps/46.png")'
       );
     } else if (locationID === 'donegal4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg155.png")'
+        'url("./images/maps/localMaps/47.png")'
       );
     } else if (locationID === 'donegal5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg154.png")'
+        'url("./images/maps/localMaps/48.png")'
       );
     } else if (locationID === 'donegal6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg153.png")'
+        'url("./images/maps/localMaps/49.png")'
       );
     } else if (locationID === 'down1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg152.png")'
+        'url("./images/maps/localMaps/50.png")'
       );
     } else if (locationID === 'down2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg151.png")'
+        'url("./images/maps/localMaps/51.png")'
       );
     } else if (locationID === 'down3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg150.png")'
+        'url("./images/maps/localMaps/52.png")'
       );
     } else if (locationID === 'down4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg179.png")'
+        'url("./images/maps/localMaps/53.png")'
       );
     } else if (locationID === 'down5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg178.png")'
+        'url("./images/maps/localMaps/54.png")'
       );
     } else if (locationID === 'down6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg177.png")'
+        'url("./images/maps/localMaps/55.png")'
       );
     } else if (locationID === 'dublin1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/56.png")'
       );
     } else if (locationID === 'dublin2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/57.png")'
       );
     } else if (locationID === 'dublin3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/58.png")'
       );
     } else if (locationID === 'dublin4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/59.png")'
       );
     } else if (locationID === 'dublin5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/60.png")'
       );
     } else if (locationID === 'dublin6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/61.png")'
       );
     } else if (locationID === 'fermanagh1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/62.png")'
       );
     } else if (locationID === 'fermanagh2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/63.png")'
       );
     } else if (locationID === 'fermanagh3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/64.png")'
       );
     } else if (locationID === 'fermanagh4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/65.png")'
       );
     } else if (locationID === 'fermanagh5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/66.png")'
       );
     } else if (locationID === 'fermanagh6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/67.png")'
       );
     } else if (locationID === 'galway1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/68.png")'
       );
     } else if (locationID === 'galway2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/69.png")'
       );
     } else if (locationID === 'galway3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/70.png")'
       );
     } else if (locationID === 'galway4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/71.png")'
       );
     } else if (locationID === 'galway5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/72.png")'
       );
     } else if (locationID === 'galway6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/73.png")'
       );
     } else if (locationID === 'kerry1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/74.png")'
       );
     } else if (locationID === 'kerry2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/75.png")'
       );
     } else if (locationID === 'kerry3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/76.png")'
       );
     } else if (locationID === 'kerry4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/77.png")'
       );
     } else if (locationID === 'kerry5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/78.png")'
       );
     } else if (locationID === 'kildare6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/79.png")'
       );
     } else if (locationID === 'kildare1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/80.png")'
       );
     } else if (locationID === 'kildare2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/81.png")'
       );
     } else if (locationID === 'kildare3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/82.png")'
       );
     } else if (locationID === 'kildare4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/83.png")'
       );
     } else if (locationID === 'kildare5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/84.png")'
       );
     } else if (locationID === 'kilkenny6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/85.png")'
       );
     } else if (locationID === 'kilkenny1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/86.png")'
       );
     } else if (locationID === 'kilkenny2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/87.png")'
       );
     } else if (locationID === 'kilkenny3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/89.png")'
       );
     } else if (locationID === 'kilkenny4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/90.png")'
       );
     } else if (locationID === 'kilkenny5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/91.png")'
       );
     } else if (locationID === 'kilkenny6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/92.png")'
       );
     } else if (locationID === 'laois1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/93.png")'
       );
     } else if (locationID === 'laois2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/94.png")'
       );
     } else if (locationID === 'laois3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/95.png")'
       );
     } else if (locationID === 'laois4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/96.png")'
       );
     } else if (locationID === 'laois5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/97.png")'
       );
     } else if (locationID === 'laois6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/98.png")'
       );
     } else if (locationID === 'leitrim1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/99.png")'
       );
     } else if (locationID === 'leitrim2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/100.png")'
       );
     } else if (locationID === 'leitrim3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/101.png")'
       );
     } else if (locationID === 'leitrim4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/102.png")'
       );
     } else if (locationID === 'leitrim5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/103.png")'
       );
     } else if (locationID === 'leitrim6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/104.png")'
       );
     } else if (locationID === 'limerick1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/105.png")'
       );
     } else if (locationID === 'limerick2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/106.png")'
       );
     } else if (locationID === 'limerick3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/107.png")'
       );
     } else if (locationID === 'limerick4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/108.png")'
       );
     } else if (locationID === 'limerick5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/109.png")'
       );
     } else if (locationID === 'limerick6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/110.png")'
       );
     } else if (locationID === 'longford1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/111.png")'
       );
     } else if (locationID === 'longford2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/112.png")'
       );
     } else if (locationID === 'longford3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/113.png")'
       );
     } else if (locationID === 'longford4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/114.png")'
       );
     } else if (locationID === 'longford5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/115.png")'
       );
     } else if (locationID === 'longford6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/116.png")'
       );
     } else if (locationID === 'louth1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/117.png")'
       );
     } else if (locationID === 'louth2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/118.png")'
       );
     } else if (locationID === 'louth3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/119.png")'
       );
     } else if (locationID === 'louth4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/120.png")'
       );
     } else if (locationID === 'louth5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/121.png")'
       );
     } else if (locationID === 'louth6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/122.png")'
       );
     } else if (locationID === 'mayo1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/123.png")'
       );
     } else if (locationID === 'mayo2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/124.png")'
       );
     } else if (locationID === 'mayo3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/125.png")'
       );
     } else if (locationID === 'mayo4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/126.png")'
       );
     } else if (locationID === 'mayo5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/127.png")'
       );
     } else if (locationID === 'mayo6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/128.png")'
       );
     } else if (locationID === 'meath1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/129.png")'
       );
     } else if (locationID === 'meath2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/130.png")'
       );
     } else if (locationID === 'meath3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/131.png")'
       );
     } else if (locationID === 'meath4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/132.png")'
       );
     } else if (locationID === 'meath5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/133.png")'
       );
     } else if (locationID === 'meath6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/134.png")'
       );
     } else if (locationID === 'monaghan1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/135.png")'
       );
     } else if (locationID === 'monaghan2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/136.png")'
       );
     } else if (locationID === 'monaghan3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/137.png")'
       );
     } else if (locationID === 'monaghan4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/138.png")'
       );
     } else if (locationID === 'monaghan5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/139.png")'
       );
     } else if (locationID === 'monaghan6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/140.png")'
       );
     } else if (locationID === 'offaly1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/141.png")'
       );
     } else if (locationID === 'offaly2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/142.png")'
       );
     } else if (locationID === 'offaly3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/143.png")'
       );
     } else if (locationID === 'offaly4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/144.png")'
       );
     } else if (locationID === 'offaly5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/145.png")'
       );
     } else if (locationID === 'offaly6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/146.png")'
       );
     } else if (locationID === 'roscommon1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/147.png")'
       );
     } else if (locationID === 'roscommon2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/148.png")'
       );
     } else if (locationID === 'roscommon3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/149.png")'
       );
     } else if (locationID === 'roscommon4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/150.png")'
       );
     } else if (locationID === 'roscommon5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/151.png")'
       );
     } else if (locationID === 'roscommon6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/152.png")'
       );
     } else if (locationID === 'sligo1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/153.png")'
       );
     } else if (locationID === 'sligo2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/154.png")'
       );
     } else if (locationID === 'sligo3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/155.png")'
       );
     } else if (locationID === 'sligo4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/156.png")'
       );
     } else if (locationID === 'sligo5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/157.png")'
       );
     } else if (locationID === 'sligo6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/158.png")'
       );
     } else if (locationID === 'tipperary1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/159.png")'
       );
     } else if (locationID === 'tipperary2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/160.png")'
       );
     } else if (locationID === 'tipperary3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/161.png")'
       );
     } else if (locationID === 'tipperary4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/162.png")'
       );
     } else if (locationID === 'tipperary5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/163.png")'
       );
     } else if (locationID === 'tipperary6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/164.png")'
       );
     } else if (locationID === 'tyrone1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/165.png")'
       );
     } else if (locationID === 'tyrone2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/166.png")'
       );
     } else if (locationID === 'tyrone3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/167.png")'
       );
     } else if (locationID === 'tyrone4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/168.png")'
       );
     } else if (locationID === 'tyrone5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/169.png")'
       );
     } else if (locationID === 'tyrone6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/170.png")'
       );
     } else if (locationID === 'waterford1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/171.png")'
       );
     } else if (locationID === 'waterford2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/172.png")'
       );
     } else if (locationID === 'waterford3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/173.png")'
       );
     } else if (locationID === 'waterford4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/174.png")'
       );
     } else if (locationID === 'waterford5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/175.png")'
       );
     } else if (locationID === 'waterford6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/176.png")'
       );
     } else if (locationID === 'westmeath1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/177.png")'
       );
     } else if (locationID === 'westmeath2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/178.png")'
       );
     } else if (locationID === 'westmeath3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/179.png")'
       );
     } else if (locationID === 'westmeath4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/180.png")'
       );
     } else if (locationID === 'westmeath5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/181.png")'
       );
     } else if (locationID === 'westmeath6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/182.png")'
       );
     } else if (locationID === 'wexford1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/183.png")'
       );
     } else if (locationID === 'wexford2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/184.png")'
       );
     } else if (locationID === 'wexford3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/185.png")'
       );
     } else if (locationID === 'wexford4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/186.png")'
       );
     } else if (locationID === 'wexford5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/187.png")'
       );
     } else if (locationID === 'wexford6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/188.png")'
       );
     } else if (locationID === 'wicklow1') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/189.png")'
       );
     } else if (locationID === 'wicklow2') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/190.png")'
       );
     } else if (locationID === 'wicklow3') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/191.png")'
       );
     } else if (locationID === 'wicklow4') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/192.png")'
       );
     } else if (locationID === 'wicklow5') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/193.png")'
       );
     } else if (locationID === 'wicklow6') {
       $('#stageBG').css(
         'background-image',
-        'url("./images/maps/localMaps/bg176.png")'
+        'url("./images/maps/localMaps/194.png")'
       );
     } else {
       //random
