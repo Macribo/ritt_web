@@ -1,3 +1,7 @@
+@font-face {
+  font-family: aonchlo;
+  src: url('../fonts/aonchlo.ttf');
+}
 #stage {
   position: relative;
   /* border: 2px solid blue; */
@@ -8,6 +12,65 @@
 
   z-index: 50;
   /* padding: 5%; */
+}
+
+#province-details-container,
+#county-details-container {
+  font-family: 'aonchlo', Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0%;
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 700;
+  width: 10%;
+}
+#province-details-container {
+  /* border: 2px solid red; */
+  right: 0%;
+}
+#province-emblem {
+  display: block;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/a2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#province-title {
+  /* display: block; */
+  /* height: 50%; */
+  transform: translateX(-23px);
+
+  margin-top: 80px;
+  /* border: 2px solid green; */
+}
+
+#county-details-container {
+  width: 250px;
+  left: 2%;
+}
+#county-emblem {
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/emblems/donegal.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#county-title {
+  margin-top: 80px;
+  width: 250px;
+  transform: translateX(-28px);
 }
 /* 
 
