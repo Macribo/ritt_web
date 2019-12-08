@@ -16,12 +16,28 @@ $(document).ready(function() {
   $('#eire-map').fadeIn();
   $('#eire-mapBG').fadeIn();
 
-  $('.eye').mouseleave(function() {
+  $('.eye').on('touchend',function() {
     $('#eire-map').fadeOut(200);
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //HOVER ON PROVINCES:
   //ULSTER
-  $('#eye1').mouseenter(function() {
+  $('#eye1').on('touchstart',function() {
     console.log('hover1');
     // $('.selectedLv').css('background-image', "url('v1.png')");
     $('#eire-map').css('background-image', 'url("./images/u.png")');
@@ -30,8 +46,32 @@ $(document).ready(function() {
     $('.levelDescription').text(`Uladh`);
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //LEINSTER
-  $('#eye3').mouseenter(function() {
+  $('#eye3').on('touchstart',function() {
+    
+    $('#eire-map').fadeOut(500);
     console.log('hover3');
     $('#eire-map').css('background-image', 'url("./images/l.png")');
     $('#eire-map').fadeIn(500);
@@ -40,7 +80,7 @@ $(document).ready(function() {
   });
 
   //MUNSTER
-  $('#eye5').mouseenter(function() {
+  $('#eye5').on('touchstart',function() {
     console.log('hover3');
     // $('.selectedLv').css('background-image', "url('v5.png')");
     $('#eire-map').css('background-image', 'url("./images/m.png")');
@@ -49,7 +89,7 @@ $(document).ready(function() {
   });
 
   //CONNAUGHT
-  $('#eye7').mouseenter(function() {
+  $('#eye7').on('touchstart',function() {
     console.log('hover3');
     $('#eire-map').css('background-image', 'url("./images/c.png")');
     $('#eire-map').fadeIn(500);
@@ -57,27 +97,27 @@ $(document).ready(function() {
     $('.levelDescription').text('Connachta');
   });
 
-  $('#eye1').click(function() {
+  $('#eye1').on('touchend',function() {
     // alert('u');
     Cookies.set('province', 'ulster');
     console.log(Cookies.get('province'));
     location.href = './countySelector.html';
   });
 
-  $('#eye3').click(function() {
+  $('#eye3').on('touchend',function() {
     // alert('l');
 
     Cookies.set('province', 'leinster');
     location.href = './countySelector.html';
   });
 
-  $('#eye5').click(function() {
+  $('#eye5').on('touchend',function() {
     // alert('m');
     Cookies.set('province', 'munster');
     location.href = './countySelector.html';
   });
 
-  $('#eye7').click(function() {
+  $('#eye7').on('touchend',function() {
     Cookies.set('province', 'connacht');
     // alert('c');
     location.href = './countySelector.html';
