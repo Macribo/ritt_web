@@ -474,3 +474,35 @@ body {
   /* border: 2px solid orange; */
   z-index: 1400 !important;
 }
+
+
+@media only screen and (orientation:portrait) {
+  #text-output {
+    position: absolute;
+    pointer-events: none;
+
+    background-color: rgba(10, 10, 10, 0.2);
+    display: flex;
+    border: 1px solid rgb(54, 218, 32);
+    height: 9%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (orientation:landscape) {
+  #text-output {
+    position: absolute;
+    pointer-events: none;
+
+    background-color: rgba(10, 10, 10, 0.2);
+    display: flex;
+    border: 1px solid rgb(54, 218, 32);
+    height: 9%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}
