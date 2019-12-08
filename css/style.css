@@ -35,7 +35,6 @@ body {
   display: none;
   height: 500px;
   width: 500px;
-  /* border: 2px solid blue; */
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -192,8 +191,8 @@ body {
   display: flex;
   /* border: 1px solid goldenrod; */
 
-  height: 100px;
-  width: 100%;
+  height: 20%;
+  width: 96%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -489,16 +488,8 @@ body {
     align-items: center;
     justify-content: center;
   }
-  #ui-0{
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-  }
-  
+
   .eyes{
-    /* border:10px solid orangered; */
      top:50%;
      left:0;
    }
@@ -554,16 +545,22 @@ body {
   
 
 }
+/*///////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////*/
 
 
 @media only screen and (orientation:landscape) {
+
+
   #text-output {
     position: absolute;
     pointer-events: none;
 
     background-color: rgba(10, 10, 10, 0.2);
     display: flex;
-    /* border: 1px solid rgb(54, 218, 32); */
+    border: 1px solid rgb(54, 218, 32);
     height: 20%;
     width: 98%;
     align-items: center;
@@ -571,23 +568,18 @@ body {
     z-index:9000;
   }
 
-
-  #ui-0{
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-  }
   
   .eyes{
     /* border:10px solid orangered; */
-     top:9%;
+     top:20%;
      left:0;
-   }
+     zoom: 0.7;
+     -moz-transform: scale(0.5);
+    }
 
    #eire-map {
-    display: none;
+
+    /* display: none; */
     margin-top: 23%;
     position: absolute;
     z-index: -10;
@@ -636,4 +628,15 @@ body {
   }
   
 
+}
+
+
+#ui-0{
+  /* display:none; */
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+left:0;
+border:5px solid orange;
 }
