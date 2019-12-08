@@ -571,7 +571,8 @@ body {
   
   .eyes{
     /* border:10px solid orangered; */
-     top:20%;
+     bottom:-23%;
+     /* moz-top:-22%; chrome : 20%*/
      left:0;
      zoom: 0.7;
      -moz-transform: scale(0.5);
@@ -605,7 +606,7 @@ body {
   
   .province-map {
     pointer-events: none;
-    margin-top: 22%;
+    margin-top: 0%;
     position: absolute;
     z-index: -11;
     background-image: url('../images/maps/u2.png');
@@ -616,7 +617,7 @@ body {
   }
   
   .province-mapBG {
-    margin-top: 22%;
+    margin-top: 65%;
     position: absolute;
     z-index: -21;
     background-image: url('../images/e.png');
@@ -626,7 +627,16 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  
+  .emblems{
+    position:fixed;
+    left:36%;
+    top:28%;
+    /* border:2px solid yellow; */
+
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    z-index:9001;
+  }
 
 }
 
