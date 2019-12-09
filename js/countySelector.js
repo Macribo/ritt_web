@@ -323,7 +323,7 @@ $(document).ready(function() {
     });
   }
   let myEmblem;
-  $('.county').mouseenter(function() {
+  $('.county').on('touchstart',function() {
     //   alert('enter')
     //   console.log(this.id);
     myEmblem = this.id;
@@ -340,7 +340,7 @@ $(document).ready(function() {
     //   alert('leave');
   });
 
-  $('.county').click(function() {
+  $('.county').on(function() {
     // chosenCounty = this.id;
     Cookies.set('playerCounty', myEmblem);
     console.log('hi from cookie script');
@@ -352,7 +352,7 @@ $(document).ready(function() {
     location.href = './index.html';
   });
 
-  $('.county').click(function() {
+  $('.county').click('touchend',function() {
     // chosenCounty = this.id;
     Cookies.set('playerCounty', myEmblem);
     console.log('hi from cookie script');
@@ -362,6 +362,9 @@ $(document).ready(function() {
   });
 
   function leave() {
-    location.href = './locations.html';
+    setTimeout(function(){
+
+      location.href = './locations.html';
+    },1000)
   }
 });

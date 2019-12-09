@@ -228,13 +228,13 @@ body {
 }
 
 #armagh {
-  top: 288px;
-  left: 366px;
+  top: 308px;
+  left: 381px;
   background-image: url('../images/emblems/armagh.png');
 }
 
 #cavan {
-  top: 388px;
+  top: 404px;
   left: 122px;
   background-image: url('../images/emblems/cavan.png');
 }
@@ -546,8 +546,8 @@ body {
   }
   .emblems{
     position:fixed;
-    left:20%;
-    top:21%;
+    top:55%;
+    left:15%;
     /* border:2px solid yellow; */
 
     zoom: 0.5;

@@ -17,7 +17,7 @@ $(document).ready(function() {
   $('#eire-mapBG').fadeIn();
 
   $('.eye').on('touchend',function() {
-    $('#eire-map').fadeOut(200);
+        $('#eire-map').fadeOut(200);
   });
 
 
@@ -101,25 +101,37 @@ $(document).ready(function() {
     // alert('u');
     Cookies.set('province', 'ulster');
     console.log(Cookies.get('province'));
-    location.href = './countySelector.html';
+    setTimeout(() => {
+      
+      location.href = './countySelector.html';
+    }, 1000);
   });
 
   $('#eye3').on('touchend',function() {
     // alert('l');
 
     Cookies.set('province', 'leinster');
-    location.href = './countySelector.html';
+    setTimeout(() => {
+      
+      location.href = './countySelector.html';
+    }, 1000);
   });
 
   $('#eye5').on('touchend',function() {
     // alert('m');
     Cookies.set('province', 'munster');
-    location.href = './countySelector.html';
+    setTimeout(() => {
+      
+      location.href = './countySelector.html';
+    }, 1000);
   });
 
   $('#eye7').on('touchend',function() {
     Cookies.set('province', 'connacht');
     // alert('c');
-    location.href = './countySelector.html';
+    setTimeout(() => {
+      
+      location.href = './countySelector.html';
+    }, 1000);
   });
 });
