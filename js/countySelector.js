@@ -17,7 +17,7 @@ $(document).ready(function() {
 /*disable cookie for testing on chrome*/
   // let province = Cookies.get('province');
   // console.log('province from cookie: ' + province);
-let province = 'leinster';
+let province = 'ulster';
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
@@ -121,8 +121,7 @@ let province = 'leinster';
     // alert('leinster') 
     $('.province-map').fadeIn('slow');
     $('.laighean').fadeIn();
-    // $('.province-mapBG').css('margin-top','48% !important');
-    $('.laighean').css('border','4px solid orange;')
+    $('.province-mapBG').css('margin-top','48% !important');
 
 
     $('#carlow').hover(function() {

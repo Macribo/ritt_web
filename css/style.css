@@ -537,21 +537,21 @@ padding-right:17%;
     position: absolute;
     z-index: -21;
     background-image: url('../images/e.png');
-    top: 42%;
-    left:0%;
+    top: 40%;
+    left:11%;
     /*   
     height: 500px;
     width: 400px; */
     background-repeat: no-repeat;
     background-size: contain;
 
-    zoom: 0.8;
+    zoom: 0.65;
     -moz-transform: scale(0.5);
     z-index:9001;
   }
   .emblems{
     position:fixed;
-    top:35%;
+    top:36%;
     left:12%;
     /* border:2px solid yellow; */
 
@@ -565,7 +565,7 @@ padding-right:17%;
 
 
   #carlow {
-    top: 595px;
+    top: 521px;
     left: 301px;
   }
 
@@ -594,36 +594,76 @@ padding-right:17%;
   }
 
   #kilkenny {
-    top: 595px;
+    top: 521px;
     left: 80px;
   }
   #wexford {
-    top: 450px;
+    top: 412px;
     left: 403px;
   }
   #laois {
-    top: 450px;
+    top: 412px;
+
     left: -21px;
   }
 
   #wicklow {
-    top: 275px;
+    top: 262px;
     left: 450px;
   }
 
   #offaly {
-    top: 275px;
+    top: 262px;
     left: -63px;
+  }
+  #fermanagh {
+    top: 365px;
+    left: -10px;
+  }
+
+  #kildare {
+    top: 615px;
+    left: 192px;
+  }
+
+  #down {
+    top: 0px;
+    left: 404px;
   }
 
 
+  #donegal {
+    top: 0px;
+    left: 24px;
+  }
+  #tyrone {
+    top: 153px;
+
+    left: -48px;
+  }
+  #monaghan {
+    top: 472px;
+    left: 274px;}
+
+    #cavan {
+      top: 472px;
+      left: 122px;}
+  
+    #armagh {
+    top: 153px;
+    left:454px;
+  }
 
 
+  #antrim {
+    top: 350px;
+    left: 406px;
+  }
 
-
-
-
-
+  #derry {
+    top: -94px;
+    left: 212px;
+  }
 
 
 
@@ -649,6 +689,7 @@ padding-right:17%;
     align-items: center;
     justify-content: center;
     z-index:9000;
+  margin-top:1%;
   }
 
   
@@ -725,7 +766,9 @@ padding-right:17%;
         zoom: 0.4;
         -moz-transform: scale(0.5);
   }
-
+  #antrim {
+    top: 27px;
+    left: 351px;
 }
 
 
