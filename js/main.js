@@ -17,7 +17,10 @@ $(document).ready(function() {
   $('#eire-mapBG').fadeIn();
 
   $('.eye').on('touchend',function() {
-        $('#eire-map').fadeOut(200);
+setTimeout(() => {
+  
+  $('#eire-map').fadeOut(200);
+}, 1000);
   });
 
 
