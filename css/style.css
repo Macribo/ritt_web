@@ -585,16 +585,15 @@ body {
     /* border:10px solid orangered; */
      bottom:-23%;
      /* moz-top:-22%; chrome : 20%*/
-     left:0;
-     zoom: 0.7;
+     left:-20%;
+     zoom: 0.65;
      -moz-transform: scale(0.5);
     }
 
    #eire-map {
-
-    /* display: none; */
-    margin-top: 23%;
-    position: absolute;
+     /* display: none; */
+     margin-top: 23%;
+     position: absolute;
     z-index: -10;
     background-image: url('../images/e.png');
   
@@ -602,6 +601,7 @@ body {
     width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
+    left:56%
   }
   #eire-mapBG {
     display: none;
@@ -609,7 +609,8 @@ body {
     position: absolute;
     z-index: -11;
     background-image: url('../images/e.png');
-  
+    left:56%;
+    
     height: 500px;
     width: 400px;
     background-repeat: no-repeat;
