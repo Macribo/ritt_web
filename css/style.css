@@ -643,13 +643,13 @@ body {
   }
   .emblems{
     position:fixed;
-    left:36%;
-    top:28%;
-    /* border:2px solid yellow; */
-
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
-    z-index:9001;
+    
+        /* border:10px solid orangered; */
+        bottom:-23%;
+        /* moz-top:-22%; chrome : 20%*/
+        left:-20%;
+        zoom: 0.65;
+        -moz-transform: scale(0.5);
   }
 
 }
