@@ -151,6 +151,7 @@ body {
 }
 
 .province-mapBG {
+  pointer-events: none;
   position: absolute;
   z-index: -21;
   background-image: url('../images/e.png');
@@ -531,6 +532,7 @@ padding-right:17%;
     width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
+
   }
   
   .province-mapBG {

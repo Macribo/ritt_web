@@ -15,9 +15,9 @@ $(document).ready(function() {
   //     speed: 3000
   //   });
 /*disable cookie for testing on chrome*/
-  let province = Cookies.get('province');
+  // let province = Cookies.get('province');
   // console.log('province from cookie: ' + province);
-// let province = 'connacht';
+let province = 'munster';
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
@@ -272,7 +272,7 @@ $(document).ready(function() {
   if (province === 'munster') {
     $('.province-map').css('background-image', "url('./images/maps/m2.png')");
     $('.province-mapBG').css('background-image', "url('./images/maps/m2.png')");
-    $('.levelDescription').text('An Mhumhain');
+    $('.levelDescription').text('An Ṁuṁain');
 
     $('.province-map').fadeIn('slow');
     $('.mumhain').fadeIn();
