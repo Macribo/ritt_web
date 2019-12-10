@@ -15,14 +15,14 @@ $(document).ready(function() {
   //     speed: 3000
   //   });
 /*disable cookie for testing on chrome*/
-  // let province = Cookies.get('province');
+  let province = Cookies.get('province');
   // console.log('province from cookie: ' + province);
-let province = 'ulster';
+// let province = 'connacht';
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
     $('.province-map').css('background-image', "url('./images/maps/u2.png')");
-    $('.levelDescription').text('Uladh');
+    $('.levelDescription').text('Ulaḋ');
     $('.uladh').fadeIn(1200);
 
     //ULSTER hover:
@@ -133,7 +133,7 @@ let province = 'ulster';
     });
 
     $('#dublin').hover(function() {
-      $('.levelDescription').text(`Co. Ḃaile Átha Ċliath`);
+      $('.levelDescription').text(`Co. Átha Ċliath`);
       $('.province-map').css(
         'background-image',
         "url('./images/maps/l2Dubl.png')"
@@ -222,7 +222,7 @@ let province = 'ulster';
   if (province === 'connacht') {
     $('.province-map').css('background-image', "url('./images/maps/c2.png')");
     $('.province-mapBG').css('background-image', "url('./images/maps/c2.png')");
-    $('.levelDescription').text('Connachta');
+    $('.levelDescription').text('Connaċta');
 
     $('.province-map').fadeIn('slow');
     $('.connachta').fadeIn();

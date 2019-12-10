@@ -626,6 +626,8 @@ padding-right:17%;
     left: 192px;
   }
 
+  /* Ulster portrait view emblem positions */
+
   #down {
     top: 0px;
     left: 404px;
@@ -665,11 +667,54 @@ padding-right:17%;
     left: 212px;
   }
 
+  /* Munster portrait view emblem positions */
+  #clare {
+    top: -13px;
+    left: 71px;}
+    #tipperary {
+      top: -13px;
+      left: 382px;}
+    #cork {
+      top: 435px;
+      left: 71px;}
+    
+      #limerick {
+        top: 435px;
+        left: 345px;}
+    
+    
+      #kerry {
+        top: 193px;
+        left: -46px;}
 
-
-
-
+        #waterford {
+          top: 193px;
+          left:456px;}
+  
 }
+
+/* connacht emblems for portrait mob */
+
+#mayo{
+  top:386px;
+  left:47px;
+}
+
+#roscommon{
+  top:386px;
+  left:372px;
+}
+
+#sligo{
+  top:94px;
+  left:415px;
+}
+
+#galway{
+  top:-48px;
+  left:197px;
+}
+
 /*///////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
@@ -771,7 +816,24 @@ padding-right:17%;
     left: 351px;
 }
 
+#tipperary {
+  top: -9px;
+  left:293px;}
 
+
+  #clare {
+    top: -9px;
+    left:71px;}
+  
+  #waterford {
+  top: 169px;
+  left:397px;}
+  #cork {
+    top: 337px;
+    left:71px;}
+  #limerick {
+    top: 337px;
+    left:317px;}
 #ui-0{
   /* display:none; */
   position:fixed;
