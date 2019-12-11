@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   // chosenCounty = this.id;
   console.log('hi' + Cookies.get('playerCounty'));
-  var county = 'dublin'// Cookies.get('playerCounty');
+  var county = Cookies.get('playerCounty');
   if (county != '') {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
