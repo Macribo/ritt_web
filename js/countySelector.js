@@ -15,9 +15,9 @@ $(document).ready(function() {
   //     speed: 3000
   //   });
 /*disable cookie for testing on chrome*/
-  // let province = Cookies.get('province');
-  // console.log('province from cookie: ' + province);
-let province = 'munster';
+  let province = Cookies.get('province');
+  console.log('province from cookie: ' + province);
+// let province = 'munster';
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
