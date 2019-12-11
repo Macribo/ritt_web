@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   // chosenCounty = this.id;
   console.log('hi' + Cookies.get('playerCounty'));
-  var county = Cookies.get('playerCounty');
+  var county = 'dublin'// Cookies.get('playerCounty');
   if (county != '') {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
@@ -302,7 +302,7 @@ let countyDetails = {
     [103, 117, 242, 401, 114, 177]
   ],
   dublin: [
-    `Co. Ḃaile Átha Ċliath`,
+    `Co. Átha Ċliath`,
     [
       `Deilginis`,
       `Binn Éadair`,
