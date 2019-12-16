@@ -17,7 +17,10 @@ $(document).ready(function() {
   $('#eire-mapBG').fadeIn();
 
   $('.eye').on('touchend',function() {
-setTimeout(() => {
+    Cookies.set('province', this.id);
+    console.log('hi from cookie script');
+  
+    setTimeout(() => {
   
   $('#eire-map').fadeOut(200);
 }, 1000);

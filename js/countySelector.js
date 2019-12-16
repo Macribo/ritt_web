@@ -2,22 +2,11 @@
 
 $(document).ready(function() {
   
-  // $('.county').tilt({
-  //   scale: 1.1,
-  //   maxTilt: '7',
-  //   perspective: 400,
-  //   speed: 3000
-  // });
-  
-  // $('.emblems').tilt({
-    //   scale: 1.1,
-    //   maxTilt: '7',
-    //   perspective: 400,
-    //   speed: 3000
-    // });
+
     /*disable cookie for testing on chrome*/
     let province = Cookies.get('province');
     // let province = 'munster';
+    // alert(province);
     $('.emblems').fadeIn();
   console.log('province from cookie: ' + province);
   
