@@ -4,7 +4,7 @@
   /* border: 2px solid blue; */
 
   position: absolute;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease;
   /* border: 1px solid goldenrod; */
 
   /* border: 2px solid salmon; */
@@ -34,8 +34,10 @@
   /* background-image: url('../images/maps/coMaps/bgSea.png'); */
 }
 #county-map {
-  position: absolute;
-  z-index: 20;
+  position: fixed;
+  z-index: 400;
+  top:0%;
+  left:0%;
   background-image: url('../images/maps/coMaps/antrim.png');
   /* border: 3px solid green; */
 }
@@ -132,18 +134,24 @@
 
 
 @media only screen and (orientation:portrait) {
-    
-  #location-output{
-    padding:0%;
-    padding-top:2%;
-    font-size:0.7rem;
-    width:98%;
-    /* border:2px solid blue; */
-  }
+      
+    #location-output{
+      padding:0%;
+      padding-top:2%;
+      font-size:0.7rem;
+      width:98%;
+      /* border:2px solid blue; */
+    }
 
-  .container{
-    zoom:0.65;
+    .container{
+      zoom:0.65;
 
+    }
+  #county-map{
+    position: fixed;
+    z-index: 400;
+    top: 19%;
+    left: -25%;
   }
 }
 @media only screen and (orientation:landscape) {

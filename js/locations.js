@@ -9,8 +9,9 @@ $(document).ready(function() {
   if (county != '') {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
+    
     $('#county-map').css('background-image', chosenCountyImg);
-    alert(chosenCountyImg);
+    // alert(county);
   
   } else {
     alert('still no cookie');
