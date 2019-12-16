@@ -151,9 +151,10 @@
     position: fixed;
     z-index: 400;
     top: 19%;
-    left: -25%;
+    left: 0%;
   }
 }
+
 @media only screen and (orientation:landscape) {
   
   #location-output{
@@ -165,4 +166,11 @@
     zoom:0.65;
 
   }
+  #county-map{
+    position: fixed;
+    z-index: 400;
+    top: 25%;
+    left: 25%;
+  }
+
 }
