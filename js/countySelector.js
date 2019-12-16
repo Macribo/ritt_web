@@ -17,8 +17,8 @@ $(document).ready(function() {
     //   speed: 3000
     // });
 /*disable cookie for testing on chrome*/
-  // let province = Cookies.get('province');
-  let province = 'munster';
+  let province = Cookies.get('province');
+  // let province = 'munster';
   console.log('province from cookie: ' + province);
   
   //IN CASE OF ULSTER:
