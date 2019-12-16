@@ -22,7 +22,7 @@
 
 #bg-land {
   z-index: -10;
-  background-image: url('../images/maps/coMaps/bgLand.png');
+  /* background-image: url('../images/maps/coMaps/bgLand.png'); */
 }
 .container {
   position: relative;
@@ -31,7 +31,7 @@
 #bg-sea {
   z-index: 10;
   opacity: 0.7;
-  background-image: url('../images/maps/coMaps/bgSea.png');
+  /* background-image: url('../images/maps/coMaps/bgSea.png'); */
 }
 #county-map {
   position: absolute;
