@@ -2,27 +2,29 @@
 
 $(document).ready(function() {
   
-  $('.emblems').fadeIn();
-  $('.county').tilt({
-    scale: 1.1,
-    maxTilt: '7',
-    perspective: 400,
-    speed: 3000
-  });
-
-    // $('.emblems').tilt({
+  // $('.county').tilt({
+  //   scale: 1.1,
+  //   maxTilt: '7',
+  //   perspective: 400,
+  //   speed: 3000
+  // });
+  
+  // $('.emblems').tilt({
     //   scale: 1.1,
     //   maxTilt: '7',
     //   perspective: 400,
     //   speed: 3000
     // });
-/*disable cookie for testing on chrome*/
-  let province = Cookies.get('province');
-  // let province = 'munster';
+    /*disable cookie for testing on chrome*/
+    let province = Cookies.get('province');
+    // let province = 'munster';
+    $('.emblems').fadeIn();
   console.log('province from cookie: ' + province);
   
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
+    $('.emblems').fadeIn();
+    
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
     $('.province-map').css('background-image', "url('./images/maps/u2.png')");
     $('.levelDescription').text('Ulaḋ');
@@ -118,6 +120,8 @@ $(document).ready(function() {
   }
   //IN CASE OF LEINSTER:
   if (province === 'leinster') {
+    $('.emblems').fadeIn();
+
     $('.province-map').css('background-image', "url('./images/maps/l2.png')");
     $('.province-mapBG').css('background-image', "url('./images/maps/l2.png')");
     $('.levelDescription').text('An Laighean');
@@ -223,6 +227,8 @@ $(document).ready(function() {
   }
   //IN CASE OF CONNACHT:
   if (province === 'connacht') {
+    $('.emblems').fadeIn();
+
     $('.province-map').css('background-image', "url('./images/maps/c2.png')");
     $('.province-mapBG').css('background-image', "url('./images/maps/c2.png')");
     $('.levelDescription').text('Connaċta');
@@ -273,6 +279,8 @@ $(document).ready(function() {
 
   //IN CASE OF MUNSTER
   if (province === 'munster') {
+    $('.emblems').fadeIn();
+
     $('.province-map').css('background-image', "url('./images/maps/m2.png')");
     $('.province-mapBG').css('background-image', "url('./images/maps/m2.png')");
     $('.levelDescription').text('An Ṁuṁain');
