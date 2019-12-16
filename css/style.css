@@ -755,16 +755,16 @@ padding-right:17%;
   
   .eyes{
     /* border:10px solid orangered; */
-     bottom:-23%;
+     bottom:9%;
      /* moz-top:-22%; chrome : 20%*/
-     left:-20%;
+     left:13%;
      zoom: 0.65;
      -moz-transform: scale(0.5);
     }
 
    #eire-map {
      /* display: none; */
-     margin-top: 23%;
+     margin-top: 5%;
      position: absolute;
     z-index: -10;
     background-image: url('../images/e.png');
@@ -773,15 +773,17 @@ padding-right:17%;
     width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
-    left:56%
+    left:56%;
+    zoom:0.8;
   }
   #eire-mapBG {
     display: none;
-    margin-top: 23%;
+    margin-top: 5%;
     position: absolute;
     z-index: -11;
     background-image: url('../images/e.png');
     left:56%;
+    zoom:0.8;
     
     height: 500px;
     width: 400px;
