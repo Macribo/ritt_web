@@ -11,8 +11,9 @@ $(document).ready(function() {
     // $('#county-map').css('border', '5px solid red');
     
     $('#county-map').css('background-image', chosenCountyImg);
-    // alert(county);
-  
+    // alert(county)
+    $('#county-map').fadeIn();
+
   } else {
     alert('still no cookie');
   }
