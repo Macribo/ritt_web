@@ -350,9 +350,7 @@ $(document).ready(function() {
     leave();
     //   alert('test');
   });
-  $('#back-to-main-menu').click(function() {
-    location.href = './index.html';
-  });
+
 
   $('.county').click('touchend',function() {
     // chosenCounty = this.id;
