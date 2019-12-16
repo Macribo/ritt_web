@@ -10,7 +10,7 @@ $(document).ready(function() {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
     $('#county-map').css('background-image', chosenCountyImg);
-    // alert(chosenCountyImg);
+    alert(chosenCountyImg);
   
   } else {
     console.log('still no cookie');
