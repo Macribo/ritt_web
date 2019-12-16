@@ -1,6 +1,8 @@
 //province has been selected
 
 $(document).ready(function() {
+  
+  $('.emblems').fadeIn();
   $('.county').tilt({
     scale: 1.1,
     maxTilt: '7',
@@ -8,16 +10,17 @@ $(document).ready(function() {
     speed: 3000
   });
 
-  //   $('.emblems').tilt({
-  //     scale: 1.1,
-  //     maxTilt: '7',
-  //     perspective: 400,
-  //     speed: 3000
-  //   });
+    // $('.emblems').tilt({
+    //   scale: 1.1,
+    //   maxTilt: '7',
+    //   perspective: 400,
+    //   speed: 3000
+    // });
 /*disable cookie for testing on chrome*/
   // let province = Cookies.get('province');
   let province = 'munster';
   console.log('province from cookie: ' + province);
+  
   //IN CASE OF ULSTER:
   if (province === 'ulster') {
     $('.province-mapBG').css('background-image', "url('./images/maps/u2.png')");
