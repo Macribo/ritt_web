@@ -13,7 +13,7 @@ $(document).ready(function() {
     alert(chosenCountyImg);
   
   } else {
-    console.log('still no cookie');
+    alert('still no cookie');
   }
   /*It turns out we need a location id.
 32 counties with 6 locations each makes 192 locations.*/
