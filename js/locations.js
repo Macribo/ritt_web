@@ -10,8 +10,7 @@ $(document).ready(function() {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
     $('#county-map').css('background-image', chosenCountyImg);
-    $('#county-map').fadeIn();
-    alert(chosenCountyImg);
+    // alert(chosenCountyImg);
   
   } else {
     console.log('still no cookie');
@@ -25,6 +24,8 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $('#map-pins').css('opacity', 1);
+    $('#county-map').fadeIn();
+
   }, 500);
   //add location pins to county map
   for (var key in countyDetails) {
