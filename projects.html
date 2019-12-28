@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="ga" xmlns="http://www.w3.org/1999/xhtml">
-<add name="Access-Control-Allow-Origin" value="*" />
-<add name="Access-Control-Allow-Headers" value="Content-Type" />
-<add name="Access-Control-Allow-Headers" value="x-requested-with" /> <!-- Add me! -->
+   <add name="Access-Control-Allow-Origin" value="*" />
+   <add name="Access-Control-Allow-Headers" value="Content-Type" />
+   <add name="Access-Control-Allow-Headers" value="x-requested-with" />
+   <!-- Add me! -->
    <meta charset="UTF-8" />
-   <!-- <script src="./scripts/typeWriter.js-master/typeWriter.js"></script> -->
+
    <head>
       <title>Projects</title>
       <!-- <link rel="stylesheet" href="./assets/css/location-styles.css" /> -->
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-         crossorigin="anonymous"
-         />
-      
-      <script src="./js/jquery.js"></script>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+      />
+      <!-- <script src="./js/jquery.js"></script> -->
       <link
-         rel="stylesheet"
-         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-         crossorigin="anonymous"
-         />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+      />
       <link rel="shortcut icon" href="images/favicon.ico" />
       <link
-         href="https://fonts.googleapis.com/css?family=Irish+Grover&display=swap"
-         rel="stylesheet"
-         />
+      href="https://fonts.googleapis.com/css?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+      />
       <link rel="stylesheet" type="text/css" href="css/normalize.css" />
       <link rel="stylesheet" type="text/css" href="css/loc-style.css" />
       <link rel="stylesheet" type="text/css" href="css/tall-order.css" />
-      <link rel="stylesheet" type="text/css" href="css/history.css" />
+      <!-- <link rel="stylesheet" type="text/css" href="css/history.css" /> -->
       <link rel="stylesheet" type="text/css" href="css/chat.css" />
       <!-- <script src="./assets/scripts/jquery.js"></script> -->
+      <link rel="stylesheet" href="./css/keyboard-style.css" >
    </head>
    <script>
       function loadIt() {
@@ -48,22 +48,7 @@
       
    </script>
    <body  onload="loadIt()" id="toLoad">
-     
-      <div id="hold-frame">
-         <img src="./images/bg_Dark.png" id="dark-frame">
-         <div id="holdSlide">
-            <div id="carousel" class="carousel slide carousel-fade hidden">
-               <div class="carousel-inner" id='carousel-inner-id'>
-                  <div class="carousel-item active">
-                     <img class="d-block w-100 " src="./images/About1/00.png" alt="First slide">
-                  </div>
-                  <div id="demo">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- close hold-frame-->
+    
       <div class="wrapper">
          <div id="loader-wrapper">
             <div id="loader"></div>
@@ -87,112 +72,244 @@
                <div id="btn-menu">
                   <div class="col-6 ">
                      <!-- <image id="bg-img1" class="align-text-bottom" src="./assets/images/backgrounds/menuBGleft.png"> -->
-                    
                   </div>
                   <div class="col-6 text-right  align-text-bottom">
                      <!-- <image id="bg-img2" class="align-text-bottom align-right" src="./assets/images/backgrounds/menuBGRight.png"> -->
                   </div>
-                  <div id="btn-panel">
-                     <button type="button" id="about" class="about btn  btn-info btn-lg mr-5">about
-                     </button>
-                     <button type="button" id="skip" class="skip btn btn-secondary btn-lg mr-5">next
-                     </button>
-                     <!-- <button type="button" id="start" class="start btn btn-info btn-lg mr-5">start -->
-                     </button>
-                  </div>
+                  
                </div>
             </div>
          </div>
       </div>
       </div>
       </div>
-
       <div class="modal">
-          <div class="listen-to-tree">
-              <div class="skulls" id="skull1" ></div>
-              <div class="skulls" id="skull2" ></div>
-              <div class="skulls" id="skull3" ></div>
-              <div class="skulls" id="skull4" ></div>
-              <div class="skulls" id="skull5" ></div>
-                <div id="geaga-portrait" alt="tree portrait">
-
-                    <div id="suile" alt="glowing eyes"></div>
-                </div>
+         <div class="listen-to-tree">
+            <div class="skulls" id="skull1" ></div>
+            <div class="skulls" id="skull2" ></div>
+            <div class="skulls" id="skull3" ></div>
+            <div class="skulls" id="skull4" ></div>
+            <div class="skulls" id="skull5" ></div>
+            <div id="geaga-portrait" alt="tree portrait">
+               <div id="suile" alt="glowing eyes"></div>
+            </div>
             <img src="" alt="">
             <img src="" alt="">
-                <div id="geaga0" class="geaga-voices story"  data-eng="Listening...">Ag éisteacht...</div>
-
-                <div id="geaga1" class="geaga-voices story" data-eng="The voices are discussing a wounded bird.">
-                        Tá na guthanna ag cainnt faoí einín gonta
-                        
-                        
-                                  </div>
-        
-          <div id="geaga2" class="geaga-voices story"  data-eng="Tree chitchat 1">Tree chitchat 1 </div>
-
-          <div id="geaga3" class="geaga-voices story" data-eng="Tree chitchat 2">
-                Tree chitchat 2
-          </div>
-
-          <div id="geaga4" class="geaga-voices story" data-eng="Tree chitchat 3">
-                Tree chitchat 3
-          </div>
-          <div id="geaga5" class="geaga-voices story" data-eng="Tree chitchat 4">
-                Tree chitchat 4
-          </div>
-          <div id="geaga6" class="geaga-voices story" data-eng="En garde bretheren! We have a visitor...">
-                Ar aire a bráithreacha! tá cuirteoir linn...    
-
-        </div>
-
+            <div id="geaga0" class="geaga-voices story"  data-eng="Listening...">Ag éisteacht...</div>
+            <div id="geaga1" class="geaga-voices story" data-eng="The voices are discussing a wounded bird.">
+               Tá na guthanna ag cainnt faoí einín gonta
+            </div>
+            <div id="geaga2" class="geaga-voices story"  data-eng="Tree chitchat 1">Tree chitchat 1 </div>
+            <div id="geaga3" class="geaga-voices story" data-eng="Tree chitchat 2">
+               Tree chitchat 2
+            </div>
+            <div id="geaga4" class="geaga-voices story" data-eng="Tree chitchat 3">
+               Tree chitchat 3
+            </div>
+            <div id="geaga5" class="geaga-voices story" data-eng="Tree chitchat 4">
+               Tree chitchat 4
+            </div>
+            <div id="geaga6" class="geaga-voices story" data-eng="En garde bretheren! We have a visitor...">
+               Ar aire a bráithreacha! tá cuirteoir linn...    
+            </div>
+         </div>
+         <div class="modal-content">
+            <div class="modal-icon"></div>
+            <div class="story" data-eng="The wind sets leaves of the tree to whispering. Thrills of fear come over thee.">Cuireann an ghaoith duileoga an crann ag siosarnach. Tagann  drithlíní faitís ort.
+            </div>
+            <div class="story"data-eng="What shall you do?">Cad a dheanfaidh tú?
+            </div>
+            <table class="answer-table">
+               <!-- <thead><tr><th>btn</th><th>frg</tr></thead> -->
+               <tbody>
+                  <tr>
+                     <td>
+                        <button class="button button-a">A:</button>
+                     </td>
+                     <td>
+                        <div class="story choice choice-a" data-eng="Approach boldly">Druid i leith go neamheaglach
                         </div>
-          <div class="modal-content">
-
-                <div class="modal-icon"></div>
-                <div class="story" data-eng="The wind sets leaves of the tree to whispering. Thrills of fear come over thee.">Cuireann an ghaoith duileoga an crann ag siosarnach. Tagann  drithlíní faitís ort.
-                </div>
-                <div class="story"data-eng="What shall you do?">Cad a dheanfaidh tú?
-                </div>
-                
-           <table class="answer-table">
-             <!-- <thead><tr><th>btn</th><th>frg</tr></thead> -->
-                          <tbody>
-<tr><td>
-
-        <button class="button button-a">A:</button>
-
-</td>
-<td>   <div class="story choice choice-a" data-eng="Approach boldly">Druid i leith go neamheaglach
-    </div></td>
-</tr>
-<tr><td>
-
-        <button class="button button-b">B:</button>
-
-</td>
-    <td>
-
-            <div class="story choice choice-b" data-eng="Wait and listen">Fan agus éist 
-    </td>
-    </tr>     
-    <tr><td>
-            <button class = "button button-c">C:</button>
-
-
-    </td>
-        <td>
-                <div class="story choice choice-c"  data-eng="Retreat">Cúlaigh                  
-
-
-        </td>
-        </tr>
-
-</tbody>
-     
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <button class="button button-b">B:</button>
+                     </td>
+                     <td>
+                        <div class="story choice choice-b" data-eng="Wait and listen">
+                           Fan agus éist 
+                     </td>
+                  </tr>
+                  <tr><td>
+                  <button class = "button button-c">C:</button>
+                  </td>
+                  <td>
+                  <div class="story choice choice-c"  data-eng="Retreat">Cúlaigh                  
+                  </td>
+                  </tr>
+               </tbody>
+               </div>
+               </div>
+            </table>
+         </div>
+         <div id="fada-mode" class="">
+            <div class="btn-group btn-group-lg" id="e-line"role="group" aria-label="...">					
+               <button type="button" id="" class="btn-right btn btn-outline-dark">é</button>
+               <button type="button" id="" class="btn-left btn btn-outline-dark">ꞃ</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">ṫ</button>
+               <button type="button" id="" class="btn btn-left btn-outline-dark">ú</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">í</button>
+               <button type="button" id="" class="btn btn-left btn-outline-dark">ó</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">ṗ</button>
             </div>
+            <div class="btn-group btn-group-lg" id="a-line"role="group" aria-label="...">					
+               <button type="button" id="" class="btn-left btn btn-outline-dark">á</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">ṡ</button>
+               <button type="button" id="" class="btn-left btn btn-outline-dark">ḋ</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">ḟ</button>
+               <button type="button" id="" class="btn-left btn btn-outline-dark">ġ</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark"></button>
+               <button type="button" id="" class="btn-left btn btn-outline-dark"></button>
             </div>
-        </table>
-    </div>
+            <div class="btn-group btn-group-lg" id="c-line"role="group" aria-label="...">					
+               <button type="button" id="" class="btn-right btn btn-outline-dark">ċ</button>
+               <button type="button" id="" class="btn-left btn btn-outline-dark">ḃ</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark"></button>			<button type="button" id="" class="btn-left btn btn-outline-dark">ṁ</button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark"></button>
+               <button type="button" id=""  class="btn-left btn btn-outline-dark"></button>
+               <button type="button" id="" class="btn-right btn btn-outline-dark">7</button>
+            </div>
+            <div class="btn-group btn-group-lg" id="shift-line"role="group" aria-label="...">					
+               <button type="button" id="undo"class="btn-right btn btn-outline-dark">
+               <i class="fa fa-undo"></i>
+               </button>
+               <button type="button" id="fada"class="btn-left btn btn-outline-dark">Ᵹ</button>
+               <button type="button" class="space btn btn-outline-dark"> </button>
+               <button type="button" id="copy"  data-clipboard-target="#output" class="btn-left btn btn-outline-dark">													<i class="fa fa-copy"></i>
+               </i></button>
+               <button type="button" class="btn-right btn btn-outline-dark"><i class="fa fa-arrow-right"></i></button>
+            </div>
+         </div>
+      </div>
+      <div id="keyboard-container" class="">
+         <div class="btn-group btn-group-lg" id="e-line"role="group" aria-label="...">					
+            <button type="button" id="e" class="btn btn-right btn-outline-dark">e</button>
+            <button type="button" id="r" class="btn-left btn btn-outline-dark">r</button>
+            <button type="button" id="t" class="btn btn-right btn-outline-dark">t</button>
+            <button type="button" id="u" class="btn-left btn btn-outline-dark">u</button>
+            <button type="button" id="i" class="btn btn-right btn-outline-dark">i</button>
+            <button type="button" id="o" class="btn-left btn btn-outline-dark">o</button>
+            <button type="button" id="p" class="btn btn-right btn-outline-dark">p</button>
+         </div>
+         <div class="btn-group btn-group-lg" id="a-line"role="group" aria-label="...">					
+            <button type="button" id="a" class="btn-left btn btn-outline-dark">a</button>
+            <button type="button"id="s"  class="btn btn-right btn-outline-dark">s</button>
+            <button type="button"id="d"  class="btn-left btn btn-outline-dark">d</button>
+            <button type="button"id="f"  class="btn-right btn btn-outline-dark">f</button>
+            <button type="button"id="g"  class="btn-left btn btn-outline-dark">g</button>
+            <button type="button"id="h"  class="btn-right btn btn-outline-dark">h</button>
+            <button type="button"id="l"  class="btn-left btn btn-outline-dark">l</button>
+         </div>
+         <div class="btn-group btn-group-lg" id="c-line"role="group" aria-label="...">					
+            <button type="button" id="c" class="btn-right btn btn-outline-dark">c</button>
+            <button type="button" id="b" class="btn-left btn btn-outline-dark">b</button>
+            <button type="button" id="n" class="btn-right btn btn-outline-dark">n</button>
+            <button type="button" id="m" class="btn-left btn btn-outline-dark">m</button>
+            <button type="button" id="," class="btn-right btn btn-outline-dark">,</button>
+            <button type="button" id="." class="btn-left btn btn-outline-dark">.</button>
+            <button type="button" id="?" class="btn-right btn btn-outline-dark">?/!</button>
+         </div>
+         <div class="btn-group btn-group-lg" id="shift-line"role="group" aria-label="...">					
+            <button type="button" id="undo"class="btn-right btn btn-outline-dark">
+            <i class="fa fa-undo"></i>
+            </button>
+            <button type="button" id="fada"class="btn-left btn btn-outline-dark">Ᵹ</button>
+            <button type="button" class="btn space btn-outline-dark"> </button>
+            <button type="button" id="copy"
+               data-clipboard-target="#output"
+               class="btn-right btn btn-outline-dark">
+            <i class="fa fa-copy"></i>
+            </button>
+            <button type="button" id="saighead-deas"class="btn-left btn btn-outline-dark"><i class="fa fa-long-arrow-right"></i></button>
+         </div>
+      </div>
+      <div id="caps-keyboard-container" class="">
+         <div class="btn-group btn-group-lg" id="e-line"role="group" aria-label="...">					
+            <button type="button" id="" class="btn-right btn btn-outline-dark">E</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">R</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">T</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">B</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">I</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">O</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">P</button>
+         </div>
+         <div class="btn-group btn-group-lg" id="a-line"role="group" aria-label="...">					
+            <button type="button" id="" class="btn-left btn btn-outline-dark">A</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">S</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">D</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">F</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">G</button>
+            <button type="button" id="" class="btn-right btn btn-outline-dark">H</button>
+            <button type="button" id="" class="btn-left btn btn-outline-dark">L</button>
+         </div>
+         <div class="btn-group btn-group-lg" id="c-line"role="group" aria-label="...">					
+            <button type="button" id=""  class="btn-right btn btn-outline-dark">C</button>
+            <button type="button" id=""  class="btn-left btn btn-outline-dark">B</button>
+            <button type="button" id=""  class="btn-right btn btn-outline-dark">N</button>
+            <button type="button" id=""  class="btn-left btn btn-outline-dark">M</button>
+            <button type="button" id=""  class="btn-right btn btn-outline-dark"></button>
+            <button type="button" id=""  class="btn-left btn btn-outline-dark"></button>
+            <button type="button" id=""  class="btn-right btn btn-outline-dark"></button>
+         </div>
+         <div class="btn-group btn-group-lg" id="shift-line"role="group" aria-label="...">					
+            <button type="button" id="undo"class="btn-right btn btn-outline-dark">
+            <i class="fa fa-undo"></i>
+            </button>
+            <button type="button" id="fada"class="btn-left btn btn-outline-dark">Ᵹ</button>
+            <button type="button" class="space btn btn-outline-dark"> </button>
+            <button type="button" class="btn-left btn btn-outline-dark caps" id="copy" data-clipboard-target="#output">
+            <i class="fa fa-copy"></i>
+            </button>
+            <button type="button" class="btn-right  btn btn-outline-dark"><i class="fa fa-arrow-right"></i></button>
+         </div>
+      </div>
+      <div id="" class="">
+         <div class="btn-group btn-group-lg" id="j-line"role="group" aria-label="...">
+            <!-- 								
+               <button type="button" class="btn-right-logo btn btn-outline-dark">e</button>
+               <button type="button" class="btn-left-logo btn btn-outline-dark">a</button>
+               <button type="button" class="btn-right-logo btn btn-outline-dark">s</button>
+               <button type="button" class="btn-left-logo btn btn-outline-dark">c</button>	
+               <button type="button" class="btn-right-logo btn btn-outline-dark">a</button> -->
+         </div>
+      </div>
+      <!-- hero keyboard for overworld movement and ui -->
+      <div class="ui">
+
+      <div id="hero-keyboard" class="">
+         <div class="btn-group btn-group-lg h-lines"role="group" aria-label="...">
+            <button type="button"  class="btn-left btn btn-outline-dark"></button>
+            <button type="button"  class="btn btn-right btn-outline-dark"></button>
+            <button type="button" id="up" class="btn-left btn btn-outline-dark highlit-btn">súas</button>
+            <button type="button"  class="btn btn-right btn-outline-dark"></button>
+            <button type="button"  class="btn-left btn btn-outline-dark"></button>
+         </div>
+         <div class="btn-group btn-group-lg h-lines" role="group" aria-label="...">
+            <button type="button"  class="btn btn-right btn-outline-dark highlit-btn"></button></button>
+            <button type="button"id="left"  class="btn-left btn btn-outline-dark highlit-btn">clé</button>
+            <button type="button" class="btn-right btn btn-outline-dark"></button>
+            <button type="button"id="right"  class="btn-left btn btn-outline-dark highlit-btn">deas</button>
+            <button type="button"  class="btn-right btn btn-outline-dark"></button>
+         </div>
+         <div class="btn-group btn-group-lg h-lines" role="group" aria-label="...">
+            <button type="button"  class="btn-left btn btn-outline-dark"></button>
+            <button type="button"  class="btn-right btn btn-outline-dark"></button>
+            <button type="button"  class="btn-left btn btn-outline-dark highlit-btn">síos</button>
+            <button type="button"  class="btn-right btn btn-outline-dark"></button>
+            <button type="button"  class="btn-left btn btn-outline-dark"></button>
+         </div>
+      </div>
+   </div>
       <!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
          integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -216,7 +333,6 @@
          integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
          crossorigin="anonymous"
          ></script>
-      <script src="./js/veue.js"></script>
       <script src="./js/js.cookie.js"></script>
       <script src="./js/tall-order.js"></script>
       <script src="js/tota11y.min.js"></script>

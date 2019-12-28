@@ -1,0 +1,195 @@
+/* *{
+	background-color:black;} */
+    .button-group{
+        margin:0 !important;
+        align-content: center;
+    }
+    
+    @font-face { font-family: 'Urchlo Romhanach'; src: url('../../fonts/Urchlo\ Romhanach.ttf'); } 
+    #output{
+        position: fixed;
+        width:90%;
+        height:30%;
+        /* border:3px solid green; */
+        margin:5%;
+        font-family: 'Urchlo Romhanach';
+        z-index: 1;
+        word-wrap: break-word;
+    }
+    .btn{
+        font-size:1.2rem;
+        /* margin:0 !important; */
+        display: block;
+        width: 100%;
+        /* margin:2px; */
+        border-radius:10px;
+        
+    
+    }
+    
+    .btn-right{
+        /* border:3px solid orange; */
+        /* padding-right:8px !important;  */
+        color:palegoldenrod;
+        background-color:#716c80
+        
+        
+    }
+    .btn-left{
+        background-color:#8b816d;
+    
+        color: rgb(255, 227, 255);
+        /* border:3px solid orange; */
+        /* padding-left:8px !important;  */
+    
+    
+    }
+    
+    #hero-keyboard,#keyboard-container, #caps-keyboard-container, #fada-mode,#new-buttons{
+        display:none;
+        position:fixed;
+        width:100%;
+        bottom:5%;
+        background-color:rgba(144, 144, 144, 0.52);
+        padding-top:3px;
+        padding-bottom:3px;
+        /* display:inline-block; */
+        align-content: center;
+        text-align: center;
+        z-index: 10;
+        
+    }
+    
+    #e-line, #f-line , #a-line, #c-line, #shift-line{
+        /* border:2px solid orange; */
+        width:100%;
+    }
+    
+    
+    .space{
+        /* border:2px solid green; */
+        width: 70% !important;
+        margin-left:5%;
+        bottom:5%;
+        padding-left:60px !important;
+        padding-right:60px !important;
+
+    }
+    #backspace{
+        
+        left:10px;
+        width:50px;
+    }
+    
+    .z-line{
+        
+        margin-left:2% !important;
+    }
+    
+    
+        .btn{
+            /* width:15%; */
+            margin:2px !important;
+    /* display:block; */
+    
+    }
+    
+    #j-line{
+        display:fixed;
+        z-index: 100;
+        
+    }
+    
+    
+    .btn-right-logo{
+        /* border:3px solid orange; */
+        /* padding-right:8px !important;  */
+        color:palegoldenrod;
+        background-color:#648136;
+        /* -webkit-animation: bounce 6.5s ease-out forwards; */
+        /* -moz-animation: bounce 1000ms ease-out forwards; */
+        /* -o-animation: bounce 1000ms ease-out forwards; */
+        /* animation: bounce 2.5s ease-out forwards;	 */
+        
+    }
+    .btn-left-logo{
+        background-color:#c469db;
+    
+        color: rgb(255, 227, 255);
+        /* border:3px solid orange; */
+        /* padding-left:8px !important;  */
+        -webkit-animation: bounce 2.2s ease-out forwards;
+        -moz-animation: bounce 1600ms ease-out forwards;
+        -o-animation: bounce 1600ms ease-out forwards;
+        animation: bounce 2.2s ease-out forwards;
+     
+    }
+    /* Webkit, Chrome and Safari */
+    
+    
+    
+    .most-btns-during-dm-mode{
+        /* background-color:#858585;
+    
+        color: rgb(27, 27, 27);
+        /* border:3px solid orange; */
+        /* padding-left:8px !important;  */
+    
+     
+    }
+    
+    .special-btns-during-dm-mode{
+        color:rgb(73, 206, 33);
+        background-color:#716c80
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
+@media screen and (orientation:portrait) {
+        
+    #keyboard-container, #caps-keyboard-container, #fada-mode,#new-buttons{
+        /* display:none; */
+        position:fixed;
+        bottom:10%;
+        background-color:rgba(144, 144, 144, 1);
+        padding-top:3px;
+        padding-bottom:3px;
+        /* display:inline-block; */
+        align-content: center;
+        text-align: center;
+        z-index: 110;
+        
+    }
+
+        #hero-keyboard {
+            position: fixed;
+            bottom: 5%;
+            background-color: rgba(144, 144, 144, 0.52);
+            padding-top: 3px;
+            padding-bottom: 3px;
+            display: inline-block;
+            align-content: center;
+            text-align: center;
+            z-index: 10;
+        
+    }
+
+#e-line, #f-line , #a-line, #c-line, #shift-line{
+	/* border:2px solid orange; */
+	width:100%;
+}
+.h-lines{
+	width:100%;
+
+}
+
+}
+@media screen and (orientation:landscape) {}
