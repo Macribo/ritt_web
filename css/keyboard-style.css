@@ -171,7 +171,8 @@
 
         #hero-keyboard {
             position: fixed;
-            bottom: 5%;
+            bottom: 10%;
+            width:100%;
             background-color: rgba(144, 144, 144, 0.52);
             padding-top: 3px;
             padding-bottom: 3px;
@@ -191,5 +192,10 @@
 
 }
 
+#tall-order{
+    position: fixed;
+    top:55% !important;
+    zoom:0.99;
+}
 }
 @media screen and (orientation:landscape) {}
