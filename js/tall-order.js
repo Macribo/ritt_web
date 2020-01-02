@@ -61,13 +61,116 @@ $(document).ready(function() {
   // $('.levelDescription').text(place);
   //The game map
   var map = [
-      ['^','^', '^', '^','^', '^', '^', '^', '^', '^', '^', '^', '^', '^', '^', '^'],
-      ['<', 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, '>'],
-      ['<', 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, '>'],
-      ['<', 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, '>'],
-      ['<', 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, '>'],
-      ['v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v', 'v']
+    [
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v'
+    ],
+    [
+      'v',
+      'v',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      'v',
+      'v'
+    ],
+    [
+      'v',
+      'v',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      'v',
+      'v'
+    ],
+    [
+      'v',
+      'v',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      'v',
+      'v'
+    ],
+    [
+      'v',
+      'v',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      '.',
+      'v',
+      'v'
+    ],
+    [
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v',
+      'v'
+    ]
   ];
+
   //The game objects map
   var gameObjects = [
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -364,13 +467,7 @@ $(document).ready(function() {
   function render() {
       //Clear the stage of img cells
       //from the previous turn
-      if (upHasBeenPressed) {
-        setTimeout(function(){
-          $('#shout').css('display','block')
-          $('#shout').html(`<img src="./images/ui/shout.png">`)
-
-     },2000)
-    }
+      
       if (stage.hasChildNodes()) {
           for (var i = 0; i < ROWS * COLUMNS; i++) {
               stage.removeChild(stage.firstChild);
@@ -1950,15 +2047,1279 @@ $(document).ready(function() {
   updateBGImage = () => {
       var bg;
       locationMapInfo.getAll().forEach(function(location) {
-          bg = 'url("./images/maps/localMaps/bg192.png")';
-          //   alert(bg);
-          $('#stageBG').css('background-image', bg);
-          console.log('bg:  ' + bg);
+        bg = locationMapExitPoints[0][locationID].bgImage;
+        //   alert(bg);
+        $('#stageBG').css('background-image', bg);
+        console.log('bg:  ' + bg);
       });
   };
   // updateLocationName = ()=>{
 
   // }
+
+  updateProvincialEmblem = () => {
+    currentCounty = getCurrentCounty(locationID);
+    if (
+      currentCounty === 'antrim' ||
+      currentCounty === 'armagh' ||
+      currentCounty === 'cavan' ||
+      currentCounty === 'donegal' ||
+      currentCounty === 'down' ||
+      currentCounty === 'fermanagh' ||
+      currentCounty === 'derry' ||
+      currentCounty === 'monaghan' ||
+      currentCounty === 'tyrone'
+    ) {
+      //   alert(currentCounty);
+      $('#province-emblem').css('background-image', 'url("./images/a2.png")');
+      $('#province-title').text('Ulaidh');
+    } else if (
+      currentCounty === 'carlow' ||
+      currentCounty === 'dublin' ||
+      currentCounty === 'kildare' ||
+      currentCounty === 'kilkenny' ||
+      currentCounty === 'laois' ||
+      currentCounty === 'longford' ||
+      currentCounty === 'louth' ||
+      currentCounty === 'meath' ||
+      currentCounty === 'offaly' ||
+      currentCounty === 'westmeath' ||
+      currentCounty === 'wexford' ||
+      currentCounty === 'wicklow'
+    ) {
+      $('#province-emblem').css('background-image', 'url("./images/a1.png")');
+      $('#province-title').text('Laighin');
+    } else if (
+      currentCounty === 'clare' ||
+      currentCounty === 'cork' ||
+      currentCounty === 'kerry' ||
+      currentCounty === 'limerick' ||
+      currentCounty === 'tipperary' ||
+      currentCounty === 'waterford'
+    ) {
+      $('#province-emblem').css('background-image', 'url("./images/a3.png")');
+      $('#province-title').text('an Mhumhain');
+    } else if (
+      currentCounty === 'Galway' ||
+      currentCounty === 'leitrim' ||
+      currentCounty === 'mayo' ||
+      currentCounty === 'roscommon' ||
+      currentCounty === 'sligo'
+    ) {
+      $('#province-emblem').css('background-image', 'url("./images/a4.png")');
+      $('#province-title').text('Connachta');
+    }
+  };
+  changeLocation = () => {
+    // loadDestinations(locationID);
+    let oldProv = $('#province-title').text();
+    let oldCounty = $('#county-title').text();
+    // alert(oldProv)
+    if (destinations.length === 0) {
+      // alert(sea);
+      seaHandler();
+    } else if (destinations.length === 1) {
+      // alert('going!');
+
+      keyboardActive = true;
+      updatePlayerLocation();
+      locationID = destinations[0];
+      updateBGImage();
+      $('.levelDescription').html(updateLocationDescription(locationID));
+      //indicate new county
+      updateCountyEmblem();
+
+      updateProvincialEmblem();
+      setLocalMapObjects(locationID);
+      // loadDestinations(locationID);
+      var original_color = $('#county-emblem').css('border-left-color');
+      //notify user on enter new province
+      if ($('#province-title').text() != oldProv) {
+        $('.cubes')
+          .fadeTo(100, 0.9)
+          .delay(2500)
+          .fadeOut(1000);
+        $('.cubes').html(
+          `<br><br><h2>Tá Cúige ` +
+            oldProv +
+            ` fágtha agat. <br><br> Fáilte go Cúige ` +
+            $('#province-title').text() +
+            `!</h2>`
+        );
+      }
+    } else {
+      showMapMenu();
+    }
+    // destinations.length = 0;
+    console.log('current locationID: ' + locationID);
+    console.log('current location: ' + updateLocationDescription(locationID));
+    console.log(
+      'Player can go up to: ' + locationMapExitPoints[0][locationID]['up']
+    );
+    console.log(
+      'Player can go down to: ' + locationMapExitPoints[0][locationID]['down']
+    );
+    console.log(
+      'Player can go left to: ' + locationMapExitPoints[0][locationID]['left']
+    );
+    console.log(
+      'Player can go right to: ' + locationMapExitPoints[0][locationID]['right']
+    );
+  };
+  updateCountyEmblem = () => {
+    currentCounty = getCurrentCounty(locationID);
+    if (currentCounty === 'antrim') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/antrim.png")'
+      );
+      $('#county-title').text(countyDetails.antrim[0]);
+    } else if (currentCounty === 'armagh') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/armagh.png")'
+      );
+      $('#county-title').text(countyDetails.armagh[0]);
+    } else if (currentCounty === 'carlow') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/carlow.png")'
+      );
+      $('#county-title').text(countyDetails.carlow[0]);
+    } else if (currentCounty === 'cavan') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/cavan.png")'
+      );
+      $('#county-title').text(countyDetails.cavan[0]);
+    } else if (currentCounty === 'clare') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/clare.png")'
+      );
+      $('#county-title').text(countyDetails.clare[0]);
+    } else if (currentCounty === 'cork') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/cork.png")'
+      );
+      $('#county-title').text(countyDetails.cork[0]);
+    } else if (currentCounty === 'derry') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/derry.png")'
+      );
+      $('#county-title').text(countyDetails.derry[0]);
+    } else if (currentCounty === 'donegal') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/donegal.png")'
+      );
+      $('#county-title').text(countyDetails.donegal[0]);
+    } else if (currentCounty === 'down') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/down.png")'
+      );
+      $('#county-title').text(countyDetails.down[0]);
+    } else if (currentCounty === 'dublin') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/dublin.png")'
+      );
+      $('#county-title').text(countyDetails.dublin[0]);
+    } else if (currentCounty === 'fermanagh') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/fermanagh.png")'
+      );
+      $('#county-title').text(countyDetails.fermanagh[0]);
+    } else if (currentCounty === 'galway') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/galway.png")'
+      );
+      $('#county-title').text(countyDetails.galway[0]);
+    } else if (currentCounty === 'kerry') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kerry.png'
+      );
+      $('#county-title').text(countyDetails.kerry[0]);
+    } else if (currentCounty === 'kildare') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kildare.png'
+      );
+      $('#county-title').text(countyDetails.kildare[0]);
+    } else if (currentCounty === 'kilkenny') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/kilkenny.png'
+      );
+      $('#county-title').text(countyDetails.kilkenny[0]);
+    } else if (currentCounty === 'laois') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/laois.png'
+      );
+      $('#county-title').text(countyDetails.laois[0]);
+    } else if (currentCounty === 'leitrim') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/leitrim.png'
+      );
+      $('#county-title').text(countyDetails.leitrim[0]);
+    } else if (currentCounty === 'limerick') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/limerick.png'
+      );
+      $('#county-title').text(countyDetails.limerick[0]);
+    } else if (currentCounty === 'longford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/longford.png'
+      );
+      $('#county-title').text(countyDetails.longford[0]);
+    } else if (currentCounty === 'louth') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/louth.png'
+      );
+      $('#county-title').text(countyDetails.louth[0]);
+    } else if (currentCounty === 'mayo') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/mayo.png'
+      );
+      $('#county-title').text(countyDetails.mayo[0]);
+    } else if (currentCounty === 'meath') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/meath.png'
+      );
+      $('#county-title').text(countyDetails.meath[0]);
+    } else if (currentCounty === 'monaghan') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/monaghan.png'
+      );
+      $('#county-title').text(countyDetails.monaghan[0]);
+    } else if (currentCounty === 'offaly') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/offaly.png'
+      );
+      $('#county-title').text(countyDetails.offaly[0]);
+    } else if (currentCounty === 'roscommon') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/roscommon.png'
+      );
+      $('#county-title').text(countyDetails.roscommon[0]);
+    } else if (currentCounty === 'sligo') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/sligo.png'
+      );
+      $('#county-title').text(countyDetails.sligo[0]);
+    } else if (currentCounty === 'tipperary') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/tipperary.png'
+      );
+      $('#county-title').text(countyDetails.tipperary[0]);
+    } else if (currentCounty === 'tyrone') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/tyrone.png")'
+      );
+      $('#county-title').text(countyDetails.tyrone[0]);
+    } else if (currentCounty === 'waterford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/waterford.png")'
+      );
+      $('#county-title').text(countyDetails.waterford[0]);
+    } else if (currentCounty === 'westmeath') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/westmeath.png")'
+      );
+      $('#county-title').text(countyDetails.westmeath[0]);
+    } else if (currentCounty === 'wexford') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/wexford.png")'
+      );
+      $('#county-title').text(countyDetails.wexford[0]);
+    } else if (currentCounty === 'wicklow') {
+      $('#county-emblem').css(
+        'background-image',
+        'url("./images/emblems/wicklow.png")'
+      );
+      $('#county-title').text(countyDetails.wicklow[0]);
+    }
+  };
+  setLocalMapObjects = locationID => {
+    if (locationID === 'meath4') {
+      $.ajax({
+        beforeSend: function(xhr) {
+          xhr.overrideMimeType('text/plain; charset=x-user-defined');
+        },
+        url: './js/data.json',
+        datatype: 'text',
+        success: function(result) {
+          var obj = JSON.parse(result);
+          //   alert(obj.meath4.a);
+          map = [];
+          map.push(obj.meath4.a);
+          map.push(obj.meath4.b);
+          map.push(obj.meath4.c);
+          map.push(obj.meath4.d);
+          map.push(obj.meath4.e);
+          map.push(obj.meath4.f);
+
+          //   alert(map);
+          render();
+        }
+      });
+      //   alert('meath4');
+      //   $('#div1').load('./js/data.json');
+      //   var cat = JSON.parse($('#div1'));
+      //   map = cat.meath4;
+      //   console.log('this is the map:' + map);
+    } else if (locationID === 'meath6') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'kr',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    } else if (locationID === 'donegal5') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          5,
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          5,
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    }
+
+    //   else if (locationID === 'donegal2') {}
+    //   else if (locationID === 'donegal3') {}
+    //   else if (locationID === 'donegal4') {}
+    //   else if (locationID === 'donegal5') {}
+    //   else if (locationID === 'donegal6') {}
+
+    //   else if (locationID === 'dublin1') {
+
+    //   }
+    //   else if (locationID === 'dublin2') {}
+    //   else if (locationID === 'dublin3') {}
+    //   else if (locationID === 'dublin4') {}
+    //   else if (locationID === 'dublin5') {}
+    //   else if (locationID === 'dublin6') {}
+
+    //   else if (locationID === 'kerry1') {
+
+    //   }
+    //   else if (locationID === 'kerry2') {}
+    //   else if (locationID === 'kerry3') {}
+    else if (locationID === 'kerry4') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'M',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    }
+    //   else if (locationID === 'kerry5') {}
+    //   else if (locationID === 'kerry6') {}
+
+    //   else if (locationID === 'cork1') {}
+    //   else if (locationID === 'cork2') {}
+    //   else if (locationID === 'cork3') {}
+    else if (locationID === 'cork4') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          'b',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    } else if (locationID === 'cork5') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          'u',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    } else if (locationID === 'cork6') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'j',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    }
+
+    //   else if (locationID === 'waterford') {}
+    //   else if (locationID === 'waterford') {}
+    //   else if (locationID === 'waterford') {}
+    //   else if (locationID === 'waterford') {}
+    //   else if (locationID === 'waterford') {}
+    //   else if (locationID === 'waterford') {}
+    else if (locationID === 'tyrone3') {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          't',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    }
+
+    //   else if (locationID === '') {}
+    else {
+      map = [
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          '.',
+          'v',
+          'v'
+        ],
+        [
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v',
+          'v'
+        ]
+      ];
+    }
+  };
 
   goBackOneSquare = () => {
       if (lastPressed === 'up') {
@@ -2060,6 +3421,141 @@ $(document).ready(function() {
   getCurrentCounty = locationID => {
       return String(locationID.substring(0, locationID.length - 1));
   };
+  updateLocationDescription = locationID => {
+    var varNum = Number(getCountyLocation(locationID)) - 1; //array value
+    let newLocationName;
+
+    var co = getCurrentCounty(locationID);
+    if (co === 'antrim') {
+      newLocationName = countyDetails.antrim[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'armagh') {
+      newLocationName = countyDetails.armagh[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'carlow') {
+      newLocationName = countyDetails.carlow[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'cavan') {
+      newLocationName = countyDetails.cavan[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'clare') {
+      newLocationName = countyDetails.clare[1][varNum];
+
+      return newLocationName;
+    }
+    if (co === 'cork') {
+      newLocationName = countyDetails.cork[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'derry') {
+      newLocationName = countyDetails.derry[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'donegal') {
+      newLocationName = countyDetails.donegal[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'down') {
+      newLocationName = countyDetails.down[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'dublin') {
+      newLocationName = countyDetails.dublin[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'fermanagh') {
+      newLocationName = countyDetails.fermanagh[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'galway') {
+      newLocationName = countyDetails.galway[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'kerry') {
+      newLocationName = countyDetails.kerry[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'kildare') {
+      newLocationName = countyDetails.kildare[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'kilkenny') {
+      newLocationName = countyDetails.kilkenny[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'laois') {
+      newLocationName = countyDetails.laois[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'leitrim') {
+      newLocationName = countyDetails.leitrim[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'limerick') {
+      newLocationName = countyDetails.limerick[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'longford') {
+      newLocationName = countyDetails.longford[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'louth') {
+      newLocationName = countyDetails.louth[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'mayo') {
+      newLocationName = countyDetails.mayo[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'meath') {
+      newLocationName = countyDetails.meath[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'monaghan') {
+      newLocationName = countyDetails.monaghan[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'offaly') {
+      newLocationName = countyDetails.offaly[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'roscommon') {
+      newLocationName = countyDetails.roscommon[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'sligo') {
+      newLocationName = countyDetails.sligo[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'tiperary') {
+      newLocationName = countyDetails.tiperary[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'tyrone') {
+      newLocationName = countyDetails.tyrone[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'westmeath') {
+      newLocationName = countyDetails.westmeath[1][varNum];
+      return newLocationName;
+    }
+
+    if (co === 'wexford') {
+      newLocationName = countyDetails.wexford[1][varNum];
+      return newLocationName;
+    }
+    if (co === 'wicklow') {
+      newLocationName = countyDetails.wickow[1][varNum];
+      return newLocationName;
+    }
+
+    // alert('no : ' + varNum);
+  };
+
 
   deactivateKeyboard = () => {
       document.onkeyup = function(e) {
@@ -2071,6 +3567,9 @@ $(document).ready(function() {
   //   alert(bg);
   if (bg === 'none') {
       updateBGImage();
+      setLocalMapObjects(locationID);
+      updateProvincialEmblem();
+      updateCountyEmblem();
       render();
 
   }
@@ -2123,3 +3622,456 @@ let rando = Math.floor(Math.random() * 40 + 150);
 let randMap = 'url("./images/maps/localMaps/bg' + rando + '.png")';
 
 ////////////
+
+let countyDetails = {
+    antrim: [
+      `Co. Aontroma`,
+      [
+        `Reaċlainn`,
+        `Dearḃóg`,
+        `Aċaḋ Eoċaille`,
+        `Carn Ṁéaḃla`,
+        `Carraig Ḟearġais`,
+        `Béal Feiriste`
+      ],
+      //left
+      [234, 218, 237, 275, 353, 314],
+      //top
+      [5, 47, 201, 299, 273, 353]
+    ],
+    armagh: [
+      `Co. Ard Ṁaċa`,
+      [
+        `Sráid na nAlbanach`,
+        `Craigavon`,
+        `Port An Dúnáin`,
+        `Baile Úr`,
+        `Baile an Ṁuilinn`,
+        `Lios Liath`
+      ], //left
+      [233, 291, 313, 217, 243, 308],
+      //top
+      [14, 25, 9, 290, 166, 333]
+    ],
+    carlow: [
+      `Co. Ċeaṫarlaċ`,
+      [
+        `Cill Deirge`,
+        `Baile Uí Ṁurċú`,
+        `Baile Haicéid`,
+        `An Ḃuiríos`,
+        `Miseal`,
+        `Cill Daṁáin`
+      ], //left
+      [225, 328, 274, 198, 342, 330],
+      //top
+      [64, 21, 172, 215, 200, 250]
+    ],
+    cavan: [
+      `Co. An Caḃáin`,
+      [
+        `Doire na Criaḋ`,
+        `An Cnoc Rua`,
+        `Béal Tairbirt`,
+        `An Dromainn`,
+        `Dún an Rí`,
+        `Lios Cré`
+      ], //left
+      [138, 278, 340, 380, 463, 428],
+      //top
+      [58, 108, 149, 300, 275, 340]
+    ],
+    clare: [
+      `Co. An Ċláir`,
+      [
+        `Ceann Boirne`,
+        `Fíoch Rua`,
+        `An Tulach`,
+        `Cill Rois`,
+        `Leaba Ṡíoda`,
+        `Bun Raite`
+      ], //left
+      [125, 159, 344, 110, 163, 321],
+      //top
+      [21, 195, 193, 371, 341, 270]
+    ],
+    cork: [
+      `Co. Ċorcaí `,
+      [
+        `Cill na Mallaċ`,
+        `Sliabh an Nóglaigh`,
+        `Gleann an Ṗreaċáin`,
+        `Beal na mḂláth`,
+        `Cionn tSáile`,
+        `An Sciobairín`
+      ], //left
+      [346, 405, 404, 362, 378, 191],
+      //top
+      [90, 123, 156, 246, 286, 345]
+    ],
+    derry: [
+      `Co. Ḋoire`,
+      [
+        `Doire`,
+        `Léim an Ṁadaiḋ`,
+        `Droichead Fíolta`,
+        `Maċaire Ráṫa`,
+        `An Seanṁullach`,
+        `Muine Mór`
+      ], //left
+      [80, 234, 267, 411, 370, 389],
+      //top
+      [139, 112, 155, 247, 294, 368]
+    ],
+    donegal: [
+      `Co. Ḋún na nGall`,
+      [
+        `Cionn Dhún Damh`,
+        `Bun na hAḃann`,
+        `Sléiḃte Ḋoire Ḃeatha`,
+        `Leitir Ceanainn`,
+        `Bealach Féich`,
+        `Na Cruaċa`
+      ], //left
+      [382, 234, 214, 305, 270, 189],
+      //top
+      [18, 81, 127, 191, 247, 268]
+    ],
+    down: [
+      `Co. An Dúin`,
+      [
+        `An Lorgain`,
+        `Lios na gCearrḃach`,
+        `An Caisleán Riaḃach`,
+        `An Ṁainistir Liath`,
+        `Dún Pádraig`,
+        `Cill Ċaoil`
+      ],
+      [123, 230, 281, 412, 393, 222],
+      //top
+      [177, 114, 103, 117, 242, 401]
+    ],
+    dublin: [
+      `Co. Ḃaile Átha Ċliath`,
+      [
+        `Fionnġlas`,
+        `Cluain Dolcáin`,
+        `Cluain Tarbh`,
+        `Binn Éadair`,
+        `Dún Laoiġaire`,
+        `Deilginis`
+      ],
+      [254, 240, 281, 303, 271, 303],
+      //top
+      [190, 256, 254, 250, 297, 319]
+    ],
+    fermanagh: [
+      `Co. Ḟear Manaċ`,
+      [
+        `An Garastún `,
+        `Paiteagó`,
+        `Eadarnaiḋ`,
+        `Lios na Daróg`,
+        `Scriobaċ`,
+        `Inis Ceiṫleann`
+      ],
+      [19, 148, 258, 257, 132, 273],
+      //top
+      [84, 35, 20, 106, 196, 213]
+    ],
+    galway: [
+      `Co. na Gailliṁe`,
+      [
+        `Poll an Phúca`,
+        `Cill Cais`,
+        `An Spidéal `,
+        `An Teach Dóite`,
+        `An Ċeaṫrú Rua`,
+        `Inis Meáin `
+      ],
+      [341, 215, 246, 338, 122, 111],
+      //top
+      [146, 233, 217, 280, 236, 299]
+    ],
+    kerry: [
+      `Co. Ċiarraí`,
+      [
+        `Cathair Saiḋḃín`,
+        `An Daingean`,
+        `Gleann na bPúcaí`,
+        `Sliabh Mis`,
+        `Na Cruaċa Duḃa`,
+        `An tSnaidhm`
+      ],
+      [9, 17, 111, 234, 235, 123],
+      //top
+      [118, 159, 159, 110, 268, 374]
+    ],
+    kildare: [
+      `Co. Ċill Dara`,
+      [
+        `Cairbre`,
+        `Na Solláin`,
+        `Fioḋ Alúine`,
+        `Maigh Nuad`,
+        `An Currach`,
+        `Léim an Ḃradáin`
+      ],
+      [239, 372, 254, 368, 329, 334],
+      //top
+      [118, 110, 159, 159, 268, 374]
+    ],
+    kilkenny: [
+      `Co. Ċill Ċainniġ`,
+      [
+        `Ġráinseaċ Ċuffe`,
+        `Baile Ṁic Andáin`,
+        `Bearna na Gaoiṫe`,
+        `Dún Garḃáin`,
+        `Baile an Ṗoill`,
+        `Sliaḃ Rua`
+      ],
+      [157, 272, 207, 274, 215, 274],
+      //top
+      [228, 295, 300, 334, 361, 397]
+    ],
+    laois: [
+      `Co. Laoise`,
+      [
+        `Eiréil `,
+        `Darú`,
+        `An Baile Fionn`,
+        `Baile Átha Í`,
+        `Cúil an tSúdaire`,
+        `Buiríos Mór Osraí`
+      ],
+      [161, 265, 298, 109, 249, 275],
+      //top
+      [119, 121, 84, 285, 316, 255]
+    ],
+    leitrim: [
+      `Co. Liatroma`,
+      [
+        `Gleann Éada`,
+        `Garḃach`,
+        `Droim Seanḃó`,
+        `Aċaḋ na Síleann`,
+        `Fíonach`,
+        `Dromad`
+      ],
+      [182, 202, 222, 302, 310, 272],
+      //top
+      [47, 126, 208, 215, 278, 347]
+    ],
+    limerick: [
+      `Co. Luimnigh`,
+      [
+        `Pailis Ċaonraí`,
+        `Poll an Phúca`,
+        `Caisleán Uí Ċonaill`,
+        `Áth na bḞuinseog`,
+        `An Ḟeoṫanaċ`,
+        `Brú Rí`
+      ],
+      [198, 284, 376, 98, 151, 220],
+      //top
+      [64, 46, 19, 247, 268, 178]
+    ],
+    longford: [
+      `Co. An LongFoirt`,
+      [
+        `An Lios Breac`,
+        `Meathais Troim`,
+        `Gránard`,
+        `Cluain Dá Ráth`,
+        `Maiġ Duṁa`,
+        `An Ċarraig Ḃuí`
+      ],
+      [197, 300, 393, 166, 232, 306],
+      [154, 171, 154, 245, 231, 232]
+    ],
+    louth: [
+      `Co.Lú`,
+      [
+        `Dún Dealgan`,
+        `An Grianfort`,
+        `Ceann Ċloċair`,
+        `Baile Átha Ḟirdia`,
+        `Poll an Phúca`,
+        `Baile an Ġearlánaigh`
+      ],
+      [287, 370, 450, 187, 254, 323],
+      //top
+      [87, 137, 53, 286, 254, 236]
+    ],
+    mayo: [
+      `Co. Mhaigh Eo`,
+      [
+        `Cill Ala`,
+        `Caisleán an Ḃarraiġ`,
+        `Baile Ui Ḟiacáin`,
+        `An Caoláire Rua`,
+        `Lios an tSaṁaiḋ`,
+        `An Éill`
+      ],
+      [380, 235, 155, 196, 366, 251],
+      //top
+      [108, 172, 196, 341, 350, 335]
+    ],
+    meath: [
+      `Co. Na Mí`,
+      [
+        `An Uaimh`,
+        `Ráth Ċairn`,
+        `Cill Ḃríde`,
+        `Teamhair`,
+        `Buaile na Bréachṁaí `,
+        `Tigh na Sióg`
+      ],
+      [274, 206, 240, 298, 122, 349],
+      //top
+      [187, 203, 240, 224, 387, 356]
+    ],
+    monaghan: [
+      `Co. Ṁuineaċáin`,
+      [
+        `Scairbh na gCaorach`,
+        `Cluain Eois`,
+        `Einistir Ḃuithe`,
+        `Teach an Scotaigh`,
+        `Crícheán Rua`,
+        `Carraig Ṁaċaire Rois`
+      ],
+      [249, 191, 234, 132, 380, 383],
+      //top
+      [17, 73, 148, 281, 200, 402]
+    ],
+    offaly: [
+      `Co. Uíḃ Ḟailí`,
+      [
+        `Cluain Ṁic Nóis`,
+        `Éadan Doire`,
+        `Biorra`,
+        `Cionn Eitigh`,
+        `Ráth Iomġáin`,
+        `Suí an Róin`
+      ],
+      [133, 442, 143, 222, 432, 141],
+      //top
+      [88, 76, 215, 253, 154, 284]
+    ],
+    roscommon: [
+      `Co. Ros Comáin`,
+      [
+        `Cluain Fada`,
+        `Baile an Tobair`,
+        `Loch Bó Finne`,
+        `Scramóg`,
+        `Loch Bó Dearge`,
+        `Corr na Fola`
+      ],
+      [164, 240, 357, 316, 353, 328],
+      //top
+      [215, 191, 124, 211, 212, 354]
+    ],
+    sligo: [
+      `Co. Shligigh`,
+      [
+        `Béal Átha na gCarraigíní`,
+        `An Mullach Mór`,
+        `An Ċéis`,
+        `Gob Reaċla`,
+        `Baile Uí Ḋálaigh`,
+        `Tobar an Ċoire`
+      ],
+      [306, 295, 375, 261, 204, 195],
+      //top
+      [110, 190, 315, 98, 166, 324]
+    ],
+    tipperary: [
+      `Co. Ṫiobraid Árann`,
+      [
+        `Ros Cré`,
+        `Durlas`,
+        `Faiċe Ró`,
+        `Sliabh na mBan`,
+        `Cluain Meala`,
+        `Tigh na Naoi Míle`
+      ],
+      [293, 332, 358, 282, 259, 363],
+      //top
+      [102, 263, 285, 307, 342, 309]
+    ],
+    tyrone: [
+      `Co. Ṫír Eoghain`,
+      [
+        `Caisleán na Deirge`,
+        `Baile Mhic Gofraidh`,
+        `An Ómaigh`,
+        `An Caisleán Glas`,
+        `An Ċorr Ċríochach`,
+        `Dún Geanainn`
+      ],
+      [157, 268, 211, 302, 426, 386],
+      //top
+      [113, 103, 161, 175, 221, 306]
+    ],
+    waterford: [
+      `Co. Ṗort Láirge`,
+      [
+        `Sléiḃte an Ċomaraigh`,
+        `An Baile Dubh`,
+        `Tullach an Iarainn`,
+        `Cluain Ḟia`,
+        `Dún Garḃán`,
+        `Cill Ṁíodáin`
+      ],
+      [261, 103, 85, 185, 251, 406],
+      //top
+      [138, 188, 266, 357, 257, 169]
+    ],
+    westmeath: [
+      `Co. Na hIarṁí`,
+      [
+        `Baile na gCailleach`,
+        `Ráth Ḟearna`,
+        `An Teanga`,
+        `Na Colúir`,
+        `Cill Ḃeagáin`,
+        `An Muileann gCearr`
+      ],
+      [393, 467, 14, 74, 223, 374],
+      //top
+      [48, 166, 178, 221, 314, 252]
+    ],
+    wexford: [
+      `Co. Loch Garman`,
+      [
+        `Coill an Iarainn`,
+        `Inis Córṫaidh`,
+        `Poll an Phúca`,
+        `Maolán na nGaḃar`,
+        `An Abhainn Dubh`,
+        `Dún Ċormaic`
+      ],
+      [393, 345, 236, 288, 118, 301],
+      //top
+      [17, 123, 152, 181, 308, 352]
+    ],
+    wicklow: [
+      `Co. Ċill Ṁantáin`,
+      [
+        `Poll an Ṗúca`,
+        `Na Cloċa Liaṫa`,
+        `Siol Éalaiġ`,
+        `Dún Ard`,
+        `An tInḃear Mór`,
+        `Aḃóca`
+      ],
+      //left
+      [216, 374, 164, 155, 329, 360],
+      //top
+      [69, 70, 125, 185, 293, 293]
+    ]
+  };
+  

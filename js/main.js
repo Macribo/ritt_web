@@ -16,6 +16,32 @@ $(document).ready(function() {
   $('#eire-map').fadeIn();
   $('#eire-mapBG').fadeIn();
 
+
+
+  // function holdKeyDown() {
+  //   // alert(keyPressed);
+    
+  //   // alert(keysToShow)
+  //   for (let i = 0; i<keysToShow.length; i++){
+  
+  //     let newButton = `<button id=`+keysToShow[i]+` onclick = "				$('#output').append(this.id);
+  //     " type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
+      
+  //     $('#j-line').append(newButton)	
+  //   }
+  
+  //   $('#j-line').fadeIn();
+  //   let newLeft = $('#'+keyPressed).offset().left;
+  //   let newTop = $('#'+keyPressed).offset().top -50;
+  //   $('#j-line').css({"left": newLeft});
+  //   $('#j-line').css({"top": newTop});
+  //   setTimeout(function(){
+  //     $('#j-line').fadeOut();
+  //     // alert("removed");
+  // },2000
+  // )
+  // }
+
   $('.eye').on('touchend',function() {
     Cookies.set('province', this.id);
     console.log('hi from cookie script');
