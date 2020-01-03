@@ -171,7 +171,7 @@
 
         #hero-keyboard {
             position: fixed;
-            bottom: 10%;
+            bottom: 7%;
             width:100%;
             background-color: rgba(144, 144, 144, 0.52);
             padding-top: 3px;
@@ -197,5 +197,9 @@
     top:55% !important;
     zoom:0.99;
 }
+.nav-btn{
+    font-size: 2em !important;
+}
+
 }
 @media screen and (orientation:landscape) {}
