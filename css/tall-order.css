@@ -9,6 +9,56 @@
   z-index: 50;
   /* padding: 5%; */
 }
+
+#province-details-container {
+  /* border: 2px solid red; */
+  right: 0%;
+}
+#province-emblem {
+  display: block;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/emblems/nullEmblem.png');
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#province-title {
+  /* display: block; */
+  /* height: 50%; */
+  width: 250px;
+  transform: translateX(-78px);
+  opacity: 0.5;
+
+  margin-top: 80px;
+  /* border: 2px solid green; */
+}
+
+#county-details-container {
+  width: 250px;
+  left: 2%;
+}
+#county-emblem {
+  /* border-radius: 50%; */
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/emblems/nullEmblem.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#county-title {
+  margin-top: 80px;
+  opacity: 0.5;
+  width: 310px;
+  transform: translateX(-5px);
+}
 /* 
 
     //set it's css id to 'tile_x'
