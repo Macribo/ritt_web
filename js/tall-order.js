@@ -330,44 +330,24 @@ $(document).ready(function() {
   }
   let underfoot;
   $('#up').on('touchend', function() {
-      // alert();
       goUp();
-      // underfoot = map[sheepRow][sheepColumn];
-      // if (underfoot === 7) {
-      //     goDown();
-      //     // keydownHandler('up')
-      // }
+   
   });
   $('#down').on('touchend', function() {
       goDown();
-      // underfoot = map[sheepRow][sheepColumn];
-      // if (underfoot === 7) {
-      //     goUp();
 
-      // };
-      // keydownHandler('up')
   });
   $('#left').on('touchend', function() {
-      // alert();
       goLeft();
 
-        // underfoot = map[sheepRow][sheepColumn];
-        // if (underfoot === 7) {
-        //     goRight();
-        //     // keydownHandler('up')
-        // }
   });
   $('#right').on('touchend', function() {
-      // alert();
       goRight();
-      // underfoot = map[sheepRow][sheepColumn];
-      // if (underfoot === 7) {
-      //     goLeft();
-      // }
-      // keydownHandler('up')
+
   });
 
   function keydownHandler(event) {
+    alert(event)
       if (keyboardActive) {
           switch (event.keyCode) {
               case UP:
