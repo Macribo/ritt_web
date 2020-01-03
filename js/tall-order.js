@@ -335,21 +335,21 @@ $(document).ready(function() {
   // var LEFT = 37;
   let underfoot;
   $('#up').on('touchend', function() {
-      // goUp();
+      goUp();
       keydownHandler(38);
    
   });
   $('#down').on('touchend', function() {
-      // goDown();
+      goDown();
       keydownHandler(40);
 
   });
   $('#right').on('touchend', function() {
-    // goRight();
+    goRight();
     keydownHandler(39);
   });
           $('#left').on('touchend', function() {
-              // goLeft();
+              goLeft();
               keydownHandler(37);
         
           });
