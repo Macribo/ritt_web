@@ -305,9 +305,7 @@ $(document).ready(function() {
           sheepRow++;
           animatePlayer();
       }
-      loadDestinations(locationID);
-
-      changeLocation(locationID);
+    
   }
   goLeft = () => {
       if (sheepColumn > 1) {
@@ -317,10 +315,7 @@ $(document).ready(function() {
           animatePlayer();
           // gameObjects[sheepRow][sheepColumn] = sheep;
       }
-      loadDestinations(locationID);
-
-      changeLocation(locationID);
-
+    
   }
   goRight = () => {
       if (sheepColumn < COLUMNS - 1) {
@@ -331,10 +326,7 @@ $(document).ready(function() {
           lastPressed = 'right';
           animatePlayer();
       }
-      loadDestinations(locationID);
-
-      changeLocation(locationID);
-
+    
   }
   let underfoot;
   $('#up').on('touchend', function() {
@@ -465,8 +457,7 @@ $(document).ready(function() {
                   break;
           }
       }
-      //Render the game
-      //   render();
+
   }
 
   setBG = placeName => {
