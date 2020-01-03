@@ -328,26 +328,33 @@ $(document).ready(function() {
       }
     
   }
+
+  // var UP = 38;
+  // var DOWN = 40;
+  // var RIGHT = 39;
+  // var LEFT = 37;
   let underfoot;
   $('#up').on('touchend', function() {
-      goUp();
+      // goUp();
+      keydownHandler(38);
    
   });
   $('#down').on('touchend', function() {
-      goDown();
-
-  });
-  $('#left').on('touchend', function() {
-      goLeft();
+      // goDown();
+      keydownHandler(40);
 
   });
   $('#right').on('touchend', function() {
-      goRight();
-
+    // goRight();
+    keydownHandler(39);
   });
+          $('#left').on('touchend', function() {
+              // goLeft();
+              keydownHandler(37);
+        
+          });
 
   function keydownHandler(event) {
-    alert(event)
       if (keyboardActive) {
           switch (event.keyCode) {
               case UP:
