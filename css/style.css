@@ -491,7 +491,7 @@ width:100%;
     position: absolute;
     pointer-events: none;
 padding-top:26%;
-padding-right:17%;
+padding-right:0%;
     background-color: rgba(10, 10, 10, 0.2);
     display: flex;
     /* border: 1px solid rgb(54, 218, 32); */
