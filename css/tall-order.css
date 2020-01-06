@@ -79,6 +79,28 @@
   height: 64px;
 }
 
+
+#sea-modal,
+#map-menu {
+  /* pointer-events: none; */
+  position: relative;
+  z-index: 1000;
+  /* border: 2px solid orange; */
+  width: 935px;
+  height: 291px;
+  top: 49.5%;
+  left: -4%;
+  margin-top: -152px; /* Negative half of height. */
+  margin-left: -15px;
+}
+#map-menu {
+  z-index: 1001;
+  display: none;
+}
+#sea-modal {
+  display: none;
+}
+
 /* #game {
   width: 100%;
   height: 100%;
