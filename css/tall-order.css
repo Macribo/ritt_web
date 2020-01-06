@@ -106,10 +106,11 @@
   margin-top: 1%;
 }
 #landscape{
-  top:0%;
+  top:57.5%;
   position:fixed;
-  left:0%;
+  left:3%;
   z-index:5000;
+  display:none;
 }
 /* #game {
   width: 100%;
