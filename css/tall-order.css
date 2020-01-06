@@ -88,7 +88,7 @@
   /* border: 2px solid orange; */
   width: 96%;
   height: auto;
-  top: 57.5%;
+  top: 14%;
   left: 1%;
   margin-top: 3px;
   margin-left: 15px;
@@ -105,7 +105,12 @@
   font-size: 2em !important;
   margin-top: 1%;
 }
-
+#landscape{
+  top:0%;
+  position:fixed;
+  left:0%;
+  z-index:5000;
+}
 /* #game {
   width: 100%;
   height: 100%;
