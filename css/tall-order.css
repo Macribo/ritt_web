@@ -102,7 +102,8 @@
 }
 .btn-info{
   background-color:rgba(36, 129, 136, 0.5);
-  font-size: larger;
+  font-size: 2em !important;
+  margin-top: 1%;
 }
 
 /* #game {
