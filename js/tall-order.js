@@ -598,11 +598,13 @@ $(document).ready(function() {
       goBackOneSquare();
       keyboardActive = true;
       $('#map-menu').fadeOut();
+      $('#landscape').fadeOut();
       mapMenuIsVisible = false;
       gameObjects[sheepRow][sheepColumn] = sheep;
   });
   showMapMenu = () => {
       $('#map-menu').fadeIn();
+      $('#landscape').fadeIn();
       mapMenuIsVisible = !mapMenuIsVisible;
 
       gameObjects[sheepRow][sheepColumn] = 0;
@@ -634,6 +636,7 @@ $(document).ready(function() {
               // updateProvincialEmblem();
               setLocalMapObjects(locationID);
               $('#map-menu').fadeOut();
+              $('#landscape').fadeOut();
               mapMenuIsVisible = false;
               //   destinations.length = 0;
 
