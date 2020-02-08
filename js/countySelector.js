@@ -7,7 +7,7 @@ $(document).ready(function() {
     let province = Cookies.get('province');
     // let province = 'munster';
     // alert(province);
-    $('.emblems').fadeIn();
+    $('.emblems').fadeOut();
   console.log('province from cookie: ' + province);
   
   //IN CASE OF ULSTER:
@@ -360,7 +360,10 @@ $(document).ready(function() {
     leave();
     //   alert('test');
   });
-
+if (provice === null){
+  location.replace('https://ritt-web-bucket-0.s3-eu-west-1.amazonaws.com/ritt_web/index.html');
+  
+}
   function leave() {
     setTimeout(function(){
 

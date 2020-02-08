@@ -8,7 +8,10 @@ $(document).ready(function() {
   //test with 
 // var county = 'wicklow';
   if (county != '') {
+    $('#county-map').fadeOut();
+
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
+
     // $('#county-map').css('border', '5px solid red');
     
     $('#county-map').css('background-image', chosenCountyImg);
@@ -16,14 +19,13 @@ $(document).ready(function() {
     $('#county-map').fadeIn();
 
   } else {
-    alert('still no cookie');
+   
+      location.replace('https://ritt-web-bucket-0.s3-eu-west-1.amazonaws.com/ritt_web/countySelector.html');
+      
   }
   /*It turns out we need a location id.
 32 counties with 6 locations each makes 192 locations.*/
 
-  $('#back-to-counties').click(function() {
-    location.href = './provinces.html';
-  });
 
   setTimeout(function() {
     $('#map-pins').css('opacity', 1);

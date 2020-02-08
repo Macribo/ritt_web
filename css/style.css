@@ -706,6 +706,16 @@ padding-right:0%;
           top: 193px;
           left:456px;}
   
+          @-moz-document url-prefix() {
+            .levelDescription {
+              font-size: 3em;
+            }
+            .eyes{
+              -moz-transform: scale(0.6) !important;
+              left:-17%;
+            }
+          }
+
 }
 
 /* connacht emblems for portrait mob */
