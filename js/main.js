@@ -1,48 +1,25 @@
 $(document).ready(function() {
+  
+  
   $('.county').tilt({
     scale: 1.1,
     maxTilt: '7',
     perspective: 400,
     speed: 3000
   });
-  $('.eyes').tilt({
-    scale: 1.1,
-    maxTilt: '7',
-    perspective: 400,
-    speed: 3000
-  });
+  // $('.eyes').tilt({
+  //   scale: 1.1,
+  //   maxTilt: '7',
+  //   perspective: 400,
+  //   speed: 3000
+  // });
 
   $('.eyes').fadeIn();
   $('#eire-map').fadeIn();
   $('#eire-mapBG').fadeIn();
 
 
-
-  // function holdKeyDown() {
-  //   // alert(keyPressed);
-    
-  //   // alert(keysToShow)
-  //   for (let i = 0; i<keysToShow.length; i++){
-  
-  //     let newButton = `<button id=`+keysToShow[i]+` onclick = "				$('#output').append(this.id);
-  //     " type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
-      
-  //     $('#j-line').append(newButton)	
-  //   }
-  
-  //   $('#j-line').fadeIn();
-  //   let newLeft = $('#'+keyPressed).offset().left;
-  //   let newTop = $('#'+keyPressed).offset().top -50;
-  //   $('#j-line').css({"left": newLeft});
-  //   $('#j-line').css({"top": newTop});
-  //   setTimeout(function(){
-  //     $('#j-line').fadeOut();
-  //     // alert("removed");
-  // },2000
-  // )
-  // }
-
-  $('.eye').on('touchend',function() {
+  $('.eye').on('click',function() {
     Cookies.set('province', this.id);
     console.log('hi from cookie script');
   
@@ -69,7 +46,7 @@ $(document).ready(function() {
 
   //HOVER ON PROVINCES:
   //ULSTER
-  $('#eye1').on('touchstart',function() {
+  $('#eye1').on('click',function() {
     console.log('hover1');
     // $('.selectedLv').css('background-image', "url('v1.png')");
     $('#eire-map').css('background-image', 'url("./images/u.png")');
@@ -101,7 +78,7 @@ $(document).ready(function() {
 
 
   //LEINSTER
-  $('#eye3').on('touchstart',function() {
+  $('#eye3').on('click',function() {
     
     $('#eire-map').fadeOut(500);
     console.log('hover3');
@@ -112,7 +89,7 @@ $(document).ready(function() {
   });
 
   //MUNSTER
-  $('#eye5').on('touchstart',function() {
+  $('#eye5').on('click',function() {
     console.log('hover3');
     // $('.selectedLv').css('background-image', "url('v5.png')");
     $('#eire-map').css('background-image', 'url("./images/m.png")');
@@ -121,7 +98,7 @@ $(document).ready(function() {
   });
 
   //CONNAUGHT
-  $('#eye7').on('touchstart',function() {
+  $('#eye7').on('click',function() {
     console.log('hover3');
     $('#eire-map').css('background-image', 'url("./images/c.png")');
     $('#eire-map').fadeIn(500);
@@ -129,8 +106,8 @@ $(document).ready(function() {
     $('.levelDescription').text('Connachta');
   });
 
-  $('#eye1').on('touchend',function() {
-    // alert('u');
+  $('#eye1').on('click',function() {
+    alert('u');
     Cookies.set('province', 'ulster');
     console.log(Cookies.get('province'));
     setTimeout(() => {
@@ -139,7 +116,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('#eye3').on('touchend',function() {
+  $('#eye3').on('click',function() {
     // alert('l');
 
     Cookies.set('province', 'leinster');
@@ -149,7 +126,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('#eye5').on('touchend',function() {
+  $('#eye5').on('click',function() {
     // alert('m');
     Cookies.set('province', 'munster');
     setTimeout(() => {
@@ -158,7 +135,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('#eye7').on('touchend',function() {
+  $('#eye7').on('click',function() {
     Cookies.set('province', 'connacht');
     // alert('c');
     setTimeout(() => {

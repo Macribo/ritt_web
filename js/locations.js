@@ -4,14 +4,15 @@ $(document).ready(function() {
   // chosenCounty = this.id;
   console.log('hi' + Cookies.get('playerCounty'));
   var county = Cookies.get('playerCounty');
-//test with 
+
+  //test with 
 // var county = 'wicklow';
   if (county != '') {
     let chosenCountyImg = "url('./images/maps/coMaps/" + county + '.png';
     // $('#county-map').css('border', '5px solid red');
     
     $('#county-map').css('background-image', chosenCountyImg);
-    // alert(county)
+    alert(county)
     $('#county-map').fadeIn();
 
   } else {

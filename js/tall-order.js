@@ -3575,11 +3575,7 @@ $(document).ready(function() {
       // $('.playerShout').fadeOut();
 
   }
-  // jQuery('#example2').raindrops({
-  //     color: '#27262a',
-  //     canvasHeight: 200
-  // });
-
+ 
 
   $('#shout').on('click', function() {
       // alert('hey')

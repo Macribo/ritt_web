@@ -1,3 +1,8 @@
+document.onload=()=>{
+
+  alert('hi')
+}
+
 $(document).ready(function() {
   $('.county').tilt({
     scale: 1.1,
